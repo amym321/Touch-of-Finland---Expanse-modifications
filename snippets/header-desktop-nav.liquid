@@ -1,0 +1,153 @@
+{%- liquid
+  unless limit
+    assign limit = main_menu.links.size
+  endunless
+  unless offset
+    assign offset = 0
+  endunless
+-%}
+
+<ul class="site-nav site-navigation site-navigation--{{ nav_position }} small--hide" role="navigation">
+  {%- for link in main_menu.links limit: limit offset: offset -%}
+    {%- liquid
+      assign has_dropdown = false
+      assign is_megamenu = false
+      
+      if link.levels > 0
+        assign has_dropdown = true
+        if link.levels > 1
+          assign is_megamenu = true
+        endif
+      endif
+      
+      assign truncate_sub = false
+      if link.title == 'Shop All' or link.title == 'Shop'
+      	assign truncate_sub = true
+      endif
+
+      assign isCollection = false
+      if show_mega_products
+        if is_megamenu and link.url contains '/collections/'
+          assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase
+          assign collection_handle = link.url | remove: '/collections/' | remove: lang_code_string
+          assign collection_drop = collections[collection_handle]
+          assign isCollection = true
+        endif
+      endif
+    -%}
+
+    <li
+      class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}"
+      {% if has_dropdown %}aria-haspopup="true"{% endif %}>
+
+      <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}{% if link.title contains 'Sale'%} sale-link{% endif %}">
+        {{ link.title }}
+      </a>
+      {%- if is_megamenu -%}
+        {%- assign previous_column_type = '' -%}
+        <div class="site-nav__dropdown megamenu text-left">
+          <div class="page-width">
+            <div class="site-nav__dropdown-animate megamenu__wrapper">
+              <div class="megamenu__cols">
+                <div class="megamenu__col">
+                  {%- for childlink in link.links -%}
+                    {%- liquid
+                      assign create_new_column = false
+
+                      if childlink.levels > 0 and forloop.index != 1
+                        assign create_new_column = true
+                      endif
+
+                      if childlink.levels == 0 and previous_column_type == 'full'
+                        assign create_new_column = true
+                      endif
+                    -%}
+
+                    {%- if create_new_column -%}
+                      </div><div class="megamenu__col">
+                    {%- endif -%}
+
+                    <div class="megamenu__col-title">
+                      <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
+                    </div>
+
+                    {%- liquid
+                      if childlink.levels > 0
+                        assign previous_column_type = 'full'
+                      else
+                        assign previous_column_type = 'single'
+                      endif
+                    -%}
+                
+                	{%- if truncate_sub and childlink.links.size >= 4  -%}
+                		{%- for grandchildlink in childlink.links limit: 4 -%}
+                          <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                            {{grandchildlink.title}}
+                          </a>
+                        {%- endfor -%}
+                		
+                		<a href="{{ childlink.url }}" class="site-nav__dropdown-link">
+                          View All
+                		</a>
+                	{%- else -%}
+                      {%- for grandchildlink in childlink.links -%}
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                          {{grandchildlink.title}}
+                        </a>
+                      {%- endfor -%}
+                	{%- endif -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+              {%- if isCollection -%}
+                <div class="megamenu__featured">
+                  <div class="product-grid">
+                    {%- liquid
+                      assign mega_product = collection_drop.products.first
+                      render 'product-grid-item', product: mega_product
+
+                      if settings.quick_shop_enable
+                        render 'quick-shop-modal', product: mega_product
+                      endif
+                    -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- elsif has_dropdown -%}
+        <div class="site-nav__dropdown">
+          <ul class="site-nav__dropdown-animate site-nav__dropdown-list text-left">
+            {%- for childlink in link.links -%}
+              {%- liquid
+                assign has_sub_dropdown = false
+                if childlink.levels > 0
+                  assign has_sub_dropdown = true
+                endif
+              -%}
+
+              <li class="{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+                <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}">
+                  {{ childlink.title | escape }}
+                  {%- if has_sub_dropdown -%}
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+                  {%- endif -%}
+                </a>
+                {%- if has_sub_dropdown -%}
+                  <ul class="site-nav__deep-dropdown">
+                    {%- for grandchildlink in childlink.links -%}
+                      <li>
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>

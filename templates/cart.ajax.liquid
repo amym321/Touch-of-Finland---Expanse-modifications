@@ -1,0 +1,30 @@
+{% comment %}
+  JS-load cart markup without bloat of a full layout.
+
+  This is used in both the mini cart drawer and cart page.
+  When a quantity is changed, this file is scraped and data-products
+    is fully replaced to account for possible cart discounts changing
+
+  The cart-wide discount div also replaces what is originally in the cart
+    as it can change anytime a cart-item changes
+{% endcomment %}
+{% layout none %}
+
+<div class="cart__items"
+  data-count="{{ cart.item_count }}"
+  data-cart-subtotal="{{ cart.total_price }}">
+  {% for item in cart.items %}
+    {%- render 'cart-item', product: item -%}
+  {% endfor %}
+</div>
+<div class="cart__discounts text-right{% if cart.cart_level_discount_applications == blank %} hide{% endif %}">
+  <div>
+    {% for cart_discount in cart.cart_level_discount_applications %}
+      {%- assign savings = cart_discount.total_allocated_amount | money -%}
+      <div class="cart__discount">
+        {{ 'cart.general.savings_html' | t: saved_amount: savings }}
+        ({{ cart_discount.title }})
+      </div>
+    {% endfor %}
+  </div>
+</div>

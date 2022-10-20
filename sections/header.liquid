@@ -1,0 +1,320 @@
+{%- liquid
+  assign main_menu = linklists[section.settings.main_menu_link_list]
+
+  assign logo_alignment = 'left'
+  assign nav_position = 'below'
+
+  if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center'
+    assign nav_position = 'beside'
+  endif
+
+  if section.settings.main_menu_alignment == 'center'
+    assign logo_alignment = 'center'
+  endif
+
+  assign template_name = template | replace: '.', ' ' | truncatewords: 2, '' | handle
+
+  assign overlay_header = false
+  if template_name == 'index' and section.settings.sticky_index
+    assign overlay_header = true
+  endif
+  if template_name == 'collection' and collection.image and section.settings.sticky_collection
+    assign overlay_header = true
+  endif
+-%}
+
+<style>
+  .site-nav__link {
+    font-size: {{ settings.type_navigation_size }}px;
+  }
+  {% if settings.type_navigation_capitalize %}
+    .site-nav__link {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+  {% endif %}
+
+  {% if mainmenu.length > 6 %}
+    .site-nav__link {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  {% endif %}
+
+  {%- if settings.color_header == settings.color_body_bg or settings.color_body_bg contains settings.color_header -%}
+    .site-header,
+    .site-header__element--sub {
+      box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+    }
+
+    .is-light .site-header,
+    .is-light .site-header__element--sub {
+      box-shadow: none;
+    }
+  {%- endif -%}
+
+  {%- if settings.color_header == settings.color_header_search -%}
+    .site-header__search-form {
+      border: 1px solid {{ settings.color_borders }}
+    }
+  {%- endif -%}
+</style>
+
+<div data-section-id="{{ section.id }}" data-section-type="header">
+  <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
+    <header
+      id="SiteHeader"
+      class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
+      data-sticky="{{ section.settings.header_sticky }}"
+      data-overlay="{{ overlay_header }}">
+
+      <div class="site-header__element site-header__element--top">
+        <div class="page-width">
+          <div class="header-layout" data-layout="{{ section.settings.main_menu_alignment }}" data-nav="{{ nav_position }}" data-logo-align="{{ logo_alignment }}">
+
+            {%- if nav_position == 'below' and logo_alignment == 'left' -%}
+              <div class="header-item header-item--compress-nav small--hide">
+                <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                  <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+                </button>
+              </div>
+            {%- endif -%}
+
+            {%- if logo_alignment == 'left' -%}
+              <div class="header-item header-item--logo">
+                {%- render 'header-logo-block', section: section -%}
+              </div>
+            {%- endif -%}
+
+            {%- if nav_position == 'below' -%}
+              <div class="header-item header-item--search small--hide">
+                {%- if logo_alignment == 'center' -%}
+                  <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
+                    <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+                  </button>
+                {%- endif -%}
+
+                {%- render 'header-search' -%}
+              </div>
+            {%- endif -%}
+
+            {%- if nav_position == 'beside' -%}
+              <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}">
+                {%- render 'header-desktop-nav', main_menu: main_menu, nav_position: nav_position, show_mega_products: section.settings.mega_products -%}
+              </div>
+            {%- endif -%}
+
+            {%- if logo_alignment == 'center' -%}
+              <div class="header-item header-item--logo">
+                {%- render 'header-logo-block', section: section -%}
+              </div>
+            {%- endif -%}
+
+            <div class="header-item header-item--icons">
+              {%- render 'header-icons', section: section, nav_position: nav_position -%}
+            </div>
+          </div>
+        </div>
+
+        <div class="site-header__search-container">
+          <div class="page-width">
+            <div class="site-header__search">
+              {%- render 'header-search' -%}
+              <button type="button" class="text-link site-header__search-btn site-header__search-btn--cancel">
+                <span class="medium-up--hide"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg></span>
+                <span class="small--hide">{{ 'general.search.cancel' | t }}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- if nav_position == 'below' -%}
+        <div class="site-header__element site-header__element--sub" data-type="nav">
+          <div class="page-width{% if logo_alignment == 'center' %} text-center{% endif %}">
+            {%- render 'header-desktop-nav', main_menu: main_menu, nav_position: nav_position, show_mega_products: section.settings.mega_products -%}
+          </div>
+        </div>
+
+        <div class="site-header__element site-header__element--sub" data-type="search">
+          <div class="page-width medium-up--hide">
+            {%- render 'header-search' -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div class="page-width site-header__drawers">
+        <div class="site-header__drawers-container">
+          <div class="site-header__drawer site-header__cart" id="HeaderCart">
+            <div class="site-header__drawer-animate">
+              {%- render 'header-cart-drawer' -%}
+            </div>
+          </div>
+
+          <div class="site-header__drawer site-header__mobile-nav medium-up--hide" id="MobileNav">
+            <div class="site-header__drawer-animate">
+              {%- render 'header-mobile-nav', main_menu: main_menu -%}
+              {%- if section.settings.header_footer_menu -%}
+                <div id="MobileNavFooter"></div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- if settings.predictive_search_enabled or settings.search_top_collection != blank -%}
+        <div id="SearchResultsWrapper" class="site-header__search-results hide">
+          {%- if settings.search_top_collection != blank -%}
+            {%- assign search_collection = collections[settings.search_top_collection] -%}
+            <div id="TopSearched" class="site-header__search-results-wrapper">
+              <div class="page-width">
+                <div class="h4 site-header__search-title">{{ 'general.search.search_title' | t }}</div>
+              </div>
+              <div class="page-width page-width--flush-small">
+                <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable">
+                  {%- for product in search_collection.products limit: 6 -%}
+                    {%- render 'product-grid-item', product: product, no_actions: true -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- if settings.predictive_search_enabled -%}
+            <div id="PredictiveWrapper" class="hide" data-image-size="{{ settings.predictive_image_size }}">
+              <div class="page-width">
+                <div id="PredictiveResults" class="predictive-result__layout"></div>
+                <div class="text-center predictive-results__footer">
+                  <button type="button" class="btn btn--small" data-predictive-search-button>
+                    <small>
+                      {{ 'general.search.view_more' | t }}
+                    </small>
+                  </button>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </header>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "class": "header-section",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "main_menu_link_list",
+        "label": "Navigation",
+        "default": "main-menu"
+      },
+      {
+        "type": "select",
+        "id": "main_menu_alignment",
+        "label": "Layout",
+        "default": "below",
+        "options": [
+          {
+            "value": "below",
+            "label": "Logo left, menu below"
+          },
+          {
+            "value": "left",
+            "label": "Logo left, menu left"
+          },
+          {
+            "value": "left-center",
+            "label": "Logo left, menu center"
+          },
+          {
+            "value": "center",
+            "label": "Logo center, menu below"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "mega_products",
+        "label": "Show first product in mega menus",
+        "info": "[Learn more](https://archetypethemes.co/blogs/expanse/how-do-i-create-a-mega-menu)",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "header_sticky",
+        "label": "Enable sticky header",
+        "default": true,
+        "info": "Recommended"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_footer_menu",
+        "label": "Show footer content on mobile menu",
+        "default": true,
+        "info": "Recommended"
+      },
+      {
+        "type": "checkbox",
+        "id": "sticky_index",
+        "label": "Overlay header over home page",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "sticky_collection",
+        "label": "Overlay header over collection",
+        "info": "(if collection image is enabled)",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo",
+        "name": "Logo",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo-inverted",
+            "label": "White logo",
+            "info": "Used when on top of an image"
+          },
+          {
+            "type": "range",
+            "id": "desktop_logo_width",
+            "label": "Desktop logo width",
+            "default": 200,
+            "min": 100,
+            "max": 400,
+            "step": 10,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "mobile_logo_width",
+            "label": "Mobile logo width",
+            "default": 140,
+            "min": 60,
+            "max": 200,
+            "step": 10,
+            "unit": "px",
+            "info": "Set as a max-width, may appear smaller"
+          }
+        ]
+      }
+    ],
+    "default": {
+      "settings": {}
+    }
+  }
+{% endschema %}

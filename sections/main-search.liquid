@@ -1,0 +1,91 @@
+{%- paginate search.results by 20 -%}
+
+<div class="page-width page-content">
+  {%- render 'breadcrumbs' -%}
+
+  <header class="section-header">
+    <h1 class="section-header__title">
+      {{ 'general.search.title' | t }}
+    </h1>
+  </header>
+
+  <form action="{{ routes.search_url }}" method="get" class="input-group search-bar search-bar--page" role="search">
+    <input type="hidden" name="type" value="{{ settings.search_type }}">
+    <input type="search" name="q" value="{{ search.terms | escape | replace: '*', '' }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field" aria-label="{{ 'general.search.placeholder' | t }}">
+    <div class="input-group-btn">
+      <button type="submit" class="btn btn--large btn--icon">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
+        <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+      </button>
+    </div>
+  </form>
+
+  {%- if search.performed -%}
+
+    <hr class="hr--medium">
+
+    <div class="section-header">
+      <h2 class="section-header__title">
+        {{ 'general.search.result_count' | t: count: search.results_count }}
+      </h2>
+      {%- if search.results_count == 0 -%}
+        <p>
+          {{ 'general.search.no_results_html' | t: terms: search.terms | replace: '*', '' }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    <div class="new-grid search-grid" data-view="xsmall">
+      {%- for item in search.results -%}
+        {%- if item.object_type == 'product' -%}
+          {%- liquid
+            render 'product-grid-item', product: item
+
+            if settings.quick_shop_enable
+              render 'quick-shop-modal', product: item
+            endif
+          -%}
+        {%- else -%}
+          <div class="grid-item grid-product">
+            <div class="grid-item__content">
+              <a href="{{ item.url }}" class="grid-item__link">
+                {%- if item.object_type == 'article' and item.image -%}
+                  <div class="grid-product__image-wrap">
+                    {%- assign img_url = item.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="grid-product__image lazyload"
+                        data-src="{{ img_url }}"
+                        data-widths="[180, 360, 540]"
+                        data-aspectratio="{{ item.image.aspect_ratio }}"
+                        data-sizes="auto"
+                        alt="{{ item.title | escape }}">
+                  </div>
+                {%- endif -%}
+                <div class="grid-item__meta">
+                  <span class="h4">{{ item.title }}</span>
+                  <div>
+                    {{ item.content | strip_html | truncatewords: 45 }}
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- liquid
+      if paginate.pages > 1
+        render 'pagination', paginate: paginate
+      endif
+    -%}
+
+  {%- endif -%}
+</div>
+
+{%- endpaginate -%}
+
+{% schema %}
+  {
+    "name": "Search"
+  }
+{% endschema %}

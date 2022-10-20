@@ -1,0 +1,48 @@
+{% if collection %}
+  <div class="return-section color-scheme-{{ section.settings.color_scheme }}">
+    {%- if section.settings.color_scheme != 'none' -%}
+      {%- render 'color-scheme-texture', color_scheme: section.settings.color_scheme -%}
+    {%- endif -%}
+    <div class="page-width text-center">
+      <a href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}" class="btn return-link">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'products.general.collection_return' | t: collection: collection.title }}
+      </a>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Back to collection",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "This section will only appear when you are on a product page that was reached through a collection"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Color scheme",
+        "default": "2",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

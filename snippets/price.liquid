@@ -1,0 +1,44 @@
+{%- assign formatted_price = price | money -%}
+{%- unless shop.money_format contains 'money' or shop.money_format contains '.' -%}
+  {%- if settings.superscript_decimals -%}
+    {%- if shop.money_format contains '{{amount}}' or shop.money_format contains '{{ amount }}' -%}
+      {% capture formatted_price %}{{ formatted_price | replace: '.','<sup>' }}</sup>{% endcapture %}
+    {%- elsif shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}' -%}
+      {% capture formatted_price %}{{ formatted_price | replace: ',','<sup>' }}</sup>{% endcapture %}
+    {%- endif -%}
+  {%- endif -%}
+{%- endunless -%}
+
+{% assign see_price_tag = false %}
+
+{% if product.tags contains 'SeePrice' or product.tags contains 'Seeprice' or product.tags contains 'seeprice'%}
+	{% assign see_price_tag = true %}
+{% endif %}
+
+<input type="hidden" data-test="{{see_price}}">
+
+{% if see_price != blank %} 
+ <input type="hidden" data-test="{{see_price}}">
+ {% if see_price == 1 %}
+   <input type="hidden" data-test="{{see_price}}">
+   {% assign see_price_tag = true %}
+ {% else %}
+   <input type="hidden" data-test="{{see_price}}">
+   {% assign see_price_tag = false %}
+ {% endif %}
+{% endif %}
+
+<span aria-hidden="true" class="{% if see_price_tag %} see_price {% endif %}">{{ formatted_price }}</span>
+<span class="visually-hidden">{{ price | money }}</span>
+
+{% if see_price_tag %} 
+
+<div class="see_price_wrapper">
+  <span>See Price In Cart</span>
+  <img class="question_mark" src="https://img.icons8.com/ios-filled/18/000000/help.png"/>
+  <div class="see_price_popup">
+    <span>Our price on this item is too low to advertise. Add the item to your cart to see the final price. This won't require you to purchase the product. You can easily remove it from your cart if you decide not to buy it.</span>
+  </div>  
+</div>
+
+{% endif %}

@@ -1,0 +1,47 @@
+<style type="text/css">.osf_inline_button { margin-top: 20px !important; }</style>
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+<script type="text/javascript">
+  window.ORDERSIFY_BIS = window.ORDERSIFY_BIS || {};
+  window.ORDERSIFY_BIS.template = "{{ template }}";
+  window.ORDERSIFY_BIS.language = "{{ request.locale.iso_code }}";
+  window.ORDERSIFY_BIS.primary_language = "en";
+  {% assign list_products = collection.products %}
+  {% if template == 'search' %}
+  	{% assign list_products = search.results %}
+  {% endif %}
+  window.ORDERSIFY_BIS.product_collections = [];
+  window.ORDERSIFY_BIS.variant_inventory = [];
+  window.ORDERSIFY_BIS.collection_product_inventories = [];
+  window.ORDERSIFY_BIS.collection_product_collections = [];
+  {% for product_variant in product.variants %}
+    window.ORDERSIFY_BIS.variant_inventory[{{ product_variant.id }}] = { inventory_management: "{{ product_variant.inventory_management }}", inventory_policy: "{{ product_variant.inventory_policy }}", inventory_quantity: {{ product_variant.inventory_quantity }}};
+  {% endfor %}
+  window.ORDERSIFY_BIS.collection_products = {{ list_products | json }};
+  {% for collection_product in list_products %}
+    window.ORDERSIFY_BIS.collection_product_collections[{{ collection_product.id }}] = [];
+    {% for collection_product_variant in collection_product.variants %} 
+      window.ORDERSIFY_BIS.collection_product_inventories[{{ collection_product_variant.id }}] = { inventory_management: "{{ collection_product_variant.inventory_management }}", inventory_policy: "{{ collection_product_variant.inventory_policy }}", inventory_quantity: {{ collection_product_variant.inventory_quantity }}};
+    {% endfor %}
+  {% endfor %}
+  {% for product_collection in product.collections %}
+    window.ORDERSIFY_BIS.product_collections.push({id: "{{ product_collection.id }}"});
+  {% endfor %}
+  window.ORDERSIFY_BIS.shop = "{{ shop.permanent_domain }}";
+  window.ORDERSIFY_BIS.variant_inventory = [];
+  {% for product_variant in product.variants %}
+    window.ORDERSIFY_BIS.variant_inventory[{{ product_variant.id }}] = {inventory_management: "{{ product_variant.inventory_management }}",inventory_policy: "{{ product_variant.inventory_policy }}",inventory_quantity: {{ product_variant.inventory_quantity }}};
+  {% endfor %}
+  {% if customer %}
+    window.ORDERSIFY_BIS.customer = {email: "{{ customer.email }}",name: "{{ customer.name }}",id: {{ customer.id }}};
+  {% endif %}
+  window.ORDERSIFY_BIS.popupSetting = {"is_optin_enable":false,"is_preorder":false,"is_brand_mark":false,"font_family":"inherit","is_multiple_language":false,"font_size":14,"popup_border_radius":5,"popup_heading_color":"#064E82","popup_text_color":"#464646","is_message_enable":false,"is_sms_enable":false,"is_accepts_marketing_enable":false,"field_border_radius":50,"popup_button_color":"#ffffff","popup_button_bg_color":"#064E82","is_float_button":false,"is_inline_form":false,"inline_form_selector":null,"inline_form_position":null,"float_button_position":"right","float_button_top":15,"float_button_color":"#ffffff","float_button_bg_color":"#064E82","is_inline_button":true,"inline_button_color":"#ffffff","inline_button_bg_color":"#064E82","is_push_notification_enable":false,"is_overlay_close":true,"ignore_collection_ids":"","ignore_product_tags":"retired","ignore_product_ids":"","is_auto_translation":false,"selector":".osf_bis","selector_position":"right","is_ga":false,"is_fp":false,"is_fb_checkbox":false,"fb_page_id":null,"is_pushowl":false};
+  window.ORDERSIFY_BIS.product = {{ product | json }};
+  window.ORDERSIFY_BIS.currentVariant = {{ current_variant | json }};
+  window.ORDERSIFY_BIS.stockRemainingSetting = {"status":false,"selector":"#osf_stock_remaining","selector_position":"inside","font_family":"Lato","font_size":13,"content":"{% raw %}Low stock! Only {{ quantity }} {{ plural: item | items }} left!{% endraw %}","display_quantity":100};
+  {% raw %}
+    window.ORDERSIFY_BIS.translations = {"en":{"inline_button_text":"Notify when available","float_button_text":"Notify when available","popup_heading":"Notify me when available","popup_description":"We will send you a notification as soon as this product is available again.","popup_button_text":"Notify me","popup_note":"We respect your privacy and don't share your email with anybody.","field_email_placeholder":"eg. username@example.com","field_phone_placeholder":"eg. (201) 555-5555","field_message_placeholder":"Tell something about your requirements to shop","success_text":"Out of stock request sent. You will be notified when this item returns to stock.","required_email":"Your email is required","invalid_email":"Your email is invalid","invalid_message":"Your message must be less then 255 characters","push_notification_message":"Receive via web notification","low_stock_content":"Low stock! Only {{ quantity }} {{ plural: item | items }} left!","optin_message":"I agree with Terms of Service and Privacy Policy","please_agree":"Please confirm your agreement","pre_order_button_content":"Pre-Order","pre_order_preparation_banner":"We need {{ preparation_days }} {{ day\/days | plural: preparation_days }} to prepare the product","coming_soon_button_content":"Coming Soon","pre_order_delivery_banner":"We will ship it on {{ delivery_datetime | date }}","coming_soon_message":"We will release this product soon","pre_order_limit_purchases":"You can purchase only {{ limit_purchases }} items","mixed_cart_content":"Your cart contains both pre-order products and normal products","badge_low_stock_content":"Low Stock","badge_out_of_stock_content":"Out of Stock","badge_pre_order_content":"Pre-Order","badge_coming_soon_content":"Coming Soon"}};
+  {% endraw %}
+  window.ORDERSIFY_BIS.poSettings = {"status":false,"is_multiple_language":false,"product_add_to_cart_selector":"[action^=\"\/cart\/add\"] [type=\"submit\"]","product_add_to_cart_text_selector":"[action^=\"\/cart\/add\"] [type=\"submit\"]","product_quantity_selector":"[name=\"quantity\"]","product_form_selector":"[action^=\"\/cart\/add\"]","product_variant_selector":"[name=\"id\"]","po_button_color":"#ffffff","po_button_bg_color":"#000000","is_hide_bin":false,"mx_color":"#000000","mx_bg_color":"transparent","is_mixed_cart":true,"cs_button_color":"#000000","cs_button_bg_color":"transparent","banner_radius":4,"banner_color":"#000000","banner_bg_color":"transparent"};
+  window.ORDERSIFY_BIS.badgeSettings = {"status":false,"is_low_stock":true,"is_out_of_stock":true,"is_pre_order":true,"is_coming_soon":true,"low_stock_threshold":10,"is_multiple_language":0,"low_stock_type":"one","out_of_stock_type":"one","pre_order_type":"one","coming_soon_type":"one"};
+  window.ORDERSIFY_BIS.poCampaigns = [];
+</script>

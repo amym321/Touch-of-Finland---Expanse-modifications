@@ -1,0 +1,26 @@
+{% comment %}
+  Images:
+    - space
+    - paper
+    - marble
+  SVG:
+    - swirl
+    - squiggle
+  CSS:
+    - darken
+{% endcomment %}
+{%- capture key -%}color_scheme_{{ color_scheme }}_texture{%- endcapture -%}
+{%- assign texture = settings[key] -%}
+{%- if texture == 'space.jpg' or
+       texture == 'paper.jpg' or
+       texture == 'marble.jpg' -%}
+  {% assign img_url = texture | asset_img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+  <img class="lazyload scheme-image"
+      aria-hidden="true"
+      data-src="{{ img_url }}"
+      data-texture="{{ texture }}"
+      data-widths="[360, 540, 720, 900, 1080]"
+      data-sizes="auto">
+{%- else -%}
+  <div class="scheme-{{ texture }}"></div>
+{%- endif -%}

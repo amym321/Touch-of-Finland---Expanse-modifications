@@ -1,0 +1,47 @@
+<div class="grid-item grid-product {{ classes }}">
+  <div class="grid-item__content">
+    <a href="{{ product.url | within: collection }}" class="grid-item__link">
+      <div class="grid-product__image-wrap">
+        {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+        {%- if i == 1 -%}
+          <div class="grid-product__tags">
+            <div class="grid-product__tag grid-product__tag--sale">
+              {{ 'products.general.sale' | t }}
+            </div>
+          </div>
+        {%- endif -%}
+        <div class="image-wrap">
+          {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      </div>
+      <div class="grid-item__meta">
+        <div class="grid-item__meta-main">
+          <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+        </div>
+        <div class="grid-item__meta-secondary">
+          <div class="grid-product__price">
+            <span class="grid-product__price--current">
+              {%- render 'price' with '2999' -%}
+            </span>
+            {%- if i == 1 -%}
+              <span class="grid-product__price--original">
+                {%- render 'price' with '3599' -%}
+              </span>
+
+              {%- if settings.product_save_amount -%}
+                {%- if settings.product_save_type == 'dollar' -%}
+                  {%- capture saved_amount -%}{{ 3599 | minus: 2999 | money_without_trailing_zeros }}{%- endcapture -%}
+                {%- else -%}
+                  {%- capture saved_amount -%}{{ 3599 | minus: 2999 | times: 100.0 | divided_by: 3599 | round }}%{%- endcapture -%}
+                {%- endif -%}
+                <span class="grid-product__price--savings">
+                  {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                </span>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

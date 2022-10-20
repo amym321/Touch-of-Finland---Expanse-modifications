@@ -1,0 +1,221 @@
+{%- if section.settings.show_newsletter -%}
+  <div class="footer__section footer__section--border">
+    <div class="page-width">
+      <div class="footer__newsletter">
+        {%- if section.settings.newsletter_richtext != blank -%}
+          <div class="footer__subscribe rte rte--nomargin">
+            {{ section.settings.newsletter_richtext }}
+          </div>
+        {%- endif -%}
+
+        {%- render 'newsletter-form', section_id: section.id, snippet_context: 'footer' -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% comment %}
+  Main navigation is copied here with JS for mobile users
+{% endcomment %}
+{%- if section.settings.footer_main_menu -%}
+  <div id="FooterMobileNavWrap" class="footer__section footer__section--border medium-up--hide hide">
+    <div id="FooterMobileNav" class="page-width"></div>
+  </div>
+{%- endif -%}
+
+<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
+  <div id="FooterMenus" class="footer__section footer__section--menus">
+    <div class="page-width">
+      <div class="footer__blocks">
+        {%- for block in section.blocks -%}
+          <div {{ block.shopify_attributes }} class="footer__block" data-type="{{ block.type }}">
+            {%- liquid
+              case block.type
+                when 'menu'
+                  render 'footer-menu', block: block
+                when 'payment'
+                  render 'footer-payments', block: block
+                when 'contact'
+                  render 'footer-contact', block: block
+              endcase
+            -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__section">
+    <div class="page-width text-center small--text-left">
+      <div class="footer__base-links">
+        {%- if section.settings.show_copyright -%}
+          <span>
+            &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+            {%- if section.settings.copyright_text != blank -%}
+              {{ section.settings.copyright_text }}
+            {%- endif -%}
+          </span>
+        {%- endif -%}
+        {%- if linklists[section.settings.policies_menu].links.size > 0 -%}
+          {%- for link in linklists[section.settings.policies_menu].links -%}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {%- endfor -%}
+        {%- endif -%}
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "max_blocks": 12,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Newsletter"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_newsletter",
+        "label": "Show newsletter signup",
+        "info": "Customers who subscribe will have their email address added to the 'accepts marketing' [customer list](/admin/customers?query=&accepts_marketing=1).",
+        "default": true
+      },
+      {
+        "type": "richtext",
+        "id": "newsletter_richtext",
+        "label": "Text",
+        "default": "<p>Subscribe today to hear first about our sales</p>"
+      },
+      {
+        "type": "header",
+        "content": "Additional footer content"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_main_menu",
+        "label": "Repeat main menu on mobile",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_copyright",
+        "label": "Show copyright"
+      },
+      {
+        "type": "text",
+        "id": "copyright_text",
+        "label": "Additional copyright text"
+      },
+      {
+        "type": "link_list",
+        "id": "policies_menu",
+        "label": "Policies menu",
+        "info": "This menu will only show top-level links"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "payment",
+        "name": "Payments and localization",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_payment_icons",
+            "label": "Show payment icons",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "show_locale_selector",
+            "label": "Show language selector",
+            "info": "To add a language, go to your [language settings.](/admin/settings/languages)",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "show_currency_selector",
+            "label": "Show currency selector",
+            "info": "To add a currency, go to your [currency settings.](/admin/settings/payments)",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "name": "Navigation",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "info": "Defaults to menu title"
+          },
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Choose a menu",
+            "default": "footer",
+            "info": "This menu will only show top-level links"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_account_link",
+            "label": "Add 'My account' link if customer accounts enabled"
+          }
+        ]
+      },
+      {
+        "type": "contact",
+        "name": "Contact and social",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Contact"
+          },
+          {
+            "type": "text",
+            "id": "phone",
+            "label": "Phone number"
+          },
+          {
+            "type": "page",
+            "id": "contact",
+            "label": "Contact page"
+          },
+          {
+            "type": "page",
+            "id": "chat",
+            "label": "Chat link"
+          },
+          {
+            "type": "header",
+            "content": "Social"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_social",
+            "label": "Show social accounts",
+            "default": true
+          }
+        ]
+      }
+    ],
+    "default": {
+      "settings": {},
+      "blocks": [
+        {
+          "type": "menu",
+          "settings": {}
+        },
+        {
+          "type": "payment",
+          "settings": {}
+        }
+      ]
+    }
+  }
+{% endschema %}

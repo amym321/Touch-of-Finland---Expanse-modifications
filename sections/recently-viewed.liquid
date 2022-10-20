@@ -1,0 +1,29 @@
+<div
+  data-subsection
+  data-section-id="{{ section.id }}"
+  data-section-type="recently-viewed"
+  data-product-id="{{ product.id }}">
+  <div class="index-section index-section--sub-product">
+    <div class="page-width">
+      <header class="section-header">
+        <div class="h3 section-header__title">{{ 'products.general.recent_products' | t }}</div>
+      </header>
+    </div>
+
+    <div class="page-width page-width--flush-small">
+      <div id="RecentlyViewed-{{ section.id }}"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Recently viewed",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Recently viewed products are only visible when browsing outside of the editor"
+      }
+    ]
+  }
+{% endschema %}

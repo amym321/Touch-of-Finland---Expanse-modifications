@@ -1,0 +1,118 @@
+{%- liquid
+  assign paginate_by = 60
+
+  assign current_filter_size = 0
+  for filter in collection.filters
+    assign current_filter_size = current_filter_size | plus: filter.active_values.size
+  endfor
+-%}
+
+{%- paginate collection.products by paginate_by -%}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'collection_description' -%}
+    {%- if collection.description != blank and current_filter_size == 0 -%}
+    <div class="rte rte--collection-desc" {{ block.shopify_attributes }}>
+        <div class="enlarge-text">
+          {{ collection.description }}
+        </div>
+      </div>
+    {%- endif -%}
+  {%- when 'subcollections' -%}
+    {%- if paginate.current_page == 1 and current_filter_size == 0 -%}
+      <div {{ block.shopify_attributes }}>
+        {%- render 'subcollections' -%}
+      </div>
+    {%- endif -%}
+  {%- when 'product_grid' -%}
+    <div {{ block.shopify_attributes }}>
+      <div class="collection-filter">
+        <div class="collection-filter__inner">
+          <div class="collection-filter__item collection-filter__item--drawer">
+            <button
+              type="button"
+              class="collection-filter__btn text-link">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-filter" viewBox="0 0 64 64"><path d="M48 42h10">.</path><path d="M48 42a5 5 0 1 1-5-5 5 5 0 0 1 5 5z"/><path d="M7 42h31">.</path><path d="M16 22H6">.</path><path d="M16 22a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"/><path d="M57 22H26">.</path></svg>
+              {{ 'collections.filters.title_tags' | t }}
+              {%- if current_filter_size > 0 -%}
+                ({{ current_filter_size }})
+              {%- endif -%}
+            </button>
+          </div>
+
+          <div class="collection-filter__item collection-filter__item--count small--hide">
+            {{ 'collections.general.items_with_count' | t: count: collection.products_count }}
+          </div>
+
+          <div class="collection-filter__item collection-filter__item--right">
+            {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+            <div class="collection-filter__sort small--hide">
+              <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+              <select name="SortBy" id="SortBy" data-default-sortby="{{ collection.default_sort_by }}">
+                <option value="title-ascending"{% if sort_by == collection.default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
+                {%- for option in collection.sort_options -%}
+                  <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+
+            {%- liquid
+              assign productGridView = block.settings.grid_style
+              if cart.attributes.product_view != blank
+                assign productGridView = cart.attributes.product_view
+              endif
+            -%}
+
+            <ul class="no-bullets inline-list text-right">
+              <li><button type="button" class="grid-view-btn{% if productGridView == 'large' %} is-active{% endif %}" data-view="large" title="{{ 'collections.general.large' | t }}">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-view-large" viewBox="0 0 35 35"><path d="M0 0h35v35H0z"/></svg>
+                <span class="icon__fallback-text">{{ 'collections.general.large' | t }}</span>
+              </button></li>
+              <li><button type="button" class="grid-view-btn{% if productGridView == 'small' %} is-active{% endif %}" data-view="small" title="{{ 'collections.general.small' | t }}">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-view-small" viewBox="0 0 35 35"><path d="M0 0h15v15H0zM20 0h15v15H20zM0 20h15v15H0zM20 20h15v15H20z"/></svg>
+                <span class="icon__fallback-text">{{ 'collections.general.small' | t }}</span>
+              </button></li>
+              <li><button type="button" class="grid-view-btn{% if productGridView == 'list' %} is-active{% endif %}" data-view="list" title="{{ 'collections.general.list' | t }}">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-view-list" viewBox="0 0 35 35"><g id="Layer_2" data-name="Layer 2"><path d="M0 0h35v8H0zM0 13h35v8H0zM0 27h35v8H0z"/></g></svg>
+                <span class="icon__fallback-text">{{ 'collections.general.list' | t }}</span>
+              </button></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collection-mobile-filters medium-up--hide">
+          <div class="collection-mobile-filters__holder" id="CollectionInlineFilterWrap"></div>
+        </div>
+      </div>
+
+      {%- if collection.products == blank -%}
+        <div class="index-section">{{ 'collections.general.no_matches' | t }}</div>
+      {%- endif -%}
+
+      <div
+        class="new-grid product-grid collection-grid"
+        data-view="{{ productGridView }}"
+        data-scroll-to>
+
+        {%- liquid
+          for product in collection.products
+            render 'product-grid-item', product: product
+
+            if settings.quick_shop_enable
+              render 'quick-shop-modal', product: product
+            endif
+          endfor
+        -%}
+      </div>
+
+      {%- liquid
+        if paginate.pages > 1
+          render 'pagination', paginate: paginate
+        endif
+      -%}
+    </div>
+  {%- endcase -%}
+{%- endfor -%}
+
+{%- endpaginate -%}

@@ -1,0 +1,1 @@
+{"sections":{"main":{"type":"article-template","settings":{}},"sidebar":{"type":"blog-sidebar","blocks":{"tags":{"type":"tags","settings":{}},"share":{"type":"share","settings":{}}},"block_order":["tags","share"],"settings":{}}},"order":["main","sidebar"],"wrapper":"div.page-width.page-content.blog-layout"}

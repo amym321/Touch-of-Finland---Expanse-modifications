@@ -1,0 +1,22 @@
+{% comment %}
+  Template used to generated recently viewed product section
+{% endcomment %}
+{% layout none %}
+
+{%- if search.performed -%}
+
+  <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable-7">
+    {%- for item in search.results -%}
+      {%- if item.object_type == 'product' -%}
+        {%- liquid
+          render 'product-grid-item', product: item
+
+          if settings.quick_shop_enable
+            render 'quick-shop-modal', product: item
+          endif
+        -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+{%- endif -%}

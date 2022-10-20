@@ -1,0 +1,169 @@
+{%- if section.blocks.size == 0 -%}
+  <style>
+    .blog-layout__sidebar { display: none; }
+  </style>
+{%- endif -%}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'article' -%}
+      {%- assign article_object = articles[block.settings.article] -%}
+      <div class="theme-block">
+        {%- if block.settings.title != blank -%}
+          <h4>{{ block.settings.title }}</h4>
+        {%- endif -%}
+        {%- render 'article-grid-item',
+          blog: blog,
+          article: article_object,
+          style: 'compact',
+          show_tags: block.settings.blog_show_tags,
+          show_date: block.settings.blog_show_date,
+          show_comments: block.settings.blog_show_comments,
+          show_author: block.settings.blog_show_author,
+          image_size: block.settings.blog_image_size -%}
+      </div>
+    {%- when 'tags' -%}
+      {%- if blog.all_tags.size > 0 -%}
+        <div class="theme-block">
+          <h4>{{ 'blogs.article.explore_more' | t }}</h4>
+          <ul class="no-bullets tag-list">
+            {%- for tag in blog.all_tags -%}
+              {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
+              <li class="tag tag--inline">
+                <a href="{{ blog.url }}/tagged/{{ tag.handle }}" class="article-tag">{{ tag }}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    {%- when 'product' -%}
+      {%- assign product = all_products[block.settings.featured_product] -%}
+      {%- unless product.empty? -%}
+        <div class="theme-block">
+          <h4>{{ 'blogs.article.featured_product' | t }}</h4>
+          {%- render 'product-grid-item', product: product, no_actions: true -%}
+        </div>
+      {%- endunless -%}
+    {%- when 'share' -%}
+      {%- if article -%}
+        <div class="theme-block">
+          <h4>{{ 'general.social.share_this' | t }}</h4>
+          {%- render 'social-sharing',
+            share_title: article.title,
+            share_permalink: article.url,
+            share_image: article.image -%}
+        </div>
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+    "name": "Blog sidebar",
+    "class": "blog-layout__sidebar",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Make sure your sidebar is one of the first two sections"
+      }
+    ],
+    "max_blocks": 5,
+    "blocks": [
+      {
+        "type": "article",
+        "name": "Featured article",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Popular posts"
+          },
+          {
+            "type": "article",
+            "id": "article",
+            "label": "Article"
+          },
+          {
+            "type": "checkbox",
+            "id": "blog_show_tags",
+            "label": "Show tags",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "blog_show_date",
+            "label": "Show date",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "blog_show_comments",
+            "label": "Show comment count",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "blog_show_author",
+            "label": "Show author"
+          },
+          {
+            "type": "select",
+            "id": "blog_image_size",
+            "label": "Force image size",
+            "default": "wide",
+            "options": [
+              {
+                "value": "natural",
+                "label": "Natural"
+              },
+              {
+                "value": "square",
+                "label": "Square (1:1)"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape (4:3)"
+              },
+              {
+                "value": "portrait",
+                "label": "Portrait (2:3)"
+              },
+              {
+                "value": "wide",
+                "label": "Wide (16:9)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "tags",
+        "name": "Tags",
+        "limit": 1
+      },
+      {
+        "type": "product",
+        "name": "Featured product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product",
+            "label": "Product"
+          }
+        ]
+      },
+      {
+        "type": "share",
+        "name": "Share links",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "Will only appear on articles"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

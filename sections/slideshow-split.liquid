@@ -1,0 +1,433 @@
+{%- unless section.settings.full_width -%}
+  <div class="page-width hero--padded">
+{%- endunless -%}
+
+  {% style %}
+    .hero--{{ section.id }} {
+      height: {{ section.settings.height }}px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero--{{ section.id }} {
+        height: {{ section.settings.height_mobile }}px;
+      }
+    }
+  {% endstyle %}
+
+  <div
+    data-section-id="{{ section.id }}"
+    data-section-type="slideshow-section"
+    data-immediate-load>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="slideshow-wrapper">
+        {%- if section.settings.autoplay and section.settings.style == 'bars' and section.blocks.size > 1 -%}
+          {%- style -%}
+            [data-bars][data-autoplay="true"] .flickity-page-dots .dot:after {
+              animation-duration: {{ section.settings.autoplay_speed | times: 1000 }}ms;
+            }
+          {%- endstyle -%}
+
+          <button type="button" class="visually-hidden slideshow__pause" data-id="{{ section.id }}" aria-live="polite">
+            <span class="slideshow__pause-stop">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pause" viewBox="0 0 10 13"><g fill="#000" fill-rule="evenodd"><path d="M0 0h3v13H0zM7 0h3v13H7z"/></g></svg>
+              <span class="icon__fallback-text">{{ 'sections.slideshow.pause_slideshow' | t }}</span>
+            </span>
+            <span class="slideshow__pause-play">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
+              <span class="icon__fallback-text">{{ 'sections.slideshow.play_slideshow' | t }}</span>
+            </span>
+          </button>
+        {%- endif -%}
+
+        <div id="Slideshow-{{ section.id }}"
+          class="hero hero--{{ section.id }} loading loading--delayed"
+          data-autoplay="{{ section.settings.autoplay }}"
+          data-speed="{{ section.settings.autoplay_speed | times: 1000 }}"
+          {% if section.settings.style == 'arrows' %}
+            data-arrows="true"
+          {% endif %}
+          {% if section.settings.style == 'dots' %}
+            data-dots="true"
+          {% endif %}
+          {% if section.settings.style == 'bars' %}
+            data-dots="true"
+            data-bars="true"
+          {% endif %}
+          data-slide-count="{{ section.blocks.size }}">
+          {%- for block in section.blocks -%}
+            <div
+              {{ block.shopify_attributes }}
+              class="slideshow__slide slideshow__slide--{{ block.id }}"
+              data-index="{{ forloop.index0 }}"
+              data-id="{{ block.id }}">
+              {%- style -%}
+                .slideshow__slide--{{ block.id }} .hero__title {
+                  font-size: {{ block.settings.title_size | times: 0.43 }}px;
+                }
+                @media only screen and (min-width: 769px) {
+                  .slideshow__slide--{{ block.id }} .hero__title {
+                    font-size: {{ block.settings.title_size }}px;
+                  }
+                }
+              {%- endstyle -%}
+
+              <div class="hero__sidebyside hero__sidebyside-text--{{ block.settings.text_position }} color-scheme-{{ block.settings.color_scheme }}">
+                {%- if block.settings.indent_image -%}
+                  {%- if block.settings.color_scheme != 'none' -%}
+                    {%- render 'color-scheme-texture', color_scheme: block.settings.color_scheme -%}
+                  {%- endif -%}
+                {%- endif -%}
+                <div class="hero__sidebyside-content">
+                  <div class="hero__sidebyside-content-inner{% if block.settings.indent_image %} hero__sidebyside-content-inner--indented{% endif %} small--text-center">
+                    {%- unless block.settings.indent_image -%}
+                      {%- if block.settings.color_scheme != 'none' -%}
+                        {%- render 'color-scheme-texture', color_scheme: block.settings.color_scheme -%}
+                      {%- endif -%}
+                    {%- endunless -%}
+                    {%- unless block.settings.top_subheading == blank -%}
+                      <div class="hero__top-subtitle">
+                        <div class="hero__animation-contents">
+                          {{ block.settings.top_subheading | escape }}
+                        </div>
+                      </div>
+                    {%- endunless -%}
+                    {%- unless block.settings.title == blank -%}
+                      <h2 class="h1 hero__title">
+                        <div class="hero__animation-contents">
+                        {{ block.settings.title | newline_to_br }}
+                        </div>
+                      </h2>
+                    {%- endunless -%}
+                    {%- if block.settings.subheading or block.settings.link or block.settings.link_2 -%}
+                      {%- unless block.settings.subheading == blank -%}
+                        <div class="hero__subtitle">
+                          <div class="hero__animation-contents">
+                            {{ block.settings.subheading | escape }}
+                          </div>
+                        </div>
+                      {%- endunless -%}
+                      {%- if block.settings.link_text != blank or block.settings.link_text_2 != blank -%}
+                        <div class="hero__link">
+                          {%- if block.settings.link_text != blank -%}
+                            <a href="{{ block.settings.link }}" class="btn">
+                              {{ block.settings.link_text }}
+                            </a>
+                          {%- endif -%}
+                          {%- if block.settings.link_text_2 != blank -%}
+                            <a href="{{ block.settings.link_2 }}" class="btn">
+                              {{ block.settings.link_text_2 }}
+                            </a>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </div>
+                </div>
+                <div class="hero__sidebyside-image{% if block.settings.indent_image %} hero__sidebyside-image--indented{% endif %}">
+                  {%- if block.settings.image != blank -%}
+                    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                    {%- if block.settings.link != blank -%}
+                      <a href="{{ block.settings.link }}" class="hero__sidebyside-image-link" aria-hidden="true">
+                    {%- endif -%}
+
+                    <img class="hero__image hero__image--{{ block.id }} lazyload"
+                      src="{{ block.settings.image | img_url: '300x' }}"
+                      data-src="{{ img_url }}"
+                      data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ block.settings.image.alt | escape }}"
+                      {% unless block.settings.indent_image %}
+                        style="object-position: {{ block.settings.focal_point }}"
+                      {% endunless %}>
+                    <noscript>
+                      <img class="hero__image hero__image--{{ block.id }}"
+                        src="{{ block.settings.image | img_url: '1400x' }}"
+                        alt="{{ block.settings.image.alt | escape }}">
+                    </noscript>
+
+                    {%- if block.settings.link != blank -%}
+                      </a>
+                    {%- endif -%}
+                  {%- else -%}
+                    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size == 0 -%}
+      <div class="placeholder-noblocks">
+        {{ 'home_page.onboarding.no_content' | t }}
+      </div>
+    {%- endif -%}
+  </div>
+{%- unless section.settings.full_width -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+  {
+    "name": "Split (optional slides)",
+    "class": "index-section--hero",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full page width",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "label": "Desktop height",
+        "default": 650,
+        "min": 450,
+        "max": 750,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "height_mobile",
+        "label": "Mobile height",
+        "default": 450,
+        "min": 350,
+        "max": 650,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "select",
+        "id": "style",
+        "label": "Slide navigation style",
+        "default": "arrows",
+        "options": [
+          {
+            "value": "minimal",
+            "label": "Minimal"
+          },
+          {
+            "value": "arrows",
+            "label": "Arrows"
+          },
+          {
+            "value": "bars",
+            "label": "Bars"
+          },
+          {
+            "value": "dots",
+            "label": "Dots"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-change slides",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "autoplay_speed",
+        "label": "Change images every",
+        "default": 7,
+        "min": 5,
+        "max": 10,
+        "step": 1,
+        "unit": "s"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "top_subheading",
+            "label": "Subheading"
+          },
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Heading",
+            "default": "Side by Side Slide"
+          },
+          {
+            "type": "range",
+            "id": "title_size",
+            "label": "Heading text size",
+            "default": 60,
+            "min": 40,
+            "max": 100,
+            "unit": "px"
+          },
+          {
+            "type": "textarea",
+            "id": "subheading",
+            "label": "Text",
+            "default": "Add optional subtext"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "link_text",
+            "label": "Button text",
+            "default": "Optional button"
+          },
+          {
+            "type": "url",
+            "id": "link_2",
+            "label": "Link 2"
+          },
+          {
+            "type": "text",
+            "id": "link_text_2",
+            "label": "Button text 2"
+          },
+          {
+            "type": "select",
+            "id": "text_position",
+            "label": "Text position",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "info": "Text is always below image on mobile"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "checkbox",
+            "id": "indent_image",
+            "label": "Indent image"
+          },
+          {
+            "type": "select",
+            "id": "focal_point",
+            "label": "Image focal point",
+            "info": "Used to keep the subject of your photo in view. Not used when image is indented",
+            "default": "center center",
+            "options": [
+              {
+                "value": "20% 0",
+                "label": "Top left"
+              },
+              {
+                "value": "top center",
+                "label": "Top center"
+              },
+              {
+                "value": "80% 0",
+                "label": "Top right"
+              },
+              {
+                "value": "20% 50%",
+                "label": "Left"
+              },
+              {
+                "value": "center center",
+                "label": "Center"
+              },
+              {
+                "value": "80% 50%",
+                "label": "Right"
+              },
+              {
+                "value": "20% 100%",
+                "label": "Bottom left"
+              },
+              {
+                "value": "bottom center",
+                "label": "Bottom center"
+              },
+              {
+                "value": "80% 100%",
+                "label": "Bottom right"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "color_scheme",
+            "label": "Color scheme",
+            "default": "none",
+            "options": [
+              {
+                "value": "none",
+                "label": "None"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+ 			  {
+                "value": "4",
+                "label": "4"
+              },
+ 			  {
+                "value": "5",
+                "label": "5"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Split (optional slides)",
+        "blocks": [
+          {
+            "type": "slide",
+            "settings": {
+              "title": "Side by side slide",
+              "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
+              "text_position": "right",
+              "color_scheme": "2"
+            }
+          },
+          {
+            "type": "slide",
+            "settings": {
+              "title": "Highlight products",
+              "subheading": "Repurpose your product photography with our \"Indented\" image option",
+              "text_position": "left",
+              "color_scheme": "1",
+              "indent_image": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

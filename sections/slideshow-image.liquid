@@ -1,0 +1,235 @@
+{%- unless section.settings.full_width -%}
+  <div class="page-width hero--padded">
+{%- endunless -%}
+  <div
+    data-section-id="{{ section.id }}"
+    data-section-type="slideshow-section"
+    {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="slideshow-wrapper">
+        {%- if section.settings.autoplay and section.settings.style == 'bars' and section.blocks.size > 1 -%}
+          {%- style -%}
+            [data-bars][data-autoplay="true"] .flickity-page-dots .dot:after {
+              animation-duration: {{ section.settings.autoplay_speed | times: 1000 }}ms;
+            }
+          {%- endstyle -%}
+
+          <button type="button" class="visually-hidden slideshow__pause" data-id="{{ section.id }}" aria-live="polite">
+            <span class="slideshow__pause-stop">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pause" viewBox="0 0 10 13"><g fill="#000" fill-rule="evenodd"><path d="M0 0h3v13H0zM7 0h3v13H7z"/></g></svg>
+              <span class="icon__fallback-text">{{ 'sections.slideshow.pause_slideshow' | t }}</span>
+            </span>
+            <span class="slideshow__pause-play">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"/></svg>
+              <span class="icon__fallback-text">{{ 'sections.slideshow.play_slideshow' | t }}</span>
+            </span>
+          </button>
+        {%- endif -%}
+
+        {%- assign natural_height_ratio = '60%' -%}
+        {%- assign natural_height_ratio_mobile = '100%' -%}
+        {%- for block in section.blocks limit: 1 -%}
+          {%- if block.settings.image != blank -%}
+            {%- capture natural_height_ratio -%}{{ 100 | divided_by: block.settings.image.aspect_ratio }}%{% endcapture %}
+            {%- assign natural_height_ratio_mobile = natural_height_ratio -%}
+          {%- endif -%}
+          {%- if block.settings.image_mobile != blank -%}
+            {%- capture natural_height_ratio_mobile -%}{{ 100 | divided_by: block.settings.image_mobile.aspect_ratio }}%{% endcapture %}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- style -%}
+          .hero-natural--{{ section.id }} {
+            height: 0;
+            padding-bottom: {{ natural_height_ratio }};
+          }
+
+          @media screen and (max-width: 768px) {
+            .hero-natural--{{ section.id }} {
+              padding-bottom: {{ natural_height_ratio_mobile }};
+            }
+          }
+        {%- endstyle -%}
+
+        <div class="hero-natural--{{ section.id }}">
+          <div id="Slideshow-{{ section.id }}"
+            class="hero hero--{{ section.id }} loading loading--delayed"
+            data-natural="true"
+            data-autoplay="{{ section.settings.autoplay }}"
+            data-speed="{{ section.settings.autoplay_speed | times: 1000 }}"
+            {% if section.settings.style == 'arrows' %}
+              data-arrows="true"
+            {% endif %}
+            {% if section.settings.style == 'dots' %}
+              data-dots="true"
+            {% endif %}
+            {% if section.settings.style == 'bars' %}
+              data-dots="true"
+              data-bars="true"
+            {% endif %}
+            data-slide-count="{{ section.blocks.size }}">
+            {%- for block in section.blocks -%}
+              <div
+                {{ block.shopify_attributes }}
+                class="slideshow__slide slideshow__slide--{{ block.id }}"
+                data-index="{{ forloop.index0 }}"
+                data-id="{{ block.id }}">
+                {%- liquid
+                  assign has_mobile_image = false
+                  if block.settings.image_mobile != blank
+                    assign has_mobile_image = true
+                  endif
+                -%}
+
+                <div class="hero__image-wrapper">
+
+                  {%- if section.settings.parallax -%}
+                    <div class="parallax-container">
+                      <div class="parallax-image">
+                  {%- endif -%}
+
+                    {%- if block.settings.image != blank -%}
+                      {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                      <img class="hero__image hero__image--{{ block.id }} lazyload{% if has_mobile_image %} small--hide{% endif %}"
+                        src="{{ block.settings.image | img_url: '300x' }}"
+                        data-src="{{ img_url }}"
+                        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                        data-sizes="auto"
+                        alt="{{ block.settings.image.alt | escape }}">
+                      {%- if has_mobile_image -%}
+                        {%- assign img_url_mobile = block.settings.image_mobile | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                        <img class="hero__image hero__image--{{ block.id }} lazyload medium-up--hide"
+                          src="{{ block.settings.image_mobile | img_url: '300x' }}"
+                          data-src="{{ img_url_mobile }}"
+                          data-aspectratio="{{ block.settings.image_mobile.aspect_ratio }}"
+                          data-sizes="auto"
+                          alt="{{ block.settings.image_mobile.alt | escape }}">
+                      {%- endif -%}
+                      <noscript>
+                        <img class="hero__image hero__image--{{ block.id }}"
+                          src="{{ block.settings.image | img_url: '1400x' }}"
+                          alt="{{ block.settings.image.alt | escape }}">
+                      </noscript>
+                    {%- else -%}
+                      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+
+                  {%- if section.settings.parallax -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                </div>
+
+                {%- if block.settings.link != blank -%}
+                  <a href="{{ block.settings.link }}" class="hero__slide-link" aria-hidden="true"></a>
+                {%- endif -%}
+
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size == 0 -%}
+      <div class="placeholder-noblocks">
+        {{ 'home_page.onboarding.no_content' | t }}
+      </div>
+    {%- endif -%}
+  </div>
+{%- unless section.settings.full_width -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+  {
+    "name": "Image (optional slides)",
+    "class": "index-section--hero",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full page width"
+      },
+      {
+        "type": "select",
+        "id": "style",
+        "label": "Slide navigation style",
+        "default": "arrows",
+        "options": [
+          {
+            "value": "minimal",
+            "label": "Minimal"
+          },
+          {
+            "value": "arrows",
+            "label": "Arrows"
+          },
+          {
+            "value": "bars",
+            "label": "Bars"
+          },
+          {
+            "value": "dots",
+            "label": "Dots"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-change slides",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "autoplay_speed",
+        "label": "Change images every",
+        "default": 7,
+        "min": 5,
+        "max": 10,
+        "step": 1,
+        "unit": "s"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Image link"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_mobile",
+            "label": "Mobile image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image (optional slides)",
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

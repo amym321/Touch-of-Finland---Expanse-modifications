@@ -1,0 +1,191 @@
+{%- liquid
+  assign blog = blogs[section.settings.blog]
+  assign sidebar_count = 4
+
+  if section.settings.blog_show_tags
+    assign sidebar_count = 3
+  endif
+
+  assign have_blog = true
+  if blog.empty? or blog.articles.size == 0
+    assign have_blog = false
+  endif
+-%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="page-width">
+
+  {%- if section.settings.title != blank -%}
+    <header class="section-header section-header--with-link">
+      <h2 class="section-header__title">
+        {{ section.settings.title | escape }}
+      </h2>
+      <a href="{{ blog.url }}" class="section-header__link">{{ 'blogs.article.view_all' | t }}</a>
+    </header>
+  {%- endif -%}
+
+  <div class="blog-layout">
+
+    <div class="blog-layout__main">
+      <div class="new-grid">
+        {%- if have_blog -%}
+          {%- for article in blog.articles limit: 1 -%}
+            {%- render 'article-grid-item',
+              blog: blog,
+              article: article,
+              style: 'large',
+              show_tags: section.settings.blog_show_tags,
+              show_date: section.settings.blog_show_date,
+              show_comments: section.settings.blog_show_comments,
+              show_author: section.settings.blog_show_author,
+              image_size: section.settings.blog_image_size -%}
+          {%- endfor -%}
+        {%- else -%}
+          {%- render 'article-grid-item',
+            blog: false,
+            article: false,
+            style: 'large',
+            show_tags: section.settings.blog_show_tags,
+            show_date: section.settings.blog_show_date,
+            show_comments: section.settings.blog_show_comments,
+            show_author: section.settings.blog_show_author,
+            image_size: 'landscape' -%}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="blog-layout__sidebar">
+      <div class="h4">{{ 'blogs.article.latest_posts' | t }}</div>
+
+      {%- if have_blog -%}
+        {%- for article in blog.articles limit: sidebar_count offset: 1 -%}
+          {%- render 'article-grid-item',
+            blog: blog,
+            article: article,
+            style: 'compact',
+            show_tags: section.settings.blog_show_tags,
+            show_date: section.settings.blog_show_date,
+            show_comments: section.settings.blog_show_comments,
+            show_author: section.settings.blog_show_author,
+            image_size: section.settings.blog_image_size -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for i in (1..sidebar_count) -%}
+          {%- render 'article-grid-item',
+            blog: false,
+            article: false,
+            style: 'compact',
+            show_tags: section.settings.blog_show_tags,
+            show_date: section.settings.blog_show_date,
+            show_comments: section.settings.blog_show_comments,
+            show_author: section.settings.blog_show_author,
+            image_size: 'landscape' -%}
+        {%- endfor -%}
+      {%- endif -%}
+
+      {%- if section.settings.blog_show_tags and blog.all_tags.size > 0 -%}
+        <hr class="hr--small hr--clear">
+        <div class="h4">{{ 'blogs.article.explore_more' | t }}</div>
+
+        <ul class="no-bullets tag-list">
+          {%- for tag in blog.all_tags -%}
+            {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
+            <li class="tag tag--inline">
+              <a href="{{ blog.url }}/tagged/{{ tag.handle }}" class="article-tag">{{ tag }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+
+  </div>
+
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Blog posts",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "From the blog"
+      },
+      {
+        "id": "blog",
+        "type": "blog",
+        "label": "Blog"
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_tags",
+        "label": "Show tags",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_date",
+        "label": "Show date",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_comments",
+        "label": "Show comment count",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_author",
+        "label": "Show author",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "blog_image_size",
+        "label": "Force image size",
+        "default": "wide",
+        "options": [
+          {
+            "value": "natural",
+            "label": "Natural"
+          },
+          {
+            "value": "square",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "landscape",
+            "label": "Landscape (4:3)"
+          },
+          {
+            "value": "portrait",
+            "label": "Portrait (2:3)"
+          },
+          {
+            "value": "wide",
+            "label": "Wide (16:9)"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Blog posts",
+        "settings": {
+          "blog": "News"
+        }
+      }
+    ]
+  }
+{% endschema %}

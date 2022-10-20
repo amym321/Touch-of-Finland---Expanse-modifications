@@ -1,0 +1,51 @@
+{% comment %}
+  Generate a list of collection tiles if the main menu item is
+  active and its children are also collection links
+{% endcomment %}
+{%- liquid
+  assign main_menu = linklists[settings.collection_menu_link_list]
+  unless current_tags
+    echo '<div class="new-grid scrollable-grid--small" data-view="scrollable" data-type="subcollections">'
+    for link in main_menu.links
+      if link.active and link.levels > 0 and link.child_active == false
+        render 'sub-collections' sub_collection_links: link.links
+      endif
+      for sub_link in link.links
+        if sub_link.active and sub_link.levels > 0 and sub_link.child_active == false
+          render 'sub-collections', sub_collection_links: sub_link.links
+        endif
+        for sub_sub_link in sub_link.links
+          if sub_sub_link.active and sub_sub_link.url == sub_link.url
+            render 'sub-collections', parent_url: sub_link.url, sub_collection_links: sub_link.links
+          elsif sub_sub_link.active and sub_sub_link.levels > 0
+            render 'sub-collections', sub_collection_links: sub_sub_link.links
+          endif
+          
+          assign sub_sub_link_handle = sub_sub_link.handle | handleize
+          assign sub_sub_link_menu = linklists[sub_sub_link_handle]
+		      
+          if sub_sub_link_menu.links.size > 0
+			     for sub_sub_sub_link in sub_sub_link_menu.links
+            if sub_sub_link.active
+              assign sub_collection_link = sub_sub_sub_link
+              
+              if sub_collection_link.url contains '/collections/'
+                assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase
+                assign sub_collection_handle = sub_collection_link.url | remove: '/collections/' | remove: lang_code_string
+                assign sub_collection = collections[sub_collection_handle]
+
+                if sub_collection != blank
+                  unless parent_url == sub_collection.url
+                    render 'collection-grid-item', collection: sub_collection,     collection_title: sub_collection_link.title
+                  endunless
+                endif
+              endif
+            endif
+			     endfor
+			   endif
+        endfor
+      endfor
+    endfor
+    echo '</div>'
+  endunless
+-%}

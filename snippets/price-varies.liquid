@@ -1,0 +1,14 @@
+{%- assign formatted_price = price | money -%}
+{%- assign raw_price = price | money -%}
+{%- unless shop.money_format contains 'money' or shop.money_format contains '.' -%}
+  {%- if settings.superscript_decimals -%}
+    {%- if shop.money_format contains '{{amount}}' or shop.money_format contains '{{ amount }}' -%}
+      {% capture formatted_price %}{{ formatted_price | replace: '.','<sup>' }}</sup>{% endcapture %}
+    {%- elsif shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}' -%}
+      {% capture formatted_price %}{{ formatted_price | replace: ',','<sup>' }}</sup>{% endcapture %}
+    {%- endif -%}
+  {%- endif -%}
+{%- endunless -%}
+
+<span aria-hidden="true" class="grid-product__price--from">{{ 'products.general.from_text_html' | t: price: formatted_price }}</span>
+<span class="visually-hidden">{{ 'products.general.from_text_html' | t: price: raw_price }}</span>

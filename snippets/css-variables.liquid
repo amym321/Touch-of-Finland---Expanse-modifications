@@ -1,0 +1,69 @@
+{%- style -%}
+  :root {
+    --typeHeaderPrimary: {{ settings.type_header_font_family.family }};
+    --typeHeaderFallback: {{ settings.type_header_font_family.fallback_families }};
+    --typeHeaderSize: {{ settings.type_header_base_size | default: '32' | append: 'px' }};
+    --typeHeaderWeight: {{ settings.type_header_font_family.weight }};
+    --typeHeaderLineHeight: {{ settings.type_header_line_height | default: 1.4 }};
+    --typeHeaderSpacing: {{ settings.type_header_spacing | default: '25' | divided_by: 1000.00 | append: 'em' }};
+
+    --typeBasePrimary:{{ settings.type_base_font_family.family }};
+    --typeBaseFallback:{{ settings.type_base_font_family.fallback_families }};
+    --typeBaseSize: {{ settings.type_base_size | default: 16 | append: 'px' }};
+    --typeBaseWeight: {{ settings.type_base_font_family.weight }};
+    --typeBaseSpacing: {{ settings.type_base_spacing | default: '50' | divided_by: 1000.00 | append: 'em' }};
+    --typeBaseLineHeight: {{ settings.type_base_line_height | default: 1.4 }};
+
+    --colorSmallImageBg: {{ settings.color_small_image_bg | default: '#eee' }};
+    --colorSmallImageBgDark: {{ settings.color_small_image_bg | default: '#eee' | color_darken: 3 }};
+    --colorLargeImageBg: {{ settings.color_large_image_bg | default: '#1c1d1d' }};
+    --colorLargeImageBgLight: {{ settings.color_large_image_bg | default: '#1c1d1d' | color_lighten: 13 }};
+
+    --iconWeight: {{ settings.icon_weight | default: '5px' }};
+    --iconLinecaps: {{ settings.icon_linecaps | default: 'miter' }};
+
+    {% if settings.button_style == 'round-slight' %}
+      --buttonRadius: 3px;
+      --btnPadding: 11px 25px;
+    {% elsif settings.button_style == 'round' %}
+      --buttonRadius: 50px;
+      --btnPadding: 11px 25px;
+    {% else %}
+      --buttonRadius: 0px;
+      --btnPadding: 11px 20px;
+    {% endif %}
+
+    {% if settings.edges == 'round' %}
+      --roundness: 15px;
+    {% else %}
+      --roundness: 0px;
+    {% endif %}
+
+    {% if settings.product_grid_style == 'gridlines-thick' %}
+      --gridThickness: 2px;
+    {% elsif settings.product_grid_style == 'gridlines-thin' %}
+      --gridThickness: 1px;
+    {% else %}
+      --gridThickness: 0px;
+    {% endif %}
+
+    --productTileMargin: {{ settings.product_grid_image_margin | default: '10' }}%;
+    --collectionTileMargin: {{ settings.collection_grid_image_margin | default: '10' }}%;
+
+    --swatchSize: {{ settings.swatch_size | default: '40' }}px;
+  }
+
+  @media screen and (max-width: 768px) {
+    :root {
+      --typeBaseSize: {{ settings.type_base_size | default: 16 | minus: 2 | append: 'px' }};
+
+      {% if settings.edges == 'round' %}
+        --roundness: 15px;
+        --btnPadding: 9px 25px;
+      {% else %}
+        --roundness: 0px;
+        --btnPadding: 9px 17px;
+      {% endif %}
+    }
+  }
+{%- endstyle -%}

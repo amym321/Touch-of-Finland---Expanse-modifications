@@ -1,0 +1,47 @@
+{%- liquid
+  assign show_selectors = false
+  assign currency_selector = false
+  assign locale_selector = false
+
+  if block.settings.show_currency_selector and shop.enabled_currencies.size > 1
+    assign currency_selector = true
+  endif
+
+  if block.settings.show_locale_selector and shop.enabled_locales.size > 1
+    assign locale_selector = true
+  endif
+
+  if currency_selector or locale_selector
+    assign show_selectors = true
+  endif
+-%}
+<div class="footer__mobile-section">
+  <div class="footer__blocks--mobile">
+    {%- if block.settings.show_payment_icons -%}
+      {%- unless shop.enabled_payment_types == empty -%}
+        <div class="footer__block--mobile">
+          <div class="footer__title">
+            {{ 'layout.footer.accepted_payments' | t }}
+          </div>
+          <ul class="inline-list payment-icons">
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="icon--payment">
+                {{ type | payment_type_svg_tag }}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endunless -%}
+    {%- endif -%}
+
+    {%- if show_selectors -%}
+      <div class="footer__block--mobile">
+        {%- render 'multi-selectors',
+          locale_selector: locale_selector,
+          currency_selector: currency_selector,
+          location: 'footer'
+        -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

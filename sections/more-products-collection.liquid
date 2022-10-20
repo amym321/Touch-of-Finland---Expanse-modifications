@@ -1,0 +1,55 @@
+{%- liquid
+  if collection
+    assign collection_handle = collection.handle
+  else
+    for col in product.collections limit: 1
+      assign collection_handle = col.handle
+    endfor
+  endif
+
+  assign collection = collections[collection_handle]
+-%}
+
+{%- if collection and collection.handle != blank -%}
+  {%- capture collection_link -%}
+    <a href="{{ collection.url }}">{{ collection.title }}</a>
+  {%- endcapture -%}
+  <div
+    data-subsection
+    data-section-id="{{ section.id }}"
+    data-section-type="collection-template">
+    <div class="index-section index-section--sub-product">
+      <div class="page-width">
+        <header class="section-header">
+          <div class="h3 section-header__title">{{ 'products.general.more_from_html' | t: link: collection_link }}</div>
+        </header>
+      </div>
+
+      <div class="page-width page-width--flush-small">
+        <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable">
+          {%- liquid
+            for product in collection.products limit: 6
+              render 'product-grid-item', product: product, collection: collection
+
+              if settings.quick_shop_enable
+                render 'quick-shop-modal', product: product, collection: collection
+              endif
+            endfor
+          -%}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "More from collection",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "This section will only appear when you are on a product page that was reached through a collection"
+      }
+    ]
+  }
+{% endschema %}

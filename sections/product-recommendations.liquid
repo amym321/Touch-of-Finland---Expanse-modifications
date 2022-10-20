@@ -1,0 +1,92 @@
+{%- liquid
+  assign recommend_products = true
+
+  if recommendations.products and recommendations.products_count > 0
+    assign related_collection = recommendations
+  endif
+
+  for tag in product.tags
+    if tag contains '_related'
+      assign include_collection_handle = tag | split: '_' | last
+      assign include_collection = collections[include_collection_handle]
+      if include_collection != empty and include_collection.products_count > 0
+        assign related_collection = include_collection
+        assign recommend_products = false
+        break
+      endif
+    endif
+  endfor
+-%}
+
+<div
+  id="Recommendations-{{ product.id }}"
+  data-section-id="{{ product.id }}"
+  data-section-type="product-recommendations"
+  data-enable="{{ recommend_products }}"
+  data-product-id="{{ product.id }}"
+  data-url="{{ routes.product_recommendations_url }}"
+  data-limit="6">
+
+  <div
+    data-section-id="{{ product.id }}"
+    data-subsection
+    data-section-type="collection-template"
+    class="index-section index-section--sub-product">
+    <div class="page-width">
+      <header class="section-header">
+        <div class="h3 section-header__title">
+          {{ section.settings.product_recommendations_heading }}
+        </div>
+      </header>
+    </div>
+
+    <div class="page-width page-width--flush-small">
+      {%- if recommend_products -%}
+        <div class="product-recommendations-placeholder">
+          {% comment %}
+            This content is visually hidden and replaced when recommended
+            products show up
+          {% endcomment %}
+          <div class="new-grid product-grid scrollable-grid--small visually-invisible" aria-hidden="true" data-view="scrollable">
+            {%- render 'product-grid-item', product: product, no_actions: true, see_price_flag: true -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if related_collection.products_count > 1 -%}
+        <div class="product-recommendations">
+          <div class="new-grid product-grid scrollable-grid--small aaabcd" data-view="scrollable">
+            {%- for product in related_collection.products -%}
+              {%- render 'product-grid-item', product: product, see_price_flag: true -%}
+            {%- endfor -%}
+          </div>
+
+          {%- liquid
+            if settings.quick_shop_enable
+              for product in related_collection.products
+                render 'quick-shop-modal', product: product
+              endfor
+            endif
+          -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product recommendations",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Dynamic recommendations use order and product information to change and improve over time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+      },
+      {
+        "type": "text",
+        "id": "product_recommendations_heading",
+        "label": "Heading",
+        "default": "You may also like"
+      }
+    ]
+  }
+{% endschema %}

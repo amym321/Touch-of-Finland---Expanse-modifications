@@ -1,0 +1,17 @@
+{%- for sub_collection_link in sub_collection_links -%}
+  {%- if sub_collection_link.url contains '/collections/' -%}
+    {%- liquid
+      assign lang_code_string = request.locale.iso_code | prepend: '/' | downcase
+      assign sub_collection_handle = sub_collection_link.url | remove: '/collections/' | remove: lang_code_string
+      assign sub_collection = collections[sub_collection_handle]
+    -%}
+    {%- if sub_collection != blank -%}
+      {%- unless parent_url == sub_collection.url -%}
+        {%- render 'collection-grid-item',
+          collection: sub_collection,
+          collection_title: sub_collection_link.title
+        -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

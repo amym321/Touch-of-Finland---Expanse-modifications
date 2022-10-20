@@ -1,0 +1,14 @@
+{% comment %}
+  Template to ajax-load products from specific vendor
+{% endcomment %}
+{% layout none %}
+
+{%- liquid
+  for product in collection.products limit: 7
+    render 'product-grid-item', product: product
+
+    if settings.quick_shop_enable
+      render 'quick-shop-modal', product: product
+    endif
+  endfor
+-%}

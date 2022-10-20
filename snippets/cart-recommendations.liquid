@@ -1,0 +1,24 @@
+{%- liquid
+  assign cart_collection = collections[settings.cart_collection]
+  assign mobileScrollOnly = true
+  if location == 'drawer'
+    assign mobileScrollOnly = false
+  endif
+-%}
+
+{%- if cart_collection != blank -%}
+  <div class="cart__item-row cart-recommendations" data-location="{{ location }}">
+    <div class="h3 h3--mobile cart__recommended-title">{{ 'cart.general.recommended_title' | t }}</div>
+    <div class="new-grid product-grid{% if mobileScrollOnly %} scrollable-grid--small{% else %} scrollable-grid{% endif %}" data-view="small">
+      {%- liquid
+        for product in cart_collection.products limit: 4
+          render 'product-grid-item', product: product
+
+          if settings.quick_shop_enable
+            render 'quick-shop-modal', product: product
+          endif
+        endfor
+      -%}
+    </div>
+  </div>
+{%- endif -%}

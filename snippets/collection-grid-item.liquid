@@ -1,0 +1,61 @@
+{%- liquid
+  unless grid_item_width
+    assign grid_item_width = 'small--one-third medium-up--one-sixth'
+  endunless
+
+  assign collection_link = collection.url
+  if block.settings.title != blank
+    assign title_output = block.settings.title
+  else
+    if collection.empty?
+      assign title_output = 'home_page.onboarding.collection_title' | t
+      assign collection_link = '/collections/all'
+    elsif collection_title
+      assign title_output = collection_title
+    else
+      assign title_output = collection.title | escape
+    endif
+  endif
+-%}
+
+<div class="grid-item">
+  <a href="{{ collection_link }}" class="collection-item">
+
+    {%- liquid
+      if settings.collection_grid_image == 'collection' and collection.image
+        assign collection_image = collection.image
+        assign using_collection_image = true
+      else
+        assign collection_image = collection.products.first.featured_media.preview_image
+        assign using_collection_image = false
+      endif
+    -%}
+
+    <div class="collection-image-wrap collection-image--{{ settings.collection_grid_shape }}">
+      {%- if collection.empty? -%}
+        {%- capture placeholder -%}collection-{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+        <div class="collection-image collection-image--placeholder">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
+      {%- else -%}
+        <div class="collection-image{% if using_collection_image %} collection-image--is-collection{% endif %} image-wrap">
+          {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+          <img
+            class="lazyload"
+            src=""
+            data-src="{{ img_url }}"
+            data-aspectratio="{{ collection_image.aspect_ratio }}"
+            data-widths="[720, 900, 1080]"
+            data-sizes="auto"
+            alt="{{ collection_image.alt | escape }}">
+
+          <noscript>
+            <img class="lazyloaded"
+              src="{{ collection_image | img_url: '400x' }}"
+              alt="{{ collection_image.alt | escape }}">
+          </noscript>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <span class="collection-item__title">{{ title_output }}</span>
+  </a>
+</div>
