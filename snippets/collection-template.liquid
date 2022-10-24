@@ -50,9 +50,9 @@
             <div class="collection-filter__sort small--hide">
               <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
               <select name="SortBy" id="SortBy" data-default-sortby="{{ collection.default_sort_by }}">
-                <option value="title-ascending"{% if sort_by == collection.default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
+                <option class="{{ option.value }}" value="manual"{% if sort_by == collection.default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
                 {%- for option in collection.sort_options -%}
-                  <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
+                  <option class="{{ option.value }}" value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
                 {%- endfor -%}
               </select>
             </div>
