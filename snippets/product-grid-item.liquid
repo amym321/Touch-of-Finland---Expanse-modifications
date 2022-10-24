@@ -52,7 +52,11 @@
                       tabindex="-1"
                       data-id="{{ product.selected_or_first_available_variant.id }}">
                 <span class="btn btn--circle btn--icon">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64"><path class="cls-1" d="M32 9v46m23-23H9"/></svg>
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
+                    <path class="cls-1" d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"/>
+                    <circle cx="27" cy="53" r="2"/>
+                    <circle cx="47" cy="53" r="2"/>
+                  </svg>
                   <span class="icon__fallback-text">{{ 'products.product.add_to_cart' | t }}</span>
                 </span>
               </button>
