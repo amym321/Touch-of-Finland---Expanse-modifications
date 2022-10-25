@@ -11270,9 +11270,11 @@ html[dir=rtl] .product-single__meta .rte{
   stroke: #000; !important;
 }
 
-/* coupon sales point on PDP */
-.discount-deal .discount-detail-bottom {
-  font-size: .85em;
+/* deal sales point on PDP */
+.discount-deal {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .discount-deal img {
@@ -11283,4 +11285,10 @@ html[dir=rtl] .product-single__meta .rte{
 
 .discount-deal .discount-link {
   text-decoration: underline;
+}
+
+/* deal sale pointon pdp & text on grid items */
+.discount-deal .discount-detail-bottom,
+.grid-item__meta-secondary .discount-title {
+  font-size: .85em;
 }

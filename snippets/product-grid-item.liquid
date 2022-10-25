@@ -264,6 +264,10 @@
               <span class="grid-product__price--current">
                 {%- render 'price-varies', price: product.price_min -%}
               </span>
+              {%- comment -%} added metafield text - am {%- endcomment -%}
+              {% if product.metafields.custom.discount_title != null %}
+                <div class="grid-product__title discount-title">{{ product.metafields.custom.discount_title }}</div>
+              {% endif %}
             {%- else -%}
               {%- if on_sale -%}
                 <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
@@ -278,8 +282,11 @@
                 {% endif %}
                 {% endcomment %}
                 {%- render 'price', price: product.price, see_price: see_price_tag -%}
-                
               </span>
+              {%- comment -%} added metafield text - am {%- endcomment -%}
+              {% if product.metafields.custom.discount_title != null %}
+                <div class="grid-product__title discount-title">{{ product.metafields.custom.discount_title }}</div>
+              {% endif %}
             {%- endif -%}
             {%- if on_sale -%}
               <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
