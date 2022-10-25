@@ -11227,3 +11227,60 @@ html[dir=rtl] .product-single__meta .rte{
     }
     }
 .product-grid .see_price_wrapper .question_mark{display: none;}
+
+/*****************************************/
+/******* added style - am studio *********/
+/*****************************************/
+
+/*Sale tag to top left*/
+.grid-product__tags { 
+  top: 0; 
+  margin-top: calc(var(--productTileMargin)*-1); 
+}
+
+/* hide certain sort options on colleciton page - theme & search app sort */
+.collection-filter__sort #SortBy  .created-ascending,
+.collection-filter__sort #SortBy  .title-ascending,
+.collection-filter__sort #SortBy  .title-descending,
+.snize-search-results  .snize-main-panel-dropdown-created-asc,
+.snize-search-results  .snize-main-panel-dropdown-title-asc,
+.snize-search-results  .snize-main-panel-dropdown-title-desc {
+  display:none;
+}
+
+/* remove images icons on mobile menu */
+.slide-nav__image {
+  display:none;
+}
+.slide-nav__image+span { 
+  padding-left: 0; 
+}
+
+/* links in mobile menu from blue to black */
+.site-header__mobile-nav .slide-nav__link>span {
+  color:#000 !important;
+}
+.site-header__mobile-nav .slide-nav__link .icon-chevron-right,
+.site-header__mobile-nav .slide-nav__link .icon-chevron-left  {
+  color:#000 !important;
+  fill: #000;
+}
+.site-header__mobile-nav .slide-nav__link .icon {
+  fill: #000; !important;
+  stroke: #000; !important;
+}
+
+/* coupon sales point on PDP */
+.discount-deal .discount-detail-bottom {
+  font-size: .85em;
+}
+
+.discount-deal img {
+ /* width: 30px;*/
+  height: 30px;
+  margin-right: 10px;
+}
+
+.discount-deal .discount-link {
+  text-decoration: underline;
+}
