@@ -91,6 +91,16 @@
           <span class="cart__price cart__discount">
             {%- render 'price' with product.final_price -%}
           </span>
+        {%- comment -%} add Sale difference between original price & compare-at-price - am {%- endcomment -%}
+        {% elsif product.variant.compare_at_price > product.variant.price %}
+          <small class="cart__price cart__price--strikethrough">
+            {%- render 'price' with product.variant.compare_at_price -%}
+          </small>
+          <span class="cart__price">
+            {%- render 'price' with product.original_price -%}
+          </span>
+          {% assign sale_difference = product.variant.compare_at_price | minus: product.variant.price %}
+          <small class="cart__discount">{{ 'cart.general.sale' | t }} (-{{ sale_difference  | money }})</small>
         {% else %}
           <span class="cart__price">
             {%- render 'price' with product.original_price -%}

@@ -33,8 +33,24 @@
       <div class="cart__page">
         <div class="cart__page-col">
           <div data-products>
+
+            {%- comment -%} calculate original price total and savings total - am {%- endcomment -%}
+            {% assign cart_subtotal = 0 %}
+            {% assign cart_complete_subtotal = 0 %}
+            {% assign cart_my_savings = 0 %}
+
             {% for item in cart.items %}
               {%- render 'cart-item', product: item -%}
+
+              {% if item.variant.compare_at_price > item.original_price %}
+                {% assign cart_subtotal = item.variant.compare_at_price | times: item.quantity  %}
+                {% assign cart_complete_subtotal = cart_complete_subtotal | plus: cart_subtotal %}
+              {% else %}
+                {% assign cart_subtotal = item.original_price | times: item.quantity %}
+                {% assign cart_complete_subtotal = cart_complete_subtotal | plus: cart_subtotal %}
+              {% endif %}
+            {% assign cart_my_savings = cart_complete_subtotal | minus: cart.total_price %}
+
             {% endfor %}
           </div>
 
@@ -57,8 +73,21 @@
             </div>
           {% endif %}
 
-          <div class="cart__item-sub cart__item-row cart__item--subtotal">
+          {%- comment -%} added original price and savings - am {%- endcomment -%}
+          <div class="cart__item-sub cart__item-row-1 cart__item--subtotal">
             <div>{{ 'cart.general.subtotal' | t }}</div>
+            <div data-full-price-total>
+              <span class="tdf-cart-total-parent">{%- render 'price' with cart_complete_subtotal -%}</span>
+            </div>
+          </div>
+          <div class="cart__item-sub cart__item-row-2 cart__item--subtotal">
+            <div>{{ 'cart.label.my_savings' | t }}</div>
+            <div data-my-savings class="cart__savings">
+              <span class="tdf-cart-total-parent">(-{%- render 'price' with cart_my_savings -%}<span style="margin-left:-2px;">)</span>
+            </div>
+          </div>
+          <div class="cart__item-sub cart__item-row cart__item--subtotal">
+            <div>{{ 'cart.label.total' | t }}</div>
             <div data-subtotal>
               <span class="tdf-cart-total-parent">{%- render 'price' with cart.total_price -%}</span>
             </div>

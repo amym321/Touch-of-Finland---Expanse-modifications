@@ -1497,6 +1497,8 @@ lazySizesConfig.expFactor = 4;
       discounts: '[data-discounts]',
       savings: '[data-savings]',
       subTotal: '[data-subtotal]',
+      mySavings: '[data-my-savings]',
+      fullPriceTotal: '[data-full-price-total]',
   
       cartBubble: '.cart-link__bubble',
       cartNote: '[name="note"]',
@@ -1527,6 +1529,8 @@ lazySizesConfig.expFactor = 4;
       this.discounts = form.querySelector(selectors.discounts);
       this.savings = form.querySelector(selectors.savings);
       this.subtotal = form.querySelector(selectors.subTotal);
+      this.mysavings = form.querySelector(selectors.mySavings);
+      this.fullpricetotal = form.querySelector(selectors.fullPriceTotal);
       this.termsCheckbox = form.querySelector(selectors.termsCheckbox);
       this.noteInput = form.querySelector(selectors.cartNote);
   
@@ -1597,8 +1601,10 @@ lazySizesConfig.expFactor = 4;
         var markup = this._parseProductHTML(html);
         var items = markup.items;
         var count = parseInt(items.dataset.count);
-        var subtotal = items.dataset.cartSubtotal;
         var savings = items.dataset.cartSavings;
+        var subtotal = items.dataset.cartSubtotal;
+        var mysavings = items.dataset.cartMysavings;
+        var carttotal = items.dataset.cartTotal;
   
         this.updateCartDiscounts(markup.discounts);
         this.updateSavings(savings);
@@ -1615,8 +1621,15 @@ lazySizesConfig.expFactor = 4;
         this.products.innerHTML = '';
         this.products.append(items);
   
-        // Update subtotal
+        // Update subtotal, my savings, & cart total
+        var innerParen = "(- ";
+        var outerParen = ")";
+        this.fullpricetotal.innerHTML = theme.Currency.formatMoney(carttotal, theme.settings.moneyFormat);
+        this.mysavings.innerHTML = innerParen+theme.Currency.formatMoney(mysavings, theme.settings.moneyFormat)+outerParen;
+
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
+        console.log("log c) update inner");
+        console.log("log c.2) subtotal" + subtotal ); 
   
         this.reInit();
   

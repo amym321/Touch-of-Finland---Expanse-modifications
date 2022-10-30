@@ -10,9 +10,24 @@
 {% endcomment %}
 {% layout none %}
 
+{%- comment -%} calculate & update original price total and savings total - am {%- endcomment -%}
+{% for item in cart.items %}
+  {% if item.variant.compare_at_price > item.original_price %}
+    {% assign cart_subtotal2 = item.variant.compare_at_price | times: item.quantity  %}
+    {% assign cart_complete_subtotal2 = cart_complete_subtotal2 | plus: cart_subtotal2 %}
+  {% else %}
+    {% assign cart_subtotal2 = item.original_price | times: item.quantity %}
+    {% assign cart_complete_subtotal2 = cart_complete_subtotal2 | plus: cart_subtotal2 %}
+  {% endif %}
+  {% assign cart_my_savings2 = cart_complete_subtotal2 | minus: cart.total_price %}
+{% endfor %}
+
 <div class="cart__items"
   data-count="{{ cart.item_count }}"
-  data-cart-subtotal="{{ cart.total_price }}">
+  data-cart-total="{{ cart_complete_subtotal2 }}"
+  data-cart-mysavings="{{ cart_my_savings2 }}"
+  data-cart-subtotal="{{ cart.total_price }}"
+>
   {% for item in cart.items %}
     {%- render 'cart-item', product: item -%}
   {% endfor %}
