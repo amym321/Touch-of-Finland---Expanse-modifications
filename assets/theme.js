@@ -1499,6 +1499,8 @@ lazySizesConfig.expFactor = 4;
       subTotal: '[data-subtotal]',
       mySavings: '[data-my-savings]',
       fullPriceTotal: '[data-full-price-total]',
+      mySavingsWrapper: '.cart__item-row-2',
+      fullPriceWrapper: '.cart__item-row-1',
   
       cartBubble: '.cart-link__bubble',
       cartNote: '[name="note"]',
@@ -1531,6 +1533,8 @@ lazySizesConfig.expFactor = 4;
       this.subtotal = form.querySelector(selectors.subTotal);
       this.mysavings = form.querySelector(selectors.mySavings);
       this.fullpricetotal = form.querySelector(selectors.fullPriceTotal);
+      this.fullpricewrapper = form.querySelector(selectors.fullPriceWrapper);
+      this.mysavingswrapper = form.querySelector(selectors.mySavingsWrapper);
       this.termsCheckbox = form.querySelector(selectors.termsCheckbox);
       this.noteInput = form.querySelector(selectors.cartNote);
   
@@ -1605,7 +1609,7 @@ lazySizesConfig.expFactor = 4;
         var subtotal = items.dataset.cartSubtotal;
         var mysavings = items.dataset.cartMysavings;
         var carttotal = items.dataset.cartTotal;
-  
+
         this.updateCartDiscounts(markup.discounts);
         this.updateSavings(savings);
   
@@ -1624,12 +1628,17 @@ lazySizesConfig.expFactor = 4;
         // Update subtotal, my savings, & cart total
         var innerParen = "(- ";
         var outerParen = ")";
-        this.fullpricetotal.innerHTML = theme.Currency.formatMoney(carttotal, theme.settings.moneyFormat);
-        this.mysavings.innerHTML = innerParen+theme.Currency.formatMoney(mysavings, theme.settings.moneyFormat)+outerParen;
 
+        if (mysavings != 0) {
+          this.fullpricetotal.innerHTML = theme.Currency.formatMoney(carttotal, theme.settings.moneyFormat);
+          this.mysavings.innerHTML = innerParen+theme.Currency.formatMoney(mysavings, theme.settings.moneyFormat)+outerParen;
+          this.mysavingswrapper.classList.remove('hide');
+          this.fullpricewrapper.classList.remove('hide');
+        } else {
+          this.mysavingswrapper.classList.add('hide');
+          this.fullpricewrapper.classList.add('hide');
+        };
         this.subtotal.innerHTML = theme.Currency.formatMoney(subtotal, theme.settings.moneyFormat);
-        console.log("log c) update inner");
-        console.log("log c.2) subtotal" + subtotal ); 
   
         this.reInit();
   

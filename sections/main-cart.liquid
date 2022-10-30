@@ -74,18 +74,20 @@
           {% endif %}
 
           {%- comment -%} added original price and savings - am {%- endcomment -%}
-          <div class="cart__item-sub cart__item-row-1 cart__item--subtotal">
-            <div>{{ 'cart.general.subtotal' | t }}</div>
-            <div data-full-price-total>
-              <span class="tdf-cart-total-parent">{%- render 'price' with cart_complete_subtotal -%}</span>
+          {% if cart_my_savings != 0 %}
+            <div class="cart__item-sub cart__item-row-1 cart__item--subtotal">
+              <div>{{ 'cart.general.subtotal' | t }}</div>
+              <div data-full-price-total>
+                <span class="tdf-cart-total-parent">{%- render 'price' with cart_complete_subtotal -%}</span>
+              </div>
             </div>
-          </div>
-          <div class="cart__item-sub cart__item-row-2 cart__item--subtotal">
-            <div>{{ 'cart.label.my_savings' | t }}</div>
-            <div data-my-savings class="cart__savings">
-              <span class="tdf-cart-total-parent">(-{%- render 'price' with cart_my_savings -%}<span style="margin-left:-2px;">)</span>
+            <div class="cart__item-sub cart__item-row-2 cart__item--subtotal">
+              <div>{{ 'cart.label.my_savings' | t }}</div>
+              <div data-my-savings class="cart__savings">
+                <span class="tdf-cart-total-parent">(-{%- render 'price' with cart_my_savings -%}<span style="margin-left:-2px;">)</span>
+              </div>
             </div>
-          </div>
+        {% endif %}
           <div class="cart__item-sub cart__item-row cart__item--subtotal">
             <div>{{ 'cart.label.total' | t }}</div>
             <div data-subtotal>
