@@ -281,7 +281,9 @@
                 	{%- render 'price' with product.price, see_price: false -%}
                 {% endif %}
                 {% endcomment %}
-                {%- render 'price', price: product.price, see_price: see_price_tag -%}
+                {% if product.price > 0 %}
+                  {%- render 'price', price: product.price, see_price: see_price_tag -%}
+              {% endif %}
               </span>
               {%- comment -%} added metafield text - am {%- endcomment -%}
               {% if product.metafields.custom.discount_title != null %}
@@ -294,7 +296,9 @@
                 {% comment %}
                 {%- render 'price' with product.compare_at_price -%}
                 {% endcomment %}
-                {%- render 'price', price: product.compare_at_price, see_price: see_price_tag -%}
+                {% if product.price > 0 %}
+                  {%- render 'price', price: product.compare_at_price, see_price: see_price_tag -%}
+              {% endif %}
               </span>
 
               {%- if settings.product_save_amount -%}
