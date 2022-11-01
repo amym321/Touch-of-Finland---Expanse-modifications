@@ -120,11 +120,11 @@
             {%- comment -%} added Sales Point - am {%- endcomment -%}
             {% if product.metafields.custom.discount_title != null %}
               <div class="product-block product-block--sales-point discount-deal">
-                <span class="icon-and-text discount-detail-top">
-                  <span>
-                    <img class="discount-image" src="https://cdn.shopify.com/s/files/1/0643/4389/files/discount-4.png?v=1666644238">
+                <span class="discount-wrapper"> 
+                  <span class="discount-detail-left">
+                    <img class="discount-image" src="https://cdn.shopify.com/s/files/1/0643/4389/files/discount-7.png?v=1667337608">
                   </span>
-                  <span>
+                  <span class="discount-detail-right">
                     <div class="discount-detail-top">
                       <span class="discount-title">{{ product.metafields.custom.discount_title }} </span>
                     </div>
@@ -132,9 +132,9 @@
                       {% if product.metafields.custom.discount_date != null %}
                         <span>Ends {{ product.metafields.custom.discount_date }} </span>
                       {% endif %}
-                      {% if product.metafields.custom.discount_collection_link  != null %}
+                      {% if product.metafields.custom.discount_collection_url  != null %}
                         <span style="padding: 0 7px;"> | </span>
-                        <a class="discount-link" href="product.metafields.custom.discount_collection_link">Shop this Deal</a>
+                        <a class="discount-link" href="{{product.metafields.custom.discount_collection_url}}">Shop this Deal</a>
                       {% endif %}
                     </div>
                   </span>
