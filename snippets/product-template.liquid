@@ -130,7 +130,7 @@
                     </div>
                     <div class="discount-detail-bottom">
                       {% if product.metafields.custom.discount_date != null %}
-                        <span>Ends {{ product.metafields.custom.discount_date }} </span>
+                        <span>{{ product.metafields.custom.discount_date }} </span>
                       {% endif %}
                       {% if product.metafields.custom.discount_collection_url  != null %}
                         <span style="padding: 0 7px;"> | </span>
