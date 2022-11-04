@@ -84,26 +84,40 @@
       <div class="cart__item-price-col text-right">
         {% if product.original_price != product.final_price %}
           <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-          <small class="cart__price cart__price--strikethrough">
+          <small class="cart__price cart__price--strikethrough cart__price--1st-small">
             {%- render 'price' with product.original_price -%}
           </small>
           <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+          <small  class="cart__price--2nd-small">
+            <span >{%- render 'price' with product.final_price -%}</span>
+          </small>
+          {% assign final_price_extrapolated = product.final_price | times: product.quantity %}
           <span class="cart__price cart__discount">
-            {%- render 'price' with product.final_price -%}
+            {%- render 'price' with final_price_extrapolated -%}
           </span>
         {%- comment -%} add Sale difference between original price & compare-at-price - am {%- endcomment -%}
         {% elsif product.variant.compare_at_price > product.variant.price %}
-          <small class="cart__price cart__price--strikethrough">
+          <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+          <small class="cart__price cart__price--strikethrough cart__price--1st-small">
             {%- render 'price' with product.variant.compare_at_price -%}
           </small>
+          <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+          <small class="cart__price--2nd-small">
+            <span >{%- render 'price' with product.original_price -%}</span>
+          </small>
+          {% assign original_price_extrapolated = product.original_price | times: product.quantity %}
           <span class="cart__price">
-            {%- render 'price' with product.original_price -%}
+            {%- render 'price' with original_price_extrapolated -%}
           </span>
           {% assign sale_difference = product.variant.compare_at_price | minus: product.variant.price %}
-          <small class="cart__discount">{{ 'cart.general.sale' | t }} (-{{ sale_difference  | money }})</small>
+          {% assign sale_difference_extrapolated = sale_difference | times: product.quantity %}
+          <small class="cart__discount">
+            {{ 'cart.general.sale' | t }} (-{{ sale_difference_extrapolated  | money }})
+          </small>
         {% else %}
+          {% assign original_price_extrapolated = product.original_price | times: product.quantity %}
           <span class="cart__price">
-            {%- render 'price' with product.original_price -%}
+            {%- render 'price' with original_price_extrapolated -%}
           </span>
         {% endif %}
 
