@@ -92,7 +92,7 @@
             <span >{%- render 'price' with product.final_price -%}</span>
           </small>
           {% assign final_price_extrapolated = product.final_price | times: product.quantity %}
-          <span class="cart__price cart__discount">
+          <span class="cart__price ">
             {%- render 'price' with final_price_extrapolated -%}
           </span>
         {%- comment -%} add Sale difference between original price & compare-at-price - am {%- endcomment -%}

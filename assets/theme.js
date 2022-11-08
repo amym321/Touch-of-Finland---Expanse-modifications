@@ -1626,7 +1626,7 @@ lazySizesConfig.expFactor = 4;
         this.products.append(items);
   
         // Update subtotal, my savings, & cart total
-        var innerParen = "(- ";
+        var innerParen = "(-";
         var outerParen = ")";
 
         if (mysavings != 0) {
