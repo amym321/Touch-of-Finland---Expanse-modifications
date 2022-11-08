@@ -71,7 +71,7 @@
           "type": "question",
           "settings": {
             "title": "How long does shipping take? When will I receive my order?",
-            "text": "<p>We process orders within 1-2 business days.<br\/><\/p><p>For customers in the U.S, transit time can add one to five days depending on your distance from Michigan.<br\/><br\/>Customers outside the U.S. should expect their package to arrive in 10-14 days. *Note: Covid-19 has increased international shipping delays. Actual transit time may be 14-28 days depending on country.<\/p>"
+            "text": "<p>We process orders within 1-2 business days.<br\/><\/p><p>For customers in the U.S, transit time can add one to five days depending on your distance from Michigan.<br\/><br\/>For customers outside the U.S., estimated delivery time is displayed at checkout but may very depending on customs clearance in your country.<\/p>"
           }
         },
         "e6f674b8-3dda-4f65-9299-6c49379b9c31": {
@@ -93,7 +93,7 @@
           "type": "question",
           "settings": {
             "title": "Can I return my purchase?",
-            "text": "<p>If a product does not meet your expectations, simply return it to us within 60 days for a full refund minus any shipping charges you may have paid. Holiday purchases  have a longer 90 day return window. Please see our <a href=\"\/pages\/returns-exchanges\" title=\"Returns & Exchanges\">Return Policy<\/a> for all qualifying details.<\/p>"
+            "text": "<p>Yes, please visit our returns page at:<\/p><p><a href=\"https:\/\/www.touchoffinland.com\/pages\/return-policy\" title=\"https:\/\/www.touchoffinland.com\/pages\/return-policy\">https:\/\/www.touchoffinland.com\/pages\/return-policy<\/a><\/p>"
           }
         },
         "faq-3": {
