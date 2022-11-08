@@ -1,1 +1,194 @@
-{"sections":{"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":false,"parallax":false}},"165739914920dfd306":{"type":"promo-grid","blocks":{"94cc0e92-c46b-49f9-8d96-a1fb41f6fdac":{"type":"banner","disabled":true,"settings":{"heading":"15% off Kitchen Towels","text":"*some exclusions","link":"shopify:\/\/collections\/kitchen-towels","label":"Shop Sale","color_scheme":"1"}},"f0d1c7a7-65ac-4150-acc8-4c40b0971b8d":{"type":"banner","settings":{"heading":"Pentik Sale","text":"Introduction Offer: Save 15% on our newest from Finland!","link":"shopify:\/\/collections\/pentik","label":"Shop Pentik","color_scheme":"5"}}},"block_order":["94cc0e92-c46b-49f9-8d96-a1fb41f6fdac","f0d1c7a7-65ac-4150-acc8-4c40b0971b8d"],"settings":{"full_width":false,"gutter_size":20,"space_above":true,"space_below":false}},"1644093850b98ffab6":{"type":"text-columns","blocks":{"16440938505b554e94-1":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/finnish_candy_on_sale_4e102aa9-bb7d-4328-a1b3-9b9e1afea4a0.png","image_width":500,"title":"View All Sale Items","text":"","button_label":"","button_link":"shopify:\/\/collections\/all-sale-items"}},"16440938505b554e94-0":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/iittala_sale_6382e640-628d-42e4-b72d-6ffb7aba9882.jpg","image_width":500,"title":"iittala Sale","text":"","button_label":"","button_link":"shopify:\/\/collections\/iittala-sale"}},"c71cbcbc-d277-4df3-b05a-4d193803256a":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/Muurla_Sale.jpg","image_width":500,"title":"Muurla Sale","text":"","button_label":"","button_link":"shopify:\/\/collections\/muurla-sale"}},"da49f8e6-37e8-431e-aa6a-f332e82b4106":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/Arabia_Sale.png","image_width":500,"title":"Arabia Sale","text":"","button_label":"","button_link":"shopify:\/\/collections\/arabia-sale"}},"bbb01b06-7ad7-45ec-a050-1ed27fed5a27":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/finlayson_sale.jpg","image_width":500,"title":"Finlayson Sale","text":"","button_label":"","button_link":"shopify:\/\/collections\/finlayson-sale"}},"16440938505b554e94-2":{"type":"text_block","disabled":true,"settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/Marimekko_Sale_f2f63351-bc33-4ae4-99d0-b3decc25af12.jpg","image_width":500,"title":"Marimekko Sale","text":"","button_label":"","button_link":"shopify:\/\/collections\/marimekko-sale"}},"23d9b578-c00d-4eb0-9f4a-efea19c7ae5e":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/value_packs_sale.jpg","image_width":500,"title":"Value Packs - Save on Finnish Favorites!","text":"","button_label":"","button_link":"shopify:\/\/collections\/value-packs"}}},"block_order":["16440938505b554e94-1","16440938505b554e94-0","c71cbcbc-d277-4df3-b05a-4d193803256a","da49f8e6-37e8-431e-aa6a-f332e82b4106","bbb01b06-7ad7-45ec-a050-1ed27fed5a27","16440938505b554e94-2","23d9b578-c00d-4eb0-9f4a-efea19c7ae5e"],"settings":{"title":"","align_text":"center","divider":false,"color_scheme":"2"}},"main-collection":{"type":"main-collection","blocks":{"collection_description":{"type":"collection_description","settings":{}},"product_grid":{"type":"product_grid","disabled":true,"settings":{"grid_style":"small"}}},"block_order":["collection_description","product_grid"],"settings":{"enable_sidebar":false,"collapse_filters":true,"enable_color_swatches":false,"enable_sort":true}},"recently-viewed":{"type":"recently-viewed","settings":{}}},"order":["collection-header","165739914920dfd306","1644093850b98ffab6","main-collection","recently-viewed"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "165739914920dfd306": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "94cc0e92-c46b-49f9-8d96-a1fb41f6fdac": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "15% off Kitchen Towels",
+            "text": "*some exclusions",
+            "link": "shopify:\/\/collections\/kitchen-towels",
+            "label": "Shop Sale",
+            "color_scheme": "1"
+          }
+        },
+        "f0d1c7a7-65ac-4150-acc8-4c40b0971b8d": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Pentik Sale",
+            "text": "Introduction Offer: Save 15% on our newest from Finland!",
+            "link": "shopify:\/\/collections\/pentik",
+            "label": "Shop Pentik",
+            "color_scheme": "5"
+          }
+        }
+      },
+      "block_order": [
+        "94cc0e92-c46b-49f9-8d96-a1fb41f6fdac",
+        "f0d1c7a7-65ac-4150-acc8-4c40b0971b8d"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "1644093850b98ffab6": {
+      "type": "text-columns",
+      "blocks": {
+        "16440938505b554e94-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/finnish_candy_on_sale_4e102aa9-bb7d-4328-a1b3-9b9e1afea4a0.png",
+            "image_width": 500,
+            "title": "View All Sale Items",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/all-sale-items"
+          }
+        },
+        "16440938505b554e94-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/iittala_sale_6382e640-628d-42e4-b72d-6ffb7aba9882.jpg",
+            "image_width": 500,
+            "title": "iittala Sale",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/iittala-sale"
+          }
+        },
+        "c71cbcbc-d277-4df3-b05a-4d193803256a": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Muurla_Sale.jpg",
+            "image_width": 500,
+            "title": "Muurla Sale",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/muurla-sale"
+          }
+        },
+        "da49f8e6-37e8-431e-aa6a-f332e82b4106": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Arabia_Sale.png",
+            "image_width": 500,
+            "title": "Arabia Sale",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/arabia-sale"
+          }
+        },
+        "bbb01b06-7ad7-45ec-a050-1ed27fed5a27": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/finlayson_sale.jpg",
+            "image_width": 500,
+            "title": "Finlayson Sale",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/finlayson-sale"
+          }
+        },
+        "16440938505b554e94-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Marimekko_Sale_f2f63351-bc33-4ae4-99d0-b3decc25af12.jpg",
+            "image_width": 500,
+            "title": "Marimekko Sale",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/marimekko-sale"
+          }
+        },
+        "23d9b578-c00d-4eb0-9f4a-efea19c7ae5e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/value_packs_sale.jpg",
+            "image_width": 500,
+            "title": "Value Packs - Save on Finnish Favorites!",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/value-packs"
+          }
+        }
+      },
+      "block_order": [
+        "16440938505b554e94-1",
+        "16440938505b554e94-0",
+        "c71cbcbc-d277-4df3-b05a-4d193803256a",
+        "da49f8e6-37e8-431e-aa6a-f332e82b4106",
+        "bbb01b06-7ad7-45ec-a050-1ed27fed5a27",
+        "16440938505b554e94-2",
+        "23d9b578-c00d-4eb0-9f4a-efea19c7ae5e"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "2"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "disabled": true,
+          "settings": {
+            "grid_style": "small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "165739914920dfd306",
+    "1644093850b98ffab6",
+    "main-collection",
+    "recently-viewed"
+  ]
+}

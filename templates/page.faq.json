@@ -93,7 +93,7 @@
           "type": "question",
           "settings": {
             "title": "Can I return my purchase?",
-            "text": "<p>Yes, please visit our returns page at:<\/p><p><a href=\"https:\/\/www.touchoffinland.com\/pages\/return-policy\" title=\"https:\/\/www.touchoffinland.com\/pages\/return-policy\">https:\/\/www.touchoffinland.com\/pages\/return-policy<\/a><\/p>"
+            "text": "<p>Yes, please visit our returns page at:<\/p><p><a href=\"\/pages\/return-policy\" title=\"Return Policy\">https:\/\/www.touchoffinland.com\/pages\/return-policy<\/a><\/p>"
           }
         },
         "faq-3": {

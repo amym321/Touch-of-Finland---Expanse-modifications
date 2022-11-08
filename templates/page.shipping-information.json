@@ -143,7 +143,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p><strong>Or pay a flat rate of just $6.95<\/strong> for any order shipped within the contiguous US 48 States.<\/p><p><\/p><p><strong>Estimated domestic delivery time is 2-5 days depending on your location.<\/strong><\/p>"
+            "text": "<p><strong>Or pay a flat rate of just $5.95<\/strong> for any order shipped within the contiguous US 48 States.<\/p><p><\/p><p><strong>Estimated domestic delivery time is 2-5 days depending on your location.<\/strong><\/p>"
           }
         },
         "c98ad28e-3547-47aa-9d35-94afb849fed6": {
@@ -208,7 +208,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p>International shipping rates are calculated at checkout based on the destination, size and weight of the product.<br\/><br\/><strong>Estimated delivery times are displayed at checkout.<\/strong><br\/><br\/>*International orders may be subject to import duties and taxes (including VAT), which are incurred once a shipment reaches the destination country. Touch of Finland is not responsible for any applicable import duties and taxes.<\/p>"
+            "text": "<p>International shipping rates are calculated at checkout based on the destination, size and weight of the product. <\/p><p><strong>Estimated delivery times are displayed at checkout.<\/strong><\/p><p><em>*International orders may be subject to import duties and taxes (including VAT), which are incurred once a shipment reaches the destination country. Touch of Finland is not responsible for any applicable import duties and taxes.<\/em><\/p>"
           }
         }
       },

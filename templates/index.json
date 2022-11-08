@@ -55,7 +55,7 @@
             "link_text": "Optional button",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/unikko1.png",
             "overlay_opacity": 0,
@@ -102,6 +102,7 @@
         },
         "314b9705-60f3-4c01-bf74-cd4aaf4f6c4f": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "UNIKKO SALE",
             "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_30.png?v=1666366335\" alt=\"iittala\" width=\"200\">",
@@ -118,17 +119,117 @@
             "focal_point": "center",
             "color_accent": "#ffffff"
           }
+        },
+        "f9917fb7-611d-4513-b9f3-7578cd0372eb": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "ENDS SOON",
+            "heading": "Holiday Candy Sale",
+            "textarea": "",
+            "cta_text1": "Shop Now",
+            "cta_link1": "shopify:\/\/collections\/finnish-candy-and-food",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/FC_KF_maitosuklaa_270g_407111_hands_hr.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#941d1d"
+          }
+        },
+        "44fe641f-3a0b-464f-8839-66b75ad6aa19": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Holiday Gift Guide",
+            "textarea": "FOR FINNISH GIFTING",
+            "cta_text1": "Discover Gifts",
+            "cta_link1": "shopify:\/\/pages\/holiday-gift-guide",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/christmas-lifestyle19-38_1.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#941d1d"
+          }
+        },
+        "f1943744-50a0-4b1e-b40a-891bd135ebf3": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "HOLIDAY SALE",
+            "heading": "Christmas Decor",
+            "textarea": "Almost all holiday items on sale!",
+            "cta_text1": "Shop the Sale",
+            "cta_link1": "shopify:\/\/collections\/christmas-decorations",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-06T105347.767.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#941d1d"
+          }
         }
       },
       "block_order": [
         "4df95667-b3b1-4963-862e-bb6a12c5e4e6",
-        "314b9705-60f3-4c01-bf74-cd4aaf4f6c4f"
+        "314b9705-60f3-4c01-bf74-cd4aaf4f6c4f",
+        "f9917fb7-611d-4513-b9f3-7578cd0372eb",
+        "44fe641f-3a0b-464f-8839-66b75ad6aa19",
+        "f1943744-50a0-4b1e-b40a-891bd135ebf3"
       ],
       "settings": {
         "full_width": true,
         "gutter_size": 10,
         "space_above": false,
         "space_below": false
+      }
+    },
+    "0ca16ad7-f1f3-41d9-934f-fbd76de85354": {
+      "type": "text-columns",
+      "disabled": true,
+      "blocks": {
+        "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Untitled_design_81.png",
+            "image_width": 650,
+            "title": "Finlayson - up to 40% off!",
+            "text": "<p>Save up to 40% off on all Finlayson<\/p>",
+            "button_label": "Shop Finlayson",
+            "button_link": "shopify:\/\/collections\/finlayson"
+          }
+        },
+        "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Untitled_design_82.png",
+            "image_width": 650,
+            "title": "15% off all Bianco Blu",
+            "text": "<p>Finnish Glass Birds from Bianco Blu<\/p>",
+            "button_label": "Shop Bianco Blu",
+            "button_link": "shopify:\/\/collections\/bianco-blu"
+          }
+        }
+      },
+      "block_order": [
+        "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-1",
+        "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-0"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "2"
       }
     },
     "16552286582d4b297e": {
@@ -504,6 +605,7 @@
   "order": [
     "464832ac-efe3-4bec-834e-d95b3cb0eb67",
     "1655228608d6ef14f7",
+    "0ca16ad7-f1f3-41d9-934f-fbd76de85354",
     "16552286582d4b297e",
     "16553090232769c836",
     "16553947720bf2b4fb",
