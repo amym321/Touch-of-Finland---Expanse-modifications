@@ -231,8 +231,8 @@
           "e20b7a29-c223-445c-9712-4b3f067da933": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><a href=\"https:\/\/unicode-table.com\/en\/1F36B\/\">🍫<\/a> <a href=\"\/collections\/finnish-candy-and-food\" title=\"Finnish Candy and Food\"><strong>Finnish Candy Sale | Shop Now<\/strong><\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"https:\/\/unicode-table.com\/en\/1F36B\/\">🍫<\/a> <a href=\"\/collections\/pentik\" title=\"Pentik\"><strong>Finnish Candy Sale | Shop Now<\/strong><\/a><\/p>"
+              "richtext": "<p>Tervetuloa! Welcome to our online store.<\/p>",
+              "richtext_mobile": ""
             }
           },
           "66861402-f063-4c1a-a2f3-d833ad59a823": {

@@ -82,7 +82,6 @@
       "blocks": {
         "4df95667-b3b1-4963-862e-bb6a12c5e4e6": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_2_d6d300cf-e71b-4ed8-8576-de6babc4fa60.png?v=1657805595\" alt=\"iittala\" width=\"150\">",
@@ -122,6 +121,7 @@
         },
         "f9917fb7-611d-4513-b9f3-7578cd0372eb": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "ENDS SOON",
             "heading": "Holiday Candy Sale",
@@ -141,6 +141,7 @@
         },
         "44fe641f-3a0b-464f-8839-66b75ad6aa19": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Holiday Gift Guide",
@@ -160,6 +161,7 @@
         },
         "f1943744-50a0-4b1e-b40a-891bd135ebf3": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "HOLIDAY SALE",
             "heading": "Christmas Decor",
