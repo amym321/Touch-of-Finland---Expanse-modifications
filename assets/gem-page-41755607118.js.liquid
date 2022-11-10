@@ -1,0 +1,149 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+        jQuery(function() {
+            var $module = jQuery('#m-1558208050054').children('.module');
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590').children('.module');
+
+            var sameHeightTitle = $module.data('sameheightitle'),
+                collg = $module.data('collg'),
+                colmd = $module.data('colmd'),
+                colsm = $module.data('colsm'),
+                colxs = $module.data('colxs');
+
+            var $clearfixes = $module.find('.gf_row-no-padding').children('.gf_clearfix');
+            var col = collg;
+
+
+            jQuery(window).resize(function() {
+                setTimeout(function() {
+                    for(var i = 0; i < $clearfixes.length; i++) {
+                        if($clearfixes.eq(i).css('display') == 'block') {
+                            if($clearfixes.eq(i).hasClass('visible-lg')) {
+                                col = collg;
+                                break;
+                            }
+                            if($clearfixes.eq(i).hasClass('visible-md')) {
+                                col = colmd;
+                                break;
+                            }
+                            if($clearfixes.eq(i).hasClass('visible-sm')) {
+                                col = colsm;
+                                break;
+                            }
+                            if($clearfixes.eq(i).hasClass('visible-xs')) {
+                                col = colxs;
+                                break;
+                            }
+                        }
+                    }
+                }, 1000);
+            });
+
+            if(sameHeightTitle == '1') {
+                var minHeight = 0;
+
+                $module.find('.product-single__title').each(function() {
+                });
+            } else {
+            }
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child1').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child1-0').children('.module');
+            var effect = $module.attr('data-effect');
+            $module.gfV3ProductImage({
+                'effect': effect
+            })
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child1-1').children('.module');
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child2').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child2-0').children('.module');
+            var effect = $module.attr('data-effect');
+            $module.gfV3ProductImage({
+                'effect': effect
+            })
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child2-1').children('.module');
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child3').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child3-0').children('.module');
+            var effect = $module.attr('data-effect');
+            $module.gfV3ProductImage({
+                'effect': effect
+            })
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557972027590-child3-1').children('.module');
+        }); 
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1557974770192').children('.module');
+
+            var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+            if(mode == 'production') { 
+                $module.find('button[type="submit"]').on('mouseover', function() {
+                    try {
+                        localStorage.setItem('gemId', '#m-1557974770192');
+                    } catch(err) {}
+                });
+
+                var gemId = '';
+                try {
+                    var gemId = localStorage.getItem('gemId');
+                } catch(err) {}
+
+                if(gemId != '') {
+                    var moduleId = '#' + $module.parent().attr('id');
+                    if(gemId == moduleId) {
+                        var cbLink = $module.find('input[name="gemcallback"]').val() != undefined ? jQuery.trim($module.find('input[name="gemcallback"]').val()) : '';
+
+                        if(cbLink && cbLink != '') {
+                            try {
+                                localStorage.setItem('gemId', 'redirected');
+                            } catch(err) {}
+
+                            window.location.href = cbLink;
+                        }
+                    }
+                } else {
+                    var cbLink = $module.find('input[name="gemcallback"]').val() != undefined ? jQuery.trim($module.find('input[name="gemcallback"]').val()) : '';
+
+                    if(cbLink && cbLink != '') {
+                        window.location.href = cbLink;
+                    }
+                }
+            } 
+        });
+    
