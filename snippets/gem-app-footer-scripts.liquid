@@ -1,25 +1,25 @@
 {% capture gemFooterScripts %}<script data-instant-track type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLPebA_baWYMkLhuEVB-YtnBQIz571zlA" class="gf-script" defer="defer"></script>    <script data-instant-track type="text/javascript">
-  var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());
-  if(typeof pageLibs === 'undefined' || pageLibs === null){
-    var pageLibs = [];
-  }
-  GEMVENDOR.init(pageLibs);
-  </script>
-<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+      var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());
+      if(typeof pageLibs === 'undefined' || pageLibs === null){
+        var pageLibs = [];
+      }
+      GEMVENDOR.init(pageLibs);
+      </script>
+    <script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
 {% endcapture %}
 
-  {% if GEM_FOOTER_SCRIPT %}
-  {{ GEM_FOOTER_SCRIPT }}
-  {% else %}
-        <script data-instant-track type="text/javascript">
-  var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());
-  if(typeof pageLibs === 'undefined' || pageLibs === null){
-    var pageLibs = [];
-  }
-  GEMVENDOR.init(pageLibs);
-  </script>
-<script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
+      {% if GEM_FOOTER_SCRIPT %}
+      {{ GEM_FOOTER_SCRIPT }}
+      {% else %}
+            <script data-instant-track type="text/javascript">
+      var GEMVENDOR = GEMVENDOR || (function(){		var _js = {};		return {			init: function(Args) {				_js = Args;			},			getLibs: function() {				return _js;			}		};	}());
+      if(typeof pageLibs === 'undefined' || pageLibs === null){
+        var pageLibs = [];
+      }
+      GEMVENDOR.init(pageLibs);
+      </script>
+    <script data-instant-track type="text/javascript" src="https://d1um8515vdn9kb.cloudfront.net/files/gempagev2.js?v=1.0" class="gf-script" defer></script>
 
-  {% endif%}    {% if shop.metafields.gpGlobalConfigs.enableProductSchema == "true" or shop.metafields.gpGlobalConfigs.enableProductSchema == blank %}
-  {{ GEM_SCHEMA_SCRIPT }}
-{% endif %}
+      {% endif%}    {% if shop.metafields.gpGlobalConfigs.enableProductSchema == "true" or shop.metafields.gpGlobalConfigs.enableProductSchema == blank %}
+      {{ GEM_SCHEMA_SCRIPT }}
+    {% endif %}
