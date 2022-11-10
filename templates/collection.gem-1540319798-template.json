@@ -59,7 +59,7 @@
       ],
       "settings": {
         "enable_sidebar": true,
-        "collapse_filters": false,
+        "collapse_filters": true,
         "enable_color_swatches": false,
         "enable_sort": true
       }

@@ -123,7 +123,7 @@
         "f9917fb7-611d-4513-b9f3-7578cd0372eb": {
           "type": "advanced",
           "settings": {
-            "subheading": "ENDS 11.5.22",
+            "subheading": "ENDS SOON",
             "heading": "Holiday Candy Sale",
             "textarea": "",
             "cta_text1": "Shop Now",
@@ -142,39 +142,39 @@
         "44fe641f-3a0b-464f-8839-66b75ad6aa19": {
           "type": "advanced",
           "settings": {
-            "subheading": "BIANCO BLU",
-            "heading": "15% off today",
-            "textarea": "All Bianco Blu Finnish Glass Birds",
-            "cta_text1": "Shop Bianco Blu",
-            "cta_link1": "shopify:\/\/collections\/bianco-blu",
+            "subheading": "",
+            "heading": "Holiday Gift Guide",
+            "textarea": "FOR FINNISH GIFTING",
+            "cta_text1": "Discover Gifts",
+            "cta_link1": "shopify:\/\/pages\/holiday-gift-guide",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/VDAY20-LIFESTYLE-27_1.jpg",
+            "image": "shopify:\/\/shop_images\/christmas-lifestyle19-38_1.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#f18f01"
+            "color_accent": "#941d1d"
           }
         },
         "f1943744-50a0-4b1e-b40a-891bd135ebf3": {
           "type": "advanced",
           "settings": {
-            "subheading": "FINLAYSON",
-            "heading": "Up to 40% off",
-            "textarea": "All Finlayson on Sale!",
-            "cta_text1": "Shop Finlayson",
-            "cta_link1": "shopify:\/\/collections\/finlayson",
+            "subheading": "HOLIDAY SALE",
+            "heading": "Christmas Decor",
+            "textarea": "Almost all holiday items on sale!",
+            "cta_text1": "Shop the Sale",
+            "cta_link1": "shopify:\/\/collections\/christmas-decorations",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Alku_feeling_720x_c5194b7a-ae4d-4581-91af-ae9c98067208.webp",
+            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-11-06T105347.767.png",
             "video_url": "",
             "width": "50",
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#f18f01"
+            "color_accent": "#941d1d"
           }
         }
       },
