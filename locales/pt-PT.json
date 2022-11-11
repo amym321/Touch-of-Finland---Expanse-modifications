@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 Página Não Encontrada",
-      "subtext_html": "A página que solicitou não existe. Clique <a href='{{ url }}'>aqui</a> para continuar as suas compras."
+      "subtext_html": "A página que solicitou não existe. Clique <a href='{{ url }}'>aqui<\/a> para continuar as suas compras."
     },
     "pagination": {
       "previous": "Anterior",
@@ -25,7 +25,7 @@
       "login_form_submit": "Entrar",
       "signup_form_email_label": "Email",
       "signup_form_success": "Iremos enviar-lhe um email imediatamente antes de abrirmos!",
-      "admin_link_html": "É o dono da loja? <a href=\"/admin\" class=\"text-link\">Inicie sessão aqui</a>",
+      "admin_link_html": "É o dono da loja? <a href=\"\/admin\" class=\"text-link\">Inicie sessão aqui<\/a>",
       "password_link": "Palavra-passe",
       "powered_by_shopify_html": "Esta loja será movida por {{ shopify }}"
     },
@@ -84,8 +84,8 @@
       "get_directions": "Obter direções",
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plano Premium</a>.",
-      "auth_error_html": "Houve um problema autenticação de sua conta do Google Maps. Criar e ativar a <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">API JavaScript</a> e permissões de <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">geocodificação da API</a> do seu aplicativo."
+      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
+      "auth_error_html": "Houve um problema autenticação de sua conta do Google Maps. Criar e ativar a <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">API JavaScript<\/a> e permissões de <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">geocodificação da API<\/a> do seu aplicativo."
     },
     "slideshow": {
       "play_slideshow": "Reproduzir de slides",
@@ -136,7 +136,7 @@
       "reduce_quantity": "Reduza a quantidade do artigo em um",
       "increase_quantity": "Aumente a quantidade do artigo em um",
       "terms": "Eu concordo com os termos e condições",
-      "terms_html": "Eu concordo com os <a href='{{ url }}' target='_blank'>termos e condições</a>",
+      "terms_html": "Eu concordo com os <a href='{{ url }}' target='_blank'>termos e condições<\/a>",
       "terms_confirm": "Você deve concordar com os termos e condições de vendas para verificar",
       "recommended_title": "Vai grande com"
     },
@@ -319,7 +319,7 @@
       "sale": "Venda",
       "sale_price": "Preço de saldo",
       "regular_price": "Preço normal",
-      "from_text_html": "<span>Desde</span> {{ price }}",
+      "from_text_html": "<span>Desde<\/span> {{ price }}",
       "quick_shop": "Compra rápida",
       "more_from_html": "Mais de {{ link }}",
       "recent_products": "Visto recentemente",
@@ -343,8 +343,8 @@
       "view_in_space_label": "Ver no seu espaço, carrega item na janela de realidade aumentada"
     }
   },
-  "store_availability":{
-    "general":{
+  "store_availability": {
+    "general": {
       "view_store_info": "Exibir informações de loja",
       "check_other_stores": "Ver disponibilidade em outras lojas",
       "pick_up_available": "transbordo",
@@ -366,7 +366,7 @@
       "add_to_apple_wallet": "Adicionar ao Apple Wallet"
     }
   },
-  "date_formats":{
+  "date_formats": {
     "month_day_year": "%d de %B de %Y"
   }
 }

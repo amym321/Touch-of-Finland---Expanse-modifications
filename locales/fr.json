@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 - Page non trouvée",
-      "subtext_html": "Cette page n'est pas disponible. <a href='{{ url }}'>Retourner au magasinage</a>"
+      "subtext_html": "Cette page n'est pas disponible. <a href='{{ url }}'>Retourner au magasinage<\/a>"
     },
     "pagination": {
       "previous": "Précédent",
@@ -25,7 +25,7 @@
       "login_form_submit": "Entrer",
       "signup_form_email_label": "Courriel",
       "signup_form_success": "Nous vous ferons parvenir un courriel juste avant l'ouverture!",
-      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"/admin\" class=\"text-link\">Connectez-vous ici</a>.",
+      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
       "password_link": "Mot de passe",
       "powered_by_shopify_html": "Cette boutique sera propulsée par {{ shopify }}"
     },
@@ -84,8 +84,8 @@
       "get_directions": "Obtenir des directions",
       "address_error": "Vous ne trouvez pas cette adresse",
       "address_no_results": "Aucun résultat pour cette adresse",
-      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https://developers.google.com/maps/premium/usage-limits\">régime spécial</a>.",
-      "auth_error_html": "Il y avait un problème authentifier votre compte Google Maps . Créer et activer <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">l'API JavaScript</a> et <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">l'API de géocodage</a> les autorisations de application."
+      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">régime spécial<\/a>.",
+      "auth_error_html": "Il y avait un problème authentifier votre compte Google Maps . Créer et activer <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">l'API JavaScript<\/a> et <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">l'API de géocodage<\/a> les autorisations de application."
     },
     "slideshow": {
       "play_slideshow": "Lire le diaporama",
@@ -136,7 +136,7 @@
       "reduce_quantity": "Réduire la quantité de l'article de un",
       "increase_quantity": "Augmenter la quantité de l'article de un",
       "terms": "Je suis d'accord avec les termes et conditions",
-      "terms_html": "Je suis d'accord avec les <a href='{{ url }}' target='_blank'>termes et conditions</a>",
+      "terms_html": "Je suis d'accord avec les <a href='{{ url }}' target='_blank'>termes et conditions<\/a>",
       "terms_confirm": "Vous devez accepter les termes et conditions de vente pour vérifier",
       "recommended_title": "Bien avec"
     },
@@ -319,7 +319,7 @@
       "sale": "Réduit",
       "sale_price": "Prix réduit",
       "regular_price": "Prix régulier",
-      "from_text_html": "<span>À partir de</span> {{ price }}",
+      "from_text_html": "<span>À partir de<\/span> {{ price }}",
       "quick_shop": "Boutique rapide",
       "more_from_html": "Plus de {{ link }}",
       "recent_products": "Vu récemment",
@@ -343,8 +343,8 @@
       "view_in_space_label": "Affichage dans votre espace, charge l'article dans une fenêtre de réalité augmentée"
     }
   },
-  "store_availability":{
-    "general":{
+  "store_availability": {
+    "general": {
       "view_store_info": "Afficher les informations de magasin",
       "check_other_stores": "Vérifier la disponibilité dans d'autres magasins",
       "pick_up_available": "Récupération disponible",
@@ -366,7 +366,7 @@
       "add_to_apple_wallet": "Ajouter à Apple Wallet"
     }
   },
-  "date_formats":{
+  "date_formats": {
     "month_day_year": "%d %B, %Y"
   }
 }
