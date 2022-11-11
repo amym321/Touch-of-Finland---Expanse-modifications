@@ -2,7 +2,6 @@
   "sections": {
     "464832ac-efe3-4bec-834e-d95b3cb0eb67": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--14478584643662__464832ac-efe3-4bec-834e-d95b3cb0eb67-1665329532f04624a2-0": {
           "type": "hero",
@@ -50,14 +49,15 @@
             "top_subheading": "",
             "title": "",
             "title_size": 70,
-            "subheading": "<",
+            "subheading": "",
             "link": "",
-            "link_text": "Optional button",
+            "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/unikko1.png",
+            "image": "shopify:\/\/shop_images\/EARLY_BLACK_FRIDAY_SALE_800_x_1000_px_1440_x_500_px_6.png",
+            "image_mobile": "shopify:\/\/shop_images\/EARLY_BLACK_FRIDAY_SALE_800_x_1000_px_1440_x_500_px_800_x_500_px_2.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -70,7 +70,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": -20,
+        "desktop_size": 0,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -79,6 +79,7 @@
     },
     "1655228608d6ef14f7": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "4df95667-b3b1-4963-862e-bb6a12c5e4e6": {
           "type": "advanced",
@@ -122,6 +123,7 @@
         },
         "f9917fb7-611d-4513-b9f3-7578cd0372eb": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "ENDS SOON",
             "heading": "Holiday Candy Sale",
@@ -141,6 +143,7 @@
         },
         "44fe641f-3a0b-464f-8839-66b75ad6aa19": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Holiday Gift Guide",
@@ -160,6 +163,7 @@
         },
         "f1943744-50a0-4b1e-b40a-891bd135ebf3": {
           "type": "advanced",
+          "disabled": true,
           "settings": {
             "subheading": "HOLIDAY SALE",
             "heading": "Christmas Decor",
