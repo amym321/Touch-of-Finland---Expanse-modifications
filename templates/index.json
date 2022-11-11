@@ -2,6 +2,7 @@
   "sections": {
     "464832ac-efe3-4bec-834e-d95b3cb0eb67": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14478584643662__464832ac-efe3-4bec-834e-d95b3cb0eb67-1665329532f04624a2-0": {
           "type": "hero",
@@ -49,15 +50,14 @@
             "top_subheading": "",
             "title": "",
             "title_size": 70,
-            "subheading": "",
-            "link": "shopify:\/\/pages\/holiday-gift-guide",
-            "link_text": "",
+            "subheading": "<",
+            "link": "",
+            "link_text": "Optional button",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/EARLY_BLACK_FRIDAY_SALE_800_x_1000_px_1440_x_500_px_6.png",
-            "image_mobile": "shopify:\/\/shop_images\/EARLY_BLACK_FRIDAY_SALE_800_x_1000_px_1440_x_500_px_800_x_500_px_2.png",
+            "image": "shopify:\/\/shop_images\/unikko1.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -70,7 +70,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -20,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -79,7 +79,6 @@
     },
     "1655228608d6ef14f7": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "4df95667-b3b1-4963-862e-bb6a12c5e4e6": {
           "type": "advanced",
@@ -105,17 +104,17 @@
           "type": "advanced",
           "disabled": true,
           "settings": {
-            "subheading": "",
-            "heading": "",
-            "textarea": "",
-            "cta_text1": "",
-            "cta_link1": "",
+            "subheading": "UNIKKO SALE",
+            "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_30.png?v=1666366335\" alt=\"iittala\" width=\"200\">",
+            "textarea": "20% off Finland's Most Iconic Print",
+            "cta_text1": "Shop Unikko",
+            "cta_link1": "shopify:\/\/collections\/marimekko",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/EARLY_BLACK_FRIDAY_SALE_800_x_1000_px_1440_x_500_px.png",
+            "image": "shopify:\/\/shop_images\/unikko1.png",
             "video_url": "",
             "width": "100",
-            "height": 660,
+            "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#ffffff"
@@ -123,7 +122,6 @@
         },
         "f9917fb7-611d-4513-b9f3-7578cd0372eb": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "ENDS SOON",
             "heading": "Holiday Candy Sale",
@@ -143,7 +141,6 @@
         },
         "44fe641f-3a0b-464f-8839-66b75ad6aa19": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "Holiday Gift Guide",
@@ -163,7 +160,6 @@
         },
         "f1943744-50a0-4b1e-b40a-891bd135ebf3": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "HOLIDAY SALE",
             "heading": "Christmas Decor",
