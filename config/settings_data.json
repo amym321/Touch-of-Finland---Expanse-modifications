@@ -14,7 +14,7 @@
     "color_large_image_bg": "#f9fafb",
     "color_header": "#ffffff",
     "color_header_text": "#464646",
-    "color_announcement": "#4fa2de",
+    "color_announcement": "#000000",
     "color_announcement_text": "#ffffff",
     "color_header_search": "#f9fafb",
     "color_footer": "#f9f9fb",
@@ -231,8 +231,8 @@
           "e20b7a29-c223-445c-9712-4b3f067da933": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><a href=\"https:\/\/unicode-table.com\/en\/1F36B\/\">🍫<\/a> <a href=\"\/collections\/finnish-candy-and-food\" title=\"Finnish Candy and Food\"><strong>Finnish Candy Sale | Shop Now<\/strong><\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"https:\/\/unicode-table.com\/en\/1F36B\/\">🍫<\/a> <a href=\"\/collections\/pentik\" title=\"Pentik\"><strong>Finnish Candy Sale | Shop Now<\/strong><\/a><\/p>"
+              "richtext": "<p><strong>EARLY BLACK FRIDAY SALE<\/strong>—<strong>20% OFF EVERYTHING SITEWIDE<\/strong><\/p>",
+              "richtext_mobile": "<p><strong>SITEWIDE SALE! 20% OFF EVERYTHING<\/strong><\/p>"
             }
           },
           "66861402-f063-4c1a-a2f3-d833ad59a823": {
