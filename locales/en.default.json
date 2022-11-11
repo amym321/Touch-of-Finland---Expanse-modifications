@@ -318,7 +318,7 @@
       "save_html": "Save {{ saved_amount }}",
       "collection_return": "Back to {{ collection }}",
       "next_product": "Next: {{ title }}",
-      "sale": "EARLY BLACK FRIDAY SALE",
+      "sale": "SALE",
       "sale_price": "Sale price",
       "regular_price": "Regular price",
       "from_text_html": "<span>from<\/span> {{ price }}",
