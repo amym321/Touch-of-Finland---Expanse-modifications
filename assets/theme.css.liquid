@@ -11233,7 +11233,10 @@ html[dir=rtl] .product-single__meta .rte{
 /*****************************************/
 
 /*Sale tag to top left*/
-
+.grid-product__tags { 
+  top: 0; 
+  margin-top: calc(var(--productTileMargin)*-1); 
+}
 
 /* hide certain sort options on colleciton page - theme & search app sort */
 .collection-filter__sort #SortBy  .created-ascending,
