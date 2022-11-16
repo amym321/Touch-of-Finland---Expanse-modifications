@@ -43,6 +43,9 @@
       <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}{% if link.title contains 'Clearance'%} sale-link{% endif %}">
         {{ link.title }}
       </a>
+          <a href="{{ link.url }}" class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}{% if link.title contains 'Holiday Gift Guide'%} gift-link{% endif %}">
+        {{ link.title }}
+      </a>
       {%- if is_megamenu -%}
         {%- assign previous_column_type = '' -%}
         <div class="site-nav__dropdown megamenu text-left">
