@@ -315,7 +315,7 @@
   "products": {
     "general": {
       "color_swatch_trigger": "Color",
-      "save_html": "Save {{ saved_amount }}",
+      "save_html": "{{ saved_amount }} off",
       "collection_return": "Back to {{ collection }}",
       "next_product": "Next: {{ title }}",
       "sale": "SITEWIDE SALE",
