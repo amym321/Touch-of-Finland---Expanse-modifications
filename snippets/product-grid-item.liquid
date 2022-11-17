@@ -299,9 +299,7 @@
                 {%- else -%}
                   {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
                 {%- endif -%}
-                                <span class="grid-product__price--savings">
-                  {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
-                </span>
+                
               {%- endif -%}
             {%- endif -%}
 
