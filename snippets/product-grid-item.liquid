@@ -95,7 +95,7 @@
           {%- endunless -%}
           {%- if on_sale and product.available -%}
             <div class="grid-product__tag grid-product__tag--sale">
-              {{ 'products.general.sale' | t }}
+              {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}% OFF
             </div>
           {%- endif -%}
         </div>
