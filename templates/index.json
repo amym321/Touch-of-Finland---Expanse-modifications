@@ -1,7 +1,42 @@
 {
   "sections": {
+    "70c2feb8-1c7a-448f-8e37-155a801b743e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14724126474318__70c2feb8-1c7a-448f-8e37-155a801b743e-1668689885b60481a4-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/Black_Friday_Sale_Landscape_Banner.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__70c2feb8-1c7a-448f-8e37-155a801b743e-1668689885b60481a4-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "464832ac-efe3-4bec-834e-d95b3cb0eb67": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14478584643662__464832ac-efe3-4bec-834e-d95b3cb0eb67-1665329532f04624a2-0": {
           "type": "hero",
@@ -45,6 +80,7 @@
         },
         "f9bb6b4d-14d1-4397-b3a9-d28c9e9a42b6": {
           "type": "hero",
+          "disabled": true,
           "settings": {
             "top_subheading": "",
             "title": "",
@@ -607,6 +643,7 @@
     }
   },
   "order": [
+    "70c2feb8-1c7a-448f-8e37-155a801b743e",
     "464832ac-efe3-4bec-834e-d95b3cb0eb67",
     "1655228608d6ef14f7",
     "0ca16ad7-f1f3-41d9-934f-fbd76de85354",
