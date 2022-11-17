@@ -95,7 +95,7 @@
           {%- endunless -%}
           {%- if on_sale and product.available -%}
             <div class="grid-product__tag grid-product__tag--sale">
-              {{ 'products.general.sale' | {{ saved_amount }} }}
+              {{ 'products.general.sale' | t }}
             </div>
           {%- endif -%}
         </div>
