@@ -231,8 +231,8 @@
           "e20b7a29-c223-445c-9712-4b3f067da933": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><strong>EARLY BLACK FRIDAY SALE<\/strong>—<strong>20% OFF EVERYTHING SITEWIDE<\/strong><\/p>",
-              "richtext_mobile": "<p><strong>SITEWIDE SALE! 20% OFF EVERYTHING<\/strong><\/p>"
+              "richtext": "<p><strong>EARLY BLACK FRIDAY SALE<\/strong>—<strong>OUR BEST PRICES OF THE SEASON!<\/strong><\/p>",
+              "richtext_mobile": "<p><strong>EARLY BLACK FRIDAY SALE<\/strong><\/p><p><em><strong>OUR BEST PRICES OF THE SEASON!<\/strong><\/em><\/p>"
             }
           },
           "66861402-f063-4c1a-a2f3-d833ad59a823": {
