@@ -35,6 +35,57 @@
         "autoplay_speed": 7
       }
     },
+    "777d9b02-ff32-462b-8e05-2476f7619aee": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14724126474318__777d9b02-ff32-462b-8e05-2476f7619aee-1669223516e7fdec05-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<br>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__777d9b02-ff32-462b-8e05-2476f7619aee-1669223516e7fdec05-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "2e3f0543-ff3c-449d-a17e-479a4aebbbe6": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FREE_GIFT_1000_x_800_px.png",
+            "link": "shopify:\/\/products\/iittala-teema-dotted-grey-mug",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "767a5859-fb4b-431c-9013-4c00b34deec3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/daily_deals.png",
+            "link": "shopify:\/\/collections\/deals-of-the-day",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0",
+        "767a5859-fb4b-431c-9013-4c00b34deec3"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
     "464832ac-efe3-4bec-834e-d95b3cb0eb67": {
       "type": "slideshow",
       "disabled": true,
@@ -273,6 +324,51 @@
         "color_scheme": "2"
       }
     },
+    "16553090232769c836": {
+      "type": "promo-grid",
+      "blocks": {
+        "327d6b8a-06dd-4719-9065-e0e168a18c7c": {
+          "type": "banner",
+          "settings": {
+            "heading": "Free Shipping on orders $99+",
+            "text": "(US 48 ONLY)",
+            "link": "",
+            "label": "",
+            "color_scheme": "5"
+          }
+        }
+      },
+      "block_order": [
+        "327d6b8a-06dd-4719-9065-e0e168a18c7c"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "6e89dbe6-439b-40d7-abaf-5fa060d9a094": {
+      "type": "advanced-content",
+      "disabled": true,
+      "blocks": {
+        "template--14724126474318__6e89dbe6-439b-40d7-abaf-5fa060d9a094-1669223516e7fdec05-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<br>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__6e89dbe6-439b-40d7-abaf-5fa060d9a094-1669223516e7fdec05-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
     "16552286582d4b297e": {
       "type": "featured-collections",
       "blocks": {
@@ -376,32 +472,8 @@
         "1b070acb-47c0-4fbd-9552-bedcd00edbbb"
       ],
       "settings": {
-        "title": "<p style=\"color:#064E82;\">What are you shopping for today?<\/p>",
+        "title": "",
         "divider": false
-      }
-    },
-    "16553090232769c836": {
-      "type": "promo-grid",
-      "blocks": {
-        "327d6b8a-06dd-4719-9065-e0e168a18c7c": {
-          "type": "banner",
-          "settings": {
-            "heading": "Up to 50% Off",
-            "text": "Save on Retired, Seasonal & Overstock.",
-            "link": "shopify:\/\/collections\/closeout-sale",
-            "label": "Shop Sale",
-            "color_scheme": "5"
-          }
-        }
-      },
-      "block_order": [
-        "327d6b8a-06dd-4719-9065-e0e168a18c7c"
-      ],
-      "settings": {
-        "full_width": false,
-        "gutter_size": 0,
-        "space_above": false,
-        "space_below": true
       }
     },
     "16553947720bf2b4fb": {
@@ -620,40 +692,21 @@
         "autoplay": true,
         "autoplay_speed": 7
       }
-    },
-    "1656862657771e2d58": {
-      "type": "advanced-content",
-      "disabled": true,
-      "blocks": {
-        "165686265726e89246-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "<div class=\"prooffactor-newsletter\"; style=\"font-size: 14px;\" data-open-accessibility-text-original=\"14px\">Enter to Win!<\/a>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "165686265726e89246-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
     }
   },
   "order": [
     "70c2feb8-1c7a-448f-8e37-155a801b743e",
+    "777d9b02-ff32-462b-8e05-2476f7619aee",
+    "2e3f0543-ff3c-449d-a17e-479a4aebbbe6",
     "464832ac-efe3-4bec-834e-d95b3cb0eb67",
     "1655228608d6ef14f7",
     "0ca16ad7-f1f3-41d9-934f-fbd76de85354",
-    "16552286582d4b297e",
     "16553090232769c836",
+    "6e89dbe6-439b-40d7-abaf-5fa060d9a094",
+    "16552286582d4b297e",
     "16553947720bf2b4fb",
     "16552982933c9c9de0",
     "1655296233694739f0",
-    "16553025618bbcbad5",
-    "1656862657771e2d58"
+    "16553025618bbcbad5"
   ]
 }
