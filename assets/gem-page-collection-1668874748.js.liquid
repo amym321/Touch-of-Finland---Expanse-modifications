@@ -288,6 +288,139 @@
   
     window.__gfAnimate.registerPageLoaded(jQuery("#e-1669227810587"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
     
+(function( jQuery ){
+  var $module = jQuery('#m-1669230350252').children('.module');
+  $module.gfV3Product();
+})( window.GemQuery || jQuery );
+    
+(function(jQuery) {
+  var $module = jQuery('#m-1669230350252-0').children('.module');
+  var effect = $module.attr('data-effect');
+  var magnify = $module.attr('data-zoom-level');
+  var displayType = $module.attr('data-displaytype');
+  $module.gfV3ProductImage({
+    'effect': effect,
+    'displayType': displayType,
+    'magnify': magnify
+  });
+})(window.GemQuery || jQuery);
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1669230350300').children('.module');
+  $module.gfV1StockCounter();
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1669230350334').children('.module');
+  var $product = $module.closest('[data-label="Product"]');
+  var productCurrentId = "";
+  if ($product.length > 0) {
+    productCurrentId = $product.attr("id");
+  }
+  var changeVariantFunction = function (variant) {
+    if(variant&&variant.id){
+      var productHandle = $module.attr("data-phandle");
+      var newHandle = "/products/"+productHandle+"?variant="+variant.id;
+      $module.find('a').attr("href",newHandle);
+    }
+  }
+  if (window.GEMSTORE) {
+    window.GEMSTORE.subscribe("product-" + productCurrentId + "-variant", changeVariantFunction);
+  }
+})( window.GemQuery || jQuery );
+  
+    window.__gfAnimate.registerPageLoaded(jQuery("#e-1669230350257"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
+(function( jQuery ){
+  var $module = jQuery('#m-1669230350238').children('.module');
+  $module.gfV3Product();
+})( window.GemQuery || jQuery );
+    
+(function(jQuery) {
+  var $module = jQuery('#m-1669230350238-0').children('.module');
+  var effect = $module.attr('data-effect');
+  var magnify = $module.attr('data-zoom-level');
+  var displayType = $module.attr('data-displaytype');
+  $module.gfV3ProductImage({
+    'effect': effect,
+    'displayType': displayType,
+    'magnify': magnify
+  });
+})(window.GemQuery || jQuery);
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1669230350287').children('.module');
+  $module.gfV1StockCounter();
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1669230350276').children('.module');
+  var $product = $module.closest('[data-label="Product"]');
+  var productCurrentId = "";
+  if ($product.length > 0) {
+    productCurrentId = $product.attr("id");
+  }
+  var changeVariantFunction = function (variant) {
+    if(variant&&variant.id){
+      var productHandle = $module.attr("data-phandle");
+      var newHandle = "/products/"+productHandle+"?variant="+variant.id;
+      $module.find('a').attr("href",newHandle);
+    }
+  }
+  if (window.GEMSTORE) {
+    window.GEMSTORE.subscribe("product-" + productCurrentId + "-variant", changeVariantFunction);
+  }
+})( window.GemQuery || jQuery );
+  
+    window.__gfAnimate.registerPageLoaded(jQuery("#e-1669230350245"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
+(function( jQuery ){
+  var $module = jQuery('#m-1669230350236').children('.module');
+  $module.gfV3Product();
+})( window.GemQuery || jQuery );
+    
+(function(jQuery) {
+  var $module = jQuery('#m-1669230350236-0').children('.module');
+  var effect = $module.attr('data-effect');
+  var magnify = $module.attr('data-zoom-level');
+  var displayType = $module.attr('data-displaytype');
+  $module.gfV3ProductImage({
+    'effect': effect,
+    'displayType': displayType,
+    'magnify': magnify
+  });
+})(window.GemQuery || jQuery);
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1669230350169').children('.module');
+  $module.gfV1StockCounter();
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1669230350196').children('.module');
+  var $product = $module.closest('[data-label="Product"]');
+  var productCurrentId = "";
+  if ($product.length > 0) {
+    productCurrentId = $product.attr("id");
+  }
+  var changeVariantFunction = function (variant) {
+    if(variant&&variant.id){
+      var productHandle = $module.attr("data-phandle");
+      var newHandle = "/products/"+productHandle+"?variant="+variant.id;
+      $module.find('a').attr("href",newHandle);
+    }
+  }
+  if (window.GEMSTORE) {
+    window.GEMSTORE.subscribe("product-" + productCurrentId + "-variant", changeVariantFunction);
+  }
+})( window.GemQuery || jQuery );
+  
+    window.__gfAnimate.registerPageLoaded(jQuery("#e-1669230350241"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
+    
   
     (function( jQuery ){
     var $module = jQuery('#m-1668879042656').children('.module');
