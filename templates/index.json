@@ -58,15 +58,6 @@
     "2e3f0543-ff3c-449d-a17e-479a4aebbbe6": {
       "type": "advanced-content",
       "blocks": {
-        "767a5859-fb4b-431c-9013-4c00b34deec3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/daily_deals.png",
-            "link": "shopify:\/\/collections\/deals-of-the-day",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
         "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
           "type": "image",
           "settings": {
@@ -75,14 +66,23 @@
             "width": "50%",
             "alignment": "center"
           }
+        },
+        "767a5859-fb4b-431c-9013-4c00b34deec3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/daily_deals.png",
+            "link": "shopify:\/\/collections\/deals-of-the-day",
+            "width": "50%",
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
-        "767a5859-fb4b-431c-9013-4c00b34deec3",
-        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0"
+        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0",
+        "767a5859-fb4b-431c-9013-4c00b34deec3"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "space_around": false
       }
     },
