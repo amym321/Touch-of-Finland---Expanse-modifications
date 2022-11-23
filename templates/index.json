@@ -58,15 +58,6 @@
     "2e3f0543-ff3c-449d-a17e-479a4aebbbe6": {
       "type": "advanced-content",
       "blocks": {
-        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/FREE_GIFT_1000_x_800_px.png",
-            "link": "shopify:\/\/products\/iittala-teema-dotted-grey-mug",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
         "767a5859-fb4b-431c-9013-4c00b34deec3": {
           "type": "image",
           "settings": {
@@ -75,11 +66,20 @@
             "width": "50%",
             "alignment": "center"
           }
+        },
+        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FREE_GIFT_1000_x_800_px.png",
+            "link": "shopify:\/\/products\/iittala-teema-dotted-grey-mug",
+            "width": "50%",
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
-        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0",
-        "767a5859-fb4b-431c-9013-4c00b34deec3"
+        "767a5859-fb4b-431c-9013-4c00b34deec3",
+        "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0"
       ],
       "settings": {
         "full_width": true,
