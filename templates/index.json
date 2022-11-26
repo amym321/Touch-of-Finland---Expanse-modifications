@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Black_Friday_Sale_Landscape_Banner_1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/mob.png",
+            "image": "shopify:\/\/shop_images\/smallbusinesswebdesktop.png",
+            "image_mobile": "shopify:\/\/shop_images\/smallbusinesswebmobile.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -641,7 +641,7 @@
         "16552962333bc0022d-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em>We typically send 3-4 emails per month with exclusive subscriber only offers.<\/em><\/p>"
+            "text": ""
           }
         },
         "16552962333bc0022d-2": {
