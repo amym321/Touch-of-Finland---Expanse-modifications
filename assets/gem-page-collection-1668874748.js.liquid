@@ -792,9 +792,164 @@
   
     window.__gfAnimate.registerPageLoaded(jQuery("#e-1668881079494"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
     
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1669824614372').children('.module');
+  $module.gfV3Product();
+})( window.GemQuery || jQuery );
+    
+(function(jQuery) {
+  var $module = jQuery('#m-1669824614372-0').children('.module');
+  var effect = $module.attr('data-effect');
+  var magnify = $module.attr('data-zoom-level');
+  var displayType = $module.attr('data-displaytype');
+  $module.gfV3ProductImage({
+    'effect': effect,
+    'displayType': displayType,
+    'magnify': magnify
+  });
+})(window.GemQuery || jQuery);
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1669824614361').children('.module');
+  $module.gfV1StockCounter();
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function(jQuery) {
+    var $module = jQuery('#m-1669824614384').children('.module');
+    $module.gfV3ProductPrice({
+        displayCurrency: true
+    });
+})(window.GemQuery || jQuery);
   
     (function( jQuery ){
-    var $module = jQuery('#m-1668879042656').children('.module');
+  var $module = jQuery('#m-1669824614288').children('.module');
+  var $product = $module.closest('[data-label="Product"]');
+  var productCurrentId = "";
+  if ($product.length > 0) {
+    productCurrentId = $product.attr("id");
+  }
+  var changeVariantFunction = function (variant) {
+    if(variant&&variant.id){
+      var productHandle = $module.attr("data-phandle");
+      var newHandle = "/products/"+productHandle+"?variant="+variant.id;
+      $module.find('a').attr("href",newHandle);
+    }
+  }
+  if (window.GEMSTORE) {
+    window.GEMSTORE.subscribe("product-" + productCurrentId + "-variant", changeVariantFunction);
+  }
+})( window.GemQuery || jQuery );
+  
+    window.__gfAnimate.registerPageLoaded(jQuery("#e-1669824614411"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
+(function( jQuery ){
+  var $module = jQuery('#m-1669824614369').children('.module');
+  $module.gfV3Product();
+})( window.GemQuery || jQuery );
+    
+(function(jQuery) {
+  var $module = jQuery('#m-1669824614369-0').children('.module');
+  var effect = $module.attr('data-effect');
+  var magnify = $module.attr('data-zoom-level');
+  var displayType = $module.attr('data-displaytype');
+  $module.gfV3ProductImage({
+    'effect': effect,
+    'displayType': displayType,
+    'magnify': magnify
+  });
+})(window.GemQuery || jQuery);
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1669824614304').children('.module');
+  $module.gfV1StockCounter();
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function(jQuery) {
+    var $module = jQuery('#m-1669824614326').children('.module');
+    $module.gfV3ProductPrice({
+        displayCurrency: true
+    });
+})(window.GemQuery || jQuery);
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1669824614371').children('.module');
+  var $product = $module.closest('[data-label="Product"]');
+  var productCurrentId = "";
+  if ($product.length > 0) {
+    productCurrentId = $product.attr("id");
+  }
+  var changeVariantFunction = function (variant) {
+    if(variant&&variant.id){
+      var productHandle = $module.attr("data-phandle");
+      var newHandle = "/products/"+productHandle+"?variant="+variant.id;
+      $module.find('a').attr("href",newHandle);
+    }
+  }
+  if (window.GEMSTORE) {
+    window.GEMSTORE.subscribe("product-" + productCurrentId + "-variant", changeVariantFunction);
+  }
+})( window.GemQuery || jQuery );
+  
+    window.__gfAnimate.registerPageLoaded(jQuery("#e-1669824614232"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
+(function( jQuery ){
+  var $module = jQuery('#m-1669824614302').children('.module');
+  $module.gfV3Product();
+})( window.GemQuery || jQuery );
+    
+(function(jQuery) {
+  var $module = jQuery('#m-1669824614302-0').children('.module');
+  var effect = $module.attr('data-effect');
+  var magnify = $module.attr('data-zoom-level');
+  var displayType = $module.attr('data-displaytype');
+  $module.gfV3ProductImage({
+    'effect': effect,
+    'displayType': displayType,
+    'magnify': magnify
+  });
+})(window.GemQuery || jQuery);
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1669824614394').children('.module');
+  $module.gfV1StockCounter();
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function(jQuery) {
+    var $module = jQuery('#m-1669824614289').children('.module');
+    $module.gfV3ProductPrice({
+        displayCurrency: true
+    });
+})(window.GemQuery || jQuery);
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1669824614252').children('.module');
+  var $product = $module.closest('[data-label="Product"]');
+  var productCurrentId = "";
+  if ($product.length > 0) {
+    productCurrentId = $product.attr("id");
+  }
+  var changeVariantFunction = function (variant) {
+    if(variant&&variant.id){
+      var productHandle = $module.attr("data-phandle");
+      var newHandle = "/products/"+productHandle+"?variant="+variant.id;
+      $module.find('a').attr("href",newHandle);
+    }
+  }
+  if (window.GEMSTORE) {
+    window.GEMSTORE.subscribe("product-" + productCurrentId + "-variant", changeVariantFunction);
+  }
+})( window.GemQuery || jQuery );
+  
+    window.__gfAnimate.registerPageLoaded(jQuery("#e-1669824614363"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"flip_in-x","delay":0,"duration":1000,"iteration-count":"1"},"interaction":{"key":"after-page-loaded","type":"level2"}}');
+    
+  
+    (function( jQuery ){
+    var $module = jQuery('#m-1669824614331').children('.module');
     var btnLabel = $module.attr('data-btnlabel');
     
     if ($module.attr('data-modelink') == 'auto'){
