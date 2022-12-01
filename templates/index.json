@@ -10,14 +10,14 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/most-popular-finnish-gifts",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/cyber_week.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/mobile.png",
+            "image_mobile": "shopify:\/\/shop_images\/jh.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -61,8 +61,8 @@
         "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/free_gift_today.png",
-            "link": "shopify:\/\/products\/iittala-kastehelmi-dewdrop-moss-green-tumblers-set-of-2",
+            "image": "shopify:\/\/shop_images\/free_gift_tote.png",
+            "link": "shopify:\/\/products\/marimekko-logo-tote-bag",
             "width": "50%",
             "alignment": "center"
           }
