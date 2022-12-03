@@ -11,7 +11,6 @@
         },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
           }
         },
@@ -23,12 +22,10 @@
             "inventory_transfers_enable": true
           }
         },
-        "29ba2e57-6ca5-4100-9a5b-4714c71baafd": {
-          "type": "sales_point",
-          "disabled": true,
+        "d21597cf-0292-4028-ad46-e6b40218921a": {
+          "type": "description",
           "settings": {
-            "icon": "truck",
-            "text": "Free Shipping on orders $99+ (US 48 only)"
+            "is_tab": false
           }
         },
         "variant_picker": {
@@ -48,22 +45,21 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false,
             "surface_pickup_enable": true
           }
         },
-        "53bbc097-a7ca-4f92-ae29-3fd358ad6986": {
-          "type": "share",
-          "disabled": true,
+        "29ba2e57-6ca5-4100-9a5b-4714c71baafd": {
+          "type": "sales_point",
           "settings": {
+            "icon": "truck",
+            "text": "Free Shipping on orders $99+ (US 48 only)"
           }
         },
-        "d21597cf-0292-4028-ad46-e6b40218921a": {
-          "type": "description",
+        "53bbc097-a7ca-4f92-ae29-3fd358ad6986": {
+          "type": "share",
           "settings": {
-            "is_tab": false
           }
         }
       },
@@ -71,12 +67,12 @@
         "7d9b2947-7144-4559-9aa8-9a44f8868fad",
         "price",
         "inventory_status",
-        "29ba2e57-6ca5-4100-9a5b-4714c71baafd",
+        "d21597cf-0292-4028-ad46-e6b40218921a",
         "variant_picker",
         "3c725b60-6084-44c9-a926-2c429dae1572",
         "buy_buttons",
-        "53bbc097-a7ca-4f92-ae29-3fd358ad6986",
-        "d21597cf-0292-4028-ad46-e6b40218921a"
+        "29ba2e57-6ca5-4100-9a5b-4714c71baafd",
+        "53bbc097-a7ca-4f92-ae29-3fd358ad6986"
       ],
       "settings": {
         "sku_enable": true,
@@ -130,7 +126,6 @@
     },
     "1630717068cbc2fb21": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "62fe51e7-3b69-454b-a1c8-56c58bbf04fe": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -154,7 +149,6 @@
     },
     "more-products-vendor": {
       "type": "more-products-vendor",
-      "disabled": true,
       "settings": {
       }
     },
