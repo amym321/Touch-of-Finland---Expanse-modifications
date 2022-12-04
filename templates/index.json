@@ -404,8 +404,9 @@
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#fff",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/mittens.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_40_cabad9aa-090a-4310-9b46-270ace923576.png",
             "overlay_opacity": 40,
             "focal_point": "center center"
           }
