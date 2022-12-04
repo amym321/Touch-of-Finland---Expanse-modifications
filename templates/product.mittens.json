@@ -43,18 +43,18 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "surface_pickup_enable": true
-          }
-        },
         "29ba2e57-6ca5-4100-9a5b-4714c71baafd": {
           "type": "sales_point",
           "settings": {
             "icon": "truck",
             "text": "Free Shipping on orders $99+ (US 48 only)"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
           }
         },
         "53bbc097-a7ca-4f92-ae29-3fd358ad6986": {
@@ -70,8 +70,8 @@
         "d21597cf-0292-4028-ad46-e6b40218921a",
         "variant_picker",
         "3c725b60-6084-44c9-a926-2c429dae1572",
-        "buy_buttons",
         "29ba2e57-6ca5-4100-9a5b-4714c71baafd",
+        "buy_buttons",
         "53bbc097-a7ca-4f92-ae29-3fd358ad6986"
       ],
       "settings": {
