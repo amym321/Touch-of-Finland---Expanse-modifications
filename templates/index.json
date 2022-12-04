@@ -478,6 +478,7 @@
     },
     "16553947720bf2b4fb": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "165539477203051642-0": {
           "type": "advanced",
@@ -570,6 +571,37 @@
         "space_below": false
       }
     },
+    "1655296233694739f0": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "16552962333bc0022d-0": {
+          "type": "title",
+          "settings": {
+            "title": "Subscribe for special offers & updates"
+          }
+        },
+        "16552962333bc0022d-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "16552962333bc0022d-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16552962333bc0022d-0",
+        "16552962333bc0022d-1",
+        "16552962333bc0022d-2"
+      ],
+      "settings": {
+        "color_scheme": "3"
+      }
+    },
     "16552982933c9c9de0": {
       "type": "logo-list",
       "blocks": {
@@ -629,36 +661,6 @@
         "divider": false
       }
     },
-    "1655296233694739f0": {
-      "type": "newsletter",
-      "blocks": {
-        "16552962333bc0022d-0": {
-          "type": "title",
-          "settings": {
-            "title": "Subscribe for special offers & updates"
-          }
-        },
-        "16552962333bc0022d-1": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "16552962333bc0022d-2": {
-          "type": "form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "16552962333bc0022d-0",
-        "16552962333bc0022d-1",
-        "16552962333bc0022d-2"
-      ],
-      "settings": {
-        "color_scheme": "3"
-      }
-    },
     "16553025618bbcbad5": {
       "type": "slideshow-split",
       "blocks": {
@@ -705,8 +707,8 @@
     "6e89dbe6-439b-40d7-abaf-5fa060d9a094",
     "16552286582d4b297e",
     "16553947720bf2b4fb",
-    "16552982933c9c9de0",
     "1655296233694739f0",
+    "16552982933c9c9de0",
     "16553025618bbcbad5"
   ]
 }
