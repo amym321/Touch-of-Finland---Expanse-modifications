@@ -112,18 +112,6 @@
         "max_width": false
       }
     },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {
-      }
-    },
-    "recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
-      "settings": {
-        "product_recommendations_heading": "Frequently bought together"
-      }
-    },
     "1630717068cbc2fb21": {
       "type": "apps",
       "blocks": {
@@ -139,6 +127,18 @@
       "settings": {
         "full_width": false,
         "space_around": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "Frequently bought together"
       }
     },
     "more-products-collection": {
@@ -175,9 +175,9 @@
   "order": [
     "main",
     "sub",
+    "1630717068cbc2fb21",
     "recently-viewed",
     "recommendations",
-    "1630717068cbc2fb21",
     "more-products-collection",
     "more-products-vendor",
     "1633533858b0f51ce0",
