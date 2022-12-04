@@ -369,6 +369,60 @@
         "space_around": false
       }
     },
+    "cd8c7749-9143-4b71-a934-a1cd5b1498c8": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14724126474318__cd8c7749-9143-4b71-a934-a1cd5b1498c8-1670174138d037ce77-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<br>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__cd8c7749-9143-4b71-a934-a1cd5b1498c8-1670174138d037ce77-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "58f3493b-3c34-4f4e-a602-f8a5282202f4": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14724126474318__58f3493b-3c34-4f4e-a602-f8a5282202f4-1670174139fee2854b-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>FinnGear Mittens<\/p>",
+            "title_size": 70,
+            "subheading": "Handmade from 100% upcycled wool",
+            "link": "shopify:\/\/collections\/finngear-mittens-1",
+            "link_text": "Shop Mittens",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/mittens.jpg",
+            "overlay_opacity": 40,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__58f3493b-3c34-4f4e-a602-f8a5282202f4-1670174139fee2854b-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "16552286582d4b297e": {
       "type": "featured-collections",
       "blocks": {
@@ -705,6 +759,8 @@
     "0ca16ad7-f1f3-41d9-934f-fbd76de85354",
     "16553090232769c836",
     "6e89dbe6-439b-40d7-abaf-5fa060d9a094",
+    "cd8c7749-9143-4b71-a934-a1cd5b1498c8",
+    "58f3493b-3c34-4f4e-a602-f8a5282202f4",
     "16552286582d4b297e",
     "16553947720bf2b4fb",
     "1655296233694739f0",
