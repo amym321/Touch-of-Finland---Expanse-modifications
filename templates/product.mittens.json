@@ -113,6 +113,7 @@
     },
     "1630717068cbc2fb21": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "62fe51e7-3b69-454b-a1c8-56c58bbf04fe": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
