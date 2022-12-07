@@ -386,10 +386,10 @@
             "image": "shopify:\/\/shop_images\/FREE_GIFT_1000_x_800_px_1000_x_800_px.png",
             "video_url": "",
             "width": "50",
-            "height": 500,
+            "height": 600,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "template--14724126474318__fd12863b-2ee0-4597-9604-6bc496607336-16703748967d9174c7-0": {
@@ -405,10 +405,10 @@
             "image": "shopify:\/\/shop_images\/MITTENS5.png",
             "video_url": "",
             "width": "50",
-            "height": 500,
+            "height": 600,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         }
       },
