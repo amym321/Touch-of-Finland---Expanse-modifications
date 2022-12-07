@@ -7,7 +7,7 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "",
+            "title": "<p><\/p>",
             "title_size": 70,
             "subheading": "",
             "link": "shopify:\/\/collections\/most-popular-finnish-gifts",
@@ -38,17 +38,17 @@
     "777d9b02-ff32-462b-8e05-2476f7619aee": {
       "type": "advanced-content",
       "blocks": {
-        "template--14724126474318__777d9b02-ff32-462b-8e05-2476f7619aee-1669223516e7fdec05-1": {
+        "45f95256-ec81-48d5-9b0d-ab3f882d8aa9": {
           "type": "liquid",
           "settings": {
             "code": "<br>",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center"
           }
         }
       },
       "block_order": [
-        "template--14724126474318__777d9b02-ff32-462b-8e05-2476f7619aee-1669223516e7fdec05-1"
+        "45f95256-ec81-48d5-9b0d-ab3f882d8aa9"
       ],
       "settings": {
         "full_width": false,
@@ -57,6 +57,7 @@
     },
     "2e3f0543-ff3c-449d-a17e-479a4aebbbe6": {
       "type": "advanced-content",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
           "type": "image",
@@ -135,7 +136,7 @@
           "disabled": true,
           "settings": {
             "top_subheading": "",
-            "title": "",
+            "title": "<p><\/p>",
             "title_size": 70,
             "subheading": "",
             "link": "",
@@ -375,7 +376,7 @@
         "template--14724126474318__cd8c7749-9143-4b71-a934-a1cd5b1498c8-1670174138d037ce77-1": {
           "type": "liquid",
           "settings": {
-            "code": "<br>",
+            "code": "<br><br>",
             "width": "50%",
             "alignment": "center"
           }
@@ -639,7 +640,7 @@
         "16552962333bc0022d-1": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "<p><\/p>"
           }
         },
         "16552962333bc0022d-2": {
