@@ -62,7 +62,7 @@
         "template--14724126474318__2e3f0543-ff3c-449d-a17e-479a4aebbbe6-1669223516e7fdec05-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/free_gift_tote.png",
+            "image": "shopify:\/\/shop_images\/MITTENS5.png",
             "link": "shopify:\/\/products\/marimekko-logo-tote-bag",
             "width": "50%",
             "alignment": "center"
@@ -370,28 +370,62 @@
         "space_around": false
       }
     },
-    "cd8c7749-9143-4b71-a934-a1cd5b1498c8": {
-      "type": "advanced-content",
+    "fd12863b-2ee0-4597-9604-6bc496607336": {
+      "type": "promo-grid",
       "blocks": {
-        "template--14724126474318__cd8c7749-9143-4b71-a934-a1cd5b1498c8-1670174138d037ce77-1": {
-          "type": "liquid",
+        "template--14724126474318__fd12863b-2ee0-4597-9604-6bc496607336-16703748967d9174c7-1": {
+          "type": "advanced",
           "settings": {
-            "code": "<br><br>",
-            "width": "50%",
-            "alignment": "center"
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "shopify:\/\/collections\/deals-of-the-day",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/FREE_GIFT_1000_x_800_px_1000_x_800_px.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        },
+        "template--14724126474318__fd12863b-2ee0-4597-9604-6bc496607336-16703748967d9174c7-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "FinnGear Mittens",
+            "textarea": "Handmade from 100% upcycled wool",
+            "cta_text1": "Shop Mittens",
+            "cta_link1": "shopify:\/\/collections\/finngear-mittens-1",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/MITTENS5.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
           }
         }
       },
       "block_order": [
-        "template--14724126474318__cd8c7749-9143-4b71-a934-a1cd5b1498c8-1670174138d037ce77-1"
+        "template--14724126474318__fd12863b-2ee0-4597-9604-6bc496607336-16703748967d9174c7-1",
+        "template--14724126474318__fd12863b-2ee0-4597-9604-6bc496607336-16703748967d9174c7-0"
       ],
       "settings": {
         "full_width": false,
-        "space_around": false
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
       }
     },
     "58f3493b-3c34-4f4e-a602-f8a5282202f4": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__58f3493b-3c34-4f4e-a602-f8a5282202f4-1670174139fee2854b-0": {
           "type": "hero",
@@ -761,7 +795,7 @@
     "0ca16ad7-f1f3-41d9-934f-fbd76de85354",
     "16553090232769c836",
     "6e89dbe6-439b-40d7-abaf-5fa060d9a094",
-    "cd8c7749-9143-4b71-a934-a1cd5b1498c8",
+    "fd12863b-2ee0-4597-9604-6bc496607336",
     "58f3493b-3c34-4f4e-a602-f8a5282202f4",
     "16552286582d4b297e",
     "16553947720bf2b4fb",
