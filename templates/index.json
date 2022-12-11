@@ -7,7 +7,7 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p><\/p>",
+            "title": "",
             "title_size": 70,
             "subheading": "",
             "link": "shopify:\/\/collections\/most-popular-finnish-gifts",
@@ -16,8 +16,8 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/F9INNMAS.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/FINNMAS.jpg",
+            "image": "shopify:\/\/shop_images\/SALE_ENDS_TONIGHT_d3358d67-873d-4e95-a3a6-51d2eb95902a.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/ALERT.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
