@@ -225,33 +225,12 @@
             "focal_point": "center",
             "color_accent": "#ffffff"
           }
-        },
-        "88de1b9d-2c48-4752-8189-20b8b3720d92": {
-          "type": "advanced",
-          "disabled": true,
-          "settings": {
-            "subheading": "ENTER TO WIN",
-            "heading": "WIN A TOIKKA BIRD!",
-            "textarea": "No purchase neccesary.",
-            "cta_text1": "Enter Now",
-            "cta_link1": "shopify:\/\/pages\/toikka-bird-giveaway",
-            "cta_text2": "",
-            "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/tb34.jpg",
-            "video_url": "",
-            "width": "100",
-            "height": 500,
-            "text_align": "vertical-center horizontal-left",
-            "focal_point": "center",
-            "color_accent": "#f18f01"
-          }
         }
       },
       "block_order": [
         "165539477203051642-0",
         "165539477203051642-1",
-        "d1b2c0fe-b7c9-4504-8c13-d06fa1340638",
-        "88de1b9d-2c48-4752-8189-20b8b3720d92"
+        "d1b2c0fe-b7c9-4504-8c13-d06fa1340638"
       ],
       "settings": {
         "full_width": false,
