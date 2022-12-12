@@ -6,18 +6,17 @@
         "template--14724126474318__70c2feb8-1c7a-448f-8e37-155a801b743e-1668689885b60481a4-0": {
           "type": "hero",
           "settings": {
-            "top_subheading": "FEATURED GIFT",
-            "title": "<p>Kupilka Cups<\/p>",
+            "top_subheading": "",
+            "title": "<p>Iittala Glassware<\/p>",
             "title_size": 70,
-            "subheading": "Made in Finland | Created for Adventure",
-            "link": "shopify:\/\/collections\/kupilka",
-            "link_text": "Shop Now",
+            "subheading": "Timeless Finnish Gifts",
+            "link": "shopify:\/\/collections\/iittala",
+            "link_text": "Shop Iittala",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#064e82",
+            "color_accent": "#941d1d",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/456.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/8888.png",
+            "image": "shopify:\/\/shop_images\/iittala-ultima-thule.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -28,7 +27,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -20,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
