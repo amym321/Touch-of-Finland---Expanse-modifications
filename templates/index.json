@@ -1,13 +1,47 @@
 {
   "sections": {
+    "baa21042-7da6-44d4-9f8c-2dda46dc6568": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--14724126474318__baa21042-7da6-44d4-9f8c-2dda46dc6568-167088752009e8ede1-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_2_d6d300cf-e71b-4ed8-8576-de6babc4fa60.png?v=1657805595\" alt=\"iittala\" width=\"150\">",
+            "textarea": "Timeless Finnish Gifts",
+            "cta_text1": "Shop Iittala",
+            "cta_link1": "shopify:\/\/collections\/iittala-by-type",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/iittala-ultima-thule.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 400,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__baa21042-7da6-44d4-9f8c-2dda46dc6568-167088752009e8ede1-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
     "70c2feb8-1c7a-448f-8e37-155a801b743e": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__70c2feb8-1c7a-448f-8e37-155a801b743e-1668689885b60481a4-0": {
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Iittala Glassware<\/p>",
+            "title": "<p>&lt;img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_2_d6d300cf-e71b-4ed8-8576-de6babc4fa60.png?v=1657805595\" alt=\"iittala\" width=\"150\"&gt;<\/p>",
             "title_size": 70,
             "subheading": "Timeless Finnish Gifts",
             "link": "shopify:\/\/collections\/iittala",
@@ -364,6 +398,7 @@
     }
   },
   "order": [
+    "baa21042-7da6-44d4-9f8c-2dda46dc6568",
     "70c2feb8-1c7a-448f-8e37-155a801b743e",
     "16553090232769c836",
     "16552286582d4b297e",
