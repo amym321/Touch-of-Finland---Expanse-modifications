@@ -231,8 +231,8 @@
           "e20b7a29-c223-445c-9712-4b3f067da933": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>Free Shipping on orders $99+ (US 48 only)<\/p>",
-              "richtext_mobile": ""
+              "richtext": "<p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>Limited Time Offer:<\/strong> Up to 65% off on Select Finnish Gifts!<\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/collections\/sale\" title=\"Sale\">Up to 65% Off on Select Finnish Gifts!<\/a><\/p>"
             }
           },
           "66861402-f063-4c1a-a2f3-d833ad59a823": {
