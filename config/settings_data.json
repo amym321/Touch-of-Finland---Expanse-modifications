@@ -231,8 +231,8 @@
           "e20b7a29-c223-445c-9712-4b3f067da933": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>Merry Markdowns: Up to 60% off!<\/strong><\/a><\/p>",
-              "richtext_mobile": ""
+              "richtext": "<p>Place your order thru December 18th for Christmas Delivery! (US 48 Only)<\/p>",
+              "richtext_mobile": "<p>Order thru 12\/18 for XMAS Delivery (US 48 only)<\/p>"
             }
           },
           "66861402-f063-4c1a-a2f3-d833ad59a823": {
