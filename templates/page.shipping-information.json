@@ -1,5 +1,29 @@
 {
   "sections": {
+    "9ea4f791-ecb4-4530-bc1a-6c234e16a455": {
+      "type": "promo-grid",
+      "blocks": {
+        "6eed647e-59d7-44c4-9958-73d7a123a315": {
+          "type": "banner",
+          "settings": {
+            "heading": "Place orders thru Dec 18th",
+            "text": "For Christmas Delivery (US 48 ONLY)",
+            "link": "",
+            "label": "",
+            "color_scheme": "5"
+          }
+        }
+      },
+      "block_order": [
+        "6eed647e-59d7-44c4-9958-73d7a123a315"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": false
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -120,7 +144,7 @@
         "align_text": "center",
         "narrow_column": true,
         "color_scheme": "none",
-        "divider": true
+        "divider": false
       }
     },
     "1633372070209a703b": {
@@ -143,7 +167,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p><strong>Or pay a flat rate of just $5.95<\/strong> for any order shipped within the contiguous US 48 States.<\/p><p><\/p><p><strong>Estimated domestic delivery time is 2-5 days depending on your location.<\/strong><\/p>"
+            "text": "<p><strong>Or pay a flat rate of just $5.95<\/strong> for any order shipped within the contiguous US 48 States.<\/p><p><\/p><p><strong>Estimated domestic delivery time is 2-5 days depending on your location. We now display estimated delivery dates at checkout.<\/strong><\/p>"
           }
         },
         "c98ad28e-3547-47aa-9d35-94afb849fed6": {
@@ -350,6 +374,7 @@
     }
   },
   "order": [
+    "9ea4f791-ecb4-4530-bc1a-6c234e16a455",
     "main",
     "16333663872c4ff09c",
     "163337257739af975a",
