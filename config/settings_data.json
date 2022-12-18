@@ -231,8 +231,8 @@
           "e20b7a29-c223-445c-9712-4b3f067da933": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>Place your order thru December 18th for Christmas Delivery! (US 48 Only)<\/p>",
-              "richtext_mobile": "<p>Order thru 12\/18 for XMAS Delivery (US 48 only)<\/p>"
+              "richtext": "<p><strong>There's still time to order for 12\/24 delivery!<\/strong> (US 48 Only)<\/p>",
+              "richtext_mobile": "<p><strong>Order thru 12\/18 for XMAS Delivery<\/strong> (US 48 only)<\/p>"
             }
           },
           "66861402-f063-4c1a-a2f3-d833ad59a823": {
@@ -358,12 +358,6 @@
       },
       "1630716072bce9a496": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "1347510106265755124": {
-        "type": "shopify:\/\/apps\/essential-countdown-timer\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
         "disabled": false,
         "settings": {
         }
