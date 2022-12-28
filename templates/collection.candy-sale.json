@@ -10,6 +10,7 @@
     },
     "1632970932008cb5bb": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "1c50f903-5743-4eb1-8369-60581ee02f35": {
           "type": "banner",
