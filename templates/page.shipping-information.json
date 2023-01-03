@@ -2,6 +2,7 @@
   "sections": {
     "9ea4f791-ecb4-4530-bc1a-6c234e16a455": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "6eed647e-59d7-44c4-9958-73d7a123a315": {
           "type": "banner",
