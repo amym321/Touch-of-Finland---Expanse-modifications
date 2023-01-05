@@ -243,11 +243,19 @@
               "richtext": "<p><a href=\"\/collections\/bianco-blu\" title=\"Bianco Blu\"><strong>15% off Bianco Blu | Shop Now<\/strong><\/a><\/p>",
               "richtext_mobile": "<p><a href=\"\/collections\/bianco-blu\" title=\"Bianco Blu\"><strong>15% off Bianco Blu | Shop Now<\/strong><\/a><\/p>"
             }
+          },
+          "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "<p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>TAKE AN EXTRA 10% OFF SALE ITEMS<\/strong><\/a><\/p><p><a href=\"\/collections\/sale\" title=\"Sale\">(DISCOUNT APPLIED IN CART)<\/a><\/p>",
+              "richtext_mobile": ""
+            }
           }
         },
         "block_order": [
           "66861402-f063-4c1a-a2f3-d833ad59a823",
-          "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54"
+          "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54",
+          "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad"
         ],
         "settings": {
           "announcement_center": true,
