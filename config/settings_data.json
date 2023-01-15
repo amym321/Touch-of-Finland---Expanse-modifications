@@ -246,9 +246,8 @@
           },
           "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>ENDS TONIGHT!<\/strong><\/a><\/p><p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>TAKE AN EXTRA 10% OFF SALE ITEMS<\/strong><\/a><\/p>",
+              "richtext": "<p><a href=\"\/collections\/sauna-accessories\" title=\"Sauna Accessories\"><strong>SAUNA STOCK UP SALE | SHOP HERE<\/strong><\/a><\/p>",
               "richtext_mobile": ""
             }
           }
