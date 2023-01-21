@@ -44,13 +44,49 @@
         "parallax": false
       }
     },
+    "235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Heikki Lunta is making our prices fall!"
+          }
+        },
+        "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Like the snow our prices are dropping on over 500 products; including best-sellers, new arrivals and more!<\/p>"
+          }
+        },
+        "280bb19c-37ee-4363-88ba-9a07e2516706": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/the-legend-of-heikki-lunta",
+            "link_text": "Read about Heikki Lunta"
+          }
+        }
+      },
+      "block_order": [
+        "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-0",
+        "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-1",
+        "280bb19c-37ee-4363-88ba-9a07e2516706"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
     "1632970932008cb5bb": {
       "type": "promo-grid",
       "blocks": {
         "1c50f903-5743-4eb1-8369-60581ee02f35": {
           "type": "banner",
           "settings": {
-            "heading": "Heikki Lunta has made prices drop!",
+            "heading": "",
             "text": "",
             "link": "shopify:\/\/pages\/the-legend-of-heikki-lunta",
             "label": "Learn about Heikki Lunta",
@@ -64,7 +100,7 @@
       "settings": {
         "full_width": true,
         "gutter_size": 0,
-        "space_above": true,
+        "space_above": false,
         "space_below": false
       }
     },
@@ -109,6 +145,7 @@
   "order": [
     "9ab7b1dc-333e-4122-83b0-757b1027b3f8",
     "collection-header",
+    "235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5",
     "1632970932008cb5bb",
     "main-collection",
     "recently-viewed"
