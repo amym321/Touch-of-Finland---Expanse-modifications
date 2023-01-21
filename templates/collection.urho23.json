@@ -49,10 +49,10 @@
         "1c50f903-5743-4eb1-8369-60581ee02f35": {
           "type": "banner",
           "settings": {
-            "heading": "Free Shipping",
-            "text": "with any purchase of $99+ (US 48 Only)",
-            "link": "shopify:\/\/pages\/shipping",
-            "label": "Details Here",
+            "heading": "Heikki Lunta has made prices drop!",
+            "text": "",
+            "link": "shopify:\/\/pages\/the-legend-of-heikki-lunta",
+            "label": "Learn about Heikki Lunta",
             "color_scheme": "1"
           }
         }
