@@ -62,10 +62,10 @@
         "1c50f903-5743-4eb1-8369-60581ee02f35"
       ],
       "settings": {
-        "full_width": false,
-        "gutter_size": 5,
-        "space_above": true,
-        "space_below": true
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
       }
     },
     "main-collection": {
