@@ -80,31 +80,6 @@
         "divider": false
       }
     },
-    "1632970932008cb5bb": {
-      "type": "promo-grid",
-      "disabled": true,
-      "blocks": {
-        "1c50f903-5743-4eb1-8369-60581ee02f35": {
-          "type": "banner",
-          "settings": {
-            "heading": "",
-            "text": "",
-            "link": "shopify:\/\/pages\/the-legend-of-heikki-lunta",
-            "label": "Learn about Heikki Lunta",
-            "color_scheme": "1"
-          }
-        }
-      },
-      "block_order": [
-        "1c50f903-5743-4eb1-8369-60581ee02f35"
-      ],
-      "settings": {
-        "full_width": true,
-        "gutter_size": 0,
-        "space_above": false,
-        "space_below": false
-      }
-    },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
@@ -147,7 +122,6 @@
     "9ab7b1dc-333e-4122-83b0-757b1027b3f8",
     "collection-header",
     "235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5",
-    "1632970932008cb5bb",
     "main-collection",
     "recently-viewed"
   ]
