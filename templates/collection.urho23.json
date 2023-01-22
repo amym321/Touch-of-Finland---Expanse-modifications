@@ -14,7 +14,7 @@
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/THE_LEGEND_OF_3.jpg",
             "image_mobile": "shopify:\/\/shop_images\/THE-LEGEND-OF-_800-x-800-px_-_2.png",
@@ -50,14 +50,14 @@
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-0": {
           "type": "heading",
           "settings": {
-            "title": "Heikki Lunta is making our prices fall!"
+            "title": "Heikki Lunta brings you savings!"
           }
         },
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-1": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>This week only! Like the snow, our prices are dropping on over 500 products; including best-sellers, new arrivals and more!<\/p>"
+            "text": "<p>Prices are falling like snow on over 500 products, including top sellers and new arrivals!<\/p>"
           }
         },
         "280bb19c-37ee-4363-88ba-9a07e2516706": {
