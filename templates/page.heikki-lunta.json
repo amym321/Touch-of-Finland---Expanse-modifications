@@ -1,1 +1,84 @@
-{"sections":{"1642951787b338ca84":{"type":"slideshow","blocks":{"1642951787a6a49b24-0":{"type":"hero","settings":{"top_subheading":"","title":"","title_size":70,"subheading":"","link":"","link_text":"","link_2":"","link_text_2":"","color_accent":"#ffffff","text_align":"vertical-bottom horizontal-left","image":"shopify:\/\/shop_images\/According_to_local_Finnish-American_mythology_of_the_Upper_Peninsula_Heikki_Lunta_the_Finnish_snow_god_is_said_to_live_deep_in_the_woods_of_Tapiola_and_brings_with_him_abundant_snow_s_4f7937d4-f4c9-4c38-aad2-a9e340dc8229.jpg","image_mobile":"shopify:\/\/shop_images\/According_to_local_Finnish-American_mythology_of_the_Upper_Peninsula_Heikki_Lunta_the_Finnish_snow_god_is_said_to_live_deep_in_the_woods_of_Tapiola_and_brings_with_him_abundant_snow_s_1eec1234-e8b8-4357-b76a-c7530a7d6ff4.jpg","overlay_opacity":0,"focal_point":"center center"}}},"block_order":["1642951787a6a49b24-0"],"settings":{"full_width":true,"desktop_size":0,"mobile_size":0,"style":"arrows","autoplay":true,"autoplay_speed":7}},"main":{"type":"main-page","settings":{}},"16429526217afcfe07":{"type":"slideshow","disabled":true,"blocks":{"164295262078f404c1-0":{"type":"hero","settings":{"top_subheading":"HEIKKI LUNTA","title":"<p>SITEWIDE SALE<\/p>","title_size":70,"subheading":"400+ items on sale today only","link":"https:\/\/www.touchoffinland.com\/collections\/heikki-lunta-sale","link_text":"Shop Now","link_2":"","link_text_2":"","color_accent":"#064e82","text_align":"vertical-center horizontal-center","image":"shopify:\/\/shop_images\/According_to_local_Finnish-American_mythology_of_the_Upper_Peninsula_Heikki_Lunta_the_Finnish_snow_god_is_said_to_live_deep_in_the_woods_of_Tapiola_and_brings_with_him_abundant_snow_s_df353107-0b8d-43f3-9708-b82331261e65.jpg","overlay_opacity":0,"focal_point":"center center"}}},"block_order":["164295262078f404c1-0"],"settings":{"full_width":true,"desktop_size":-20,"mobile_size":20,"style":"arrows","autoplay":true,"autoplay_speed":7}}},"order":["1642951787b338ca84","main","16429526217afcfe07"]}
+{
+  "sections": {
+    "1642951787b338ca84": {
+      "type": "slideshow",
+      "blocks": {
+        "1642951787a6a49b24-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/According_to_local_Finnish-American_mythology_of_the_Upper_Peninsula_Heikki_Lunta_the_Finnish_snow_god_is_said_to_live_deep_in_the_woods_of_Tapiola_and_brings_with_him_abundant_snow_s_4f7937d4-f4c9-4c38-aad2-a9e340dc8229.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/According_to_local_Finnish-American_mythology_of_the_Upper_Peninsula_Heikki_Lunta_the_Finnish_snow_god_is_said_to_live_deep_in_the_woods_of_Tapiola_and_brings_with_him_abundant_snow_s_1eec1234-e8b8-4357-b76a-c7530a7d6ff4.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1642951787a6a49b24-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16429526217afcfe07": {
+      "type": "slideshow",
+      "blocks": {
+        "164295262078f404c1-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "https:\/\/www.touchoffinland.com\/collections\/heikki-lunta-sale",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#064e82",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/THE_LEGEND_OF_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/THE-LEGEND-OF-_800-x-800-px_-_2.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "164295262078f404c1-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "1642951787b338ca84",
+    "main",
+    "16429526217afcfe07"
+  ]
+}
