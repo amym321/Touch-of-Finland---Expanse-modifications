@@ -2,7 +2,6 @@
   "sections": {
     "695b845f-4726-41c6-ad13-342155b6705c": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__695b845f-4726-41c6-ad13-342155b6705c-1671065729b2d7b402-0": {
           "type": "hero",
@@ -11,14 +10,14 @@
             "title": "",
             "title_size": 70,
             "subheading": "",
-            "link": "shopify:\/\/collections\/sauna-accessories",
+            "link": "shopify:\/\/collections\/heikki-lunta-sale",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/STOCK_SAUNA.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/stock_up_mobiule.png",
+            "image": "shopify:\/\/shop_images\/THE_LEGEND_OF_2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/THE-LEGEND-OF-_800-x-800-px_-_2.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -38,6 +37,7 @@
     },
     "baa21042-7da6-44d4-9f8c-2dda46dc6568": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__baa21042-7da6-44d4-9f8c-2dda46dc6568-167088752009e8ede1-0": {
           "type": "advanced",
