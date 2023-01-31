@@ -2,6 +2,7 @@
   "sections": {
     "cf6257d2-9079-4c0b-81de-7ee1a6917fb4": {
       "type": "advanced-content",
+      "disabled": true,
       "blocks": {
         "275b3433-a03e-44b9-8cdc-5fa49efcfd45": {
           "type": "liquid",
@@ -47,8 +48,8 @@
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0"
       ],
       "settings": {
-        "full_width": false,
-        "gutter_size": 10,
+        "full_width": true,
+        "gutter_size": 20,
         "space_above": false,
         "space_below": false
       }
