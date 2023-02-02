@@ -14,7 +14,7 @@
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
             "image_mobile": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
@@ -168,7 +168,7 @@
         "collection6": {
           "type": "collection",
           "settings": {
-            "collection": "aarikka",
+            "collection": "lumoava-jewelry",
             "title": ""
           }
         }
