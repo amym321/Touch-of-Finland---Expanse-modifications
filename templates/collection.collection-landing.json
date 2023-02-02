@@ -103,7 +103,7 @@
             "title_size": 70,
             "subheading": "ALL FINNISH JEWELRY ON SALE!",
             "link": "shopify:\/\/collections\/finnish-jewelry",
-            "link_text": "Shop Jewelry",
+            "link_text": "Shop Jewelry Sale",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
@@ -208,7 +208,7 @@
             "title_size": 70,
             "subheading": "ALL FINNISH CANDY ON SALE!",
             "link": "shopify:\/\/collections\/finnish-candy-and-food",
-            "link_text": "Shop Candy",
+            "link_text": "Shop Candy Sale",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
@@ -302,6 +302,52 @@
         "divider": false
       }
     },
+    "967587b2-4640-4fbc-b261-8d455ba28a66": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14724125818958__967587b2-4640-4fbc-b261-8d455ba28a66-167535103430f22c11-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>Finnish Beauty Sale<\/p>",
+            "title_size": 70,
+            "subheading": "ALL BATH & BODY ON SALE!",
+            "link": "shopify:\/\/collections\/bath-body",
+            "link_text": "Shop Beauty Sale",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_9.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-02T102059.344.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724125818958__967587b2-4640-4fbc-b261-8d455ba28a66-167535103430f22c11-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "b5829ce5-53b7-44f6-8e4f-b2cbaf3b3d74": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "home_featured_products": "bath-body",
+        "count": 10,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "promo-grid2": {
       "type": "promo-grid",
       "disabled": true,
@@ -390,6 +436,8 @@
     "1559babe-6f49-4f50-9277-8b873b8d47dd",
     "75029e64-53f0-412a-ba1a-8ae4576e6f11",
     "featured-collection2",
+    "967587b2-4640-4fbc-b261-8d455ba28a66",
+    "b5829ce5-53b7-44f6-8e4f-b2cbaf3b3d74",
     "promo-grid2",
     "main-collection"
   ]
