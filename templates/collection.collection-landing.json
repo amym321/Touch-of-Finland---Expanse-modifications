@@ -144,13 +144,6 @@
             "title": ""
           }
         },
-        "collection3": {
-          "type": "collection",
-          "settings": {
-            "collection": "pohjolan-helmi-jewelry",
-            "title": ""
-          }
-        },
         "collection6": {
           "type": "collection",
           "settings": {
@@ -165,6 +158,13 @@
             "title": ""
           }
         },
+        "collection3": {
+          "type": "collection",
+          "settings": {
+            "collection": "pohjolan-helmi-jewelry",
+            "title": ""
+          }
+        },
         "collection5": {
           "type": "collection",
           "settings": {
@@ -176,9 +176,9 @@
       "block_order": [
         "collection1",
         "collection2",
-        "collection3",
         "collection6",
         "collection4",
+        "collection3",
         "collection5"
       ],
       "settings": {
