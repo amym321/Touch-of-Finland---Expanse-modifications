@@ -1,7 +1,43 @@
 {
   "sections": {
+    "8d8fc6c0-b9b4-42df-970b-dde33ccf020f": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14724125818958__8d8fc6c0-b9b4-42df-970b-dde33ccf020f-16753453586fd3491a-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "FEATURED SALE",
+            "title": "<p>Finnish Valentine's Gifts<\/p>",
+            "title_size": 60,
+            "subheading": "Save on Jewelry, Candy, Beauty & More!",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724125818958__8d8fc6c0-b9b4-42df-970b-dde33ccf020f-16753453586fd3491a-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": -10,
+        "mobile_size": 10,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "promo-grid": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "banner": {
           "type": "banner",
@@ -27,7 +63,7 @@
             "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
             "video_url": "",
             "width": "100",
-            "height": 200,
+            "height": 160,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#ffffff"
@@ -345,6 +381,7 @@
     }
   },
   "order": [
+    "8d8fc6c0-b9b4-42df-970b-dde33ccf020f",
     "promo-grid",
     "featured-collection",
     "3a8c3712-87f9-46ae-afb7-ae6dfcba7bab",
