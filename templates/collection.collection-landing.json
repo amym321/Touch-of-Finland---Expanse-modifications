@@ -127,17 +127,6 @@
         "autoplay_speed": 7
       }
     },
-    "featured-collection3": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "home_featured_products": "finnish-jewelry",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": false,
-        "divider": false
-      }
-    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -194,6 +183,17 @@
       ],
       "settings": {
         "title": "",
+        "divider": false
+      }
+    },
+    "featured-collection3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "home_featured_products": "finnish-jewelry",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": false,
         "divider": false
       }
     },
@@ -431,8 +431,8 @@
     "promo-grid",
     "featured-collection",
     "3a8c3712-87f9-46ae-afb7-ae6dfcba7bab",
-    "featured-collection3",
     "featured-collections",
+    "featured-collection3",
     "1559babe-6f49-4f50-9277-8b873b8d47dd",
     "75029e64-53f0-412a-ba1a-8ae4576e6f11",
     "featured-collection2",
