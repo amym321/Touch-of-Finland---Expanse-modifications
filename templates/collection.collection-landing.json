@@ -320,7 +320,7 @@
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/Untitled_design_9.jpg",
             "image_mobile": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-02T102059.344.png",
-            "overlay_opacity": 0,
+            "overlay_opacity": 24,
             "focal_point": "center center"
           }
         }
