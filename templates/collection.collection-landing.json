@@ -18,7 +18,7 @@
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/Untitled_design_12.jpg",
             "image_mobile": "shopify:\/\/shop_images\/Untitled_design_13.jpg",
-            "overlay_opacity": 24,
+            "overlay_opacity": 40,
             "focal_point": "center center"
           }
         }
