@@ -24,10 +24,10 @@
             "cta_link1": "",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/unikko1.png",
+            "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
             "video_url": "",
             "width": "100",
-            "height": 260,
+            "height": 200,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#ffffff"
@@ -70,10 +70,11 @@
             "link_text": "Shop Jewelry",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Untitled_design_9_ed9fddc5-7edf-490d-a7bb-d77d2d50aee1.jpg",
-            "overlay_opacity": 10,
+            "image": "shopify:\/\/shop_images\/Untitled_design_4.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_5_b248298c-fa15-44d3-980e-df5cc053555e.jpg",
+            "overlay_opacity": 0,
             "focal_point": "center center"
           }
         }
@@ -83,7 +84,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": -40,
+        "desktop_size": 0,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -174,9 +175,10 @@
             "link_text": "Shop Candy",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/candy_0a66b30a-6e9b-41fa-8a6b-fc2e2a0da692.png",
+            "image": "shopify:\/\/shop_images\/Untitled_design_8_3d08cec5-ed3c-4035-a8c4-7a620ee52cd8.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_6_914e5685-9425-42ee-92bf-d10c6254ae7f.jpg",
             "overlay_opacity": 10,
             "focal_point": "center center"
           }
@@ -187,7 +189,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": -20,
+        "desktop_size": 0,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
