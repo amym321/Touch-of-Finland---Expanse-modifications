@@ -151,6 +151,13 @@
             "title": ""
           }
         },
+        "collection6": {
+          "type": "collection",
+          "settings": {
+            "collection": "lumoava-jewelry",
+            "title": ""
+          }
+        },
         "collection4": {
           "type": "collection",
           "settings": {
@@ -164,22 +171,15 @@
             "collection": "chao-eero-finnish-jewelry",
             "title": ""
           }
-        },
-        "collection6": {
-          "type": "collection",
-          "settings": {
-            "collection": "lumoava-jewelry",
-            "title": ""
-          }
         }
       },
       "block_order": [
         "collection1",
         "collection2",
         "collection3",
+        "collection6",
         "collection4",
-        "collection5",
-        "collection6"
+        "collection5"
       ],
       "settings": {
         "title": "",
