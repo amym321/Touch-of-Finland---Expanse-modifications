@@ -14,7 +14,7 @@
     "color_large_image_bg": "#f9fafb",
     "color_header": "#ffffff",
     "color_header_text": "#464646",
-    "color_announcement": "#941d1d",
+    "color_announcement": "#064e82",
     "color_announcement_text": "#ffffff",
     "color_header_search": "#f9fafb",
     "color_footer": "#f9f9fb",
@@ -238,10 +238,9 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/finnish-valentines-gift-sale\" title=\"Finnish Valentine's Gift Sale\"><strong>Finnish Valentine's Gift Sale! Shop Now<\/strong><\/a><\/p>",
-              "richtext_mobile": ""
+              "richtext": "<p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>Super Sunday Sale: Up to 65% Off + Extra 10% Off Sale Items!<\/strong><\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/collections\/sale\" title=\"Sale\"><strong>Up to 65% Off + Extra 10% Off Sale Items!<\/strong><\/a><\/p>"
             }
           },
           "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad": {
