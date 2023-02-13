@@ -97,7 +97,7 @@
             "image": "shopify:\/\/shop_images\/iittala-ultima-thule.jpg",
             "video_url": "",
             "width": "50",
-            "height": 700,
+            "height": 800,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#ffffff"
@@ -116,7 +116,7 @@
             "image": "shopify:\/\/shop_images\/Iittala_2022_Recycled_collection_1_2.jpg",
             "video_url": "",
             "width": "50",
-            "height": 700,
+            "height": 800,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#ffffff"
