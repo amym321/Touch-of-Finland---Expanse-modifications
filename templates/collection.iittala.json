@@ -50,7 +50,7 @@
         "full_width": true,
         "gutter_size": 1,
         "space_above": false,
-        "space_below": false
+        "space_below": true
       }
     },
     "630863e8-8613-4b5c-abb9-9e430afb5048": {
