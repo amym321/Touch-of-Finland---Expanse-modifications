@@ -148,7 +148,7 @@
         "850a47f2-56c1-49e2-b116-bf65ce0fde70"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "gutter_size": 20,
         "space_above": true,
         "space_below": false
