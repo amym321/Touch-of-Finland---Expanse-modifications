@@ -121,23 +121,43 @@
             "focal_point": "center",
             "color_accent": "#ffffff"
           }
+        },
+        "850a47f2-56c1-49e2-b116-bf65ce0fde70": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "New for 2023",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Browse New Arrivals",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/iittala-new-arrivals-2023.png",
+            "video_url": "",
+            "width": "100",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
         }
       },
       "block_order": [
         "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-0",
-        "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-1"
+        "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-1",
+        "850a47f2-56c1-49e2-b116-bf65ce0fde70"
       ],
       "settings": {
         "full_width": false,
         "gutter_size": 20,
         "space_above": true,
-        "space_below": true
+        "space_below": false
       }
     },
     "5ae1376e-d798-4564-ae92-2e1cf2aa1575": {
       "type": "featured-collection",
       "settings": {
-        "title": "New Arrivals",
+        "title": "Classics Reborn",
         "home_featured_products": "new-arrivals-from-iittala",
         "count": 5,
         "mobile_scrollable": true,
