@@ -81,6 +81,17 @@
         "divider": false
       }
     },
+    "5ae1376e-d798-4564-ae92-2e1cf2aa1575": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New for Spring",
+        "home_featured_products": "new-arrivals-from-iittala",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "cc5d75f9-1916-486b-9a66-5967e7eafd92": {
       "type": "promo-grid",
       "blocks": {
@@ -134,17 +145,6 @@
         "space_below": true
       }
     },
-    "5ae1376e-d798-4564-ae92-2e1cf2aa1575": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New for Spring",
-        "home_featured_products": "new-arrivals-from-iittala",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "main-collection": {
       "type": "main-collection",
       "disabled": true,
@@ -183,8 +183,8 @@
   "order": [
     "03df492b-1e60-40e3-b844-775b94a28869",
     "630863e8-8613-4b5c-abb9-9e430afb5048",
-    "cc5d75f9-1916-486b-9a66-5967e7eafd92",
     "5ae1376e-d798-4564-ae92-2e1cf2aa1575",
+    "cc5d75f9-1916-486b-9a66-5967e7eafd92",
     "main-collection"
   ]
 }
