@@ -81,6 +81,59 @@
         "divider": false
       }
     },
+    "cc5d75f9-1916-486b-9a66-5967e7eafd92": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Collections",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Explore Collections",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/iittala-ultima-thule.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        },
+        "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Type",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop by Type",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Iittala_2022_Recycled_collection_1_2.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-0",
+        "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
     "5ae1376e-d798-4564-ae92-2e1cf2aa1575": {
       "type": "featured-collection",
       "settings": {
@@ -130,6 +183,7 @@
   "order": [
     "03df492b-1e60-40e3-b844-775b94a28869",
     "630863e8-8613-4b5c-abb9-9e430afb5048",
+    "cc5d75f9-1916-486b-9a66-5967e7eafd92",
     "5ae1376e-d798-4564-ae92-2e1cf2aa1575",
     "main-collection"
   ]
