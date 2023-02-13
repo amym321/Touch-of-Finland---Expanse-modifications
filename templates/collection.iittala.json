@@ -19,7 +19,7 @@
             "height": 300,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "bottom",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "template--17990710821178__03df492b-1e60-40e3-b844-775b94a28869-16763100920773d4f8-1": {
@@ -38,7 +38,7 @@
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         }
       },
@@ -97,10 +97,10 @@
             "image": "shopify:\/\/shop_images\/iittala-ultima-thule.jpg",
             "video_url": "",
             "width": "50",
-            "height": 500,
+            "height": 700,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "template--17990710821178__cc5d75f9-1916-486b-9a66-5967e7eafd92-16763100920773d4f8-1": {
@@ -116,10 +116,10 @@
             "image": "shopify:\/\/shop_images\/Iittala_2022_Recycled_collection_1_2.jpg",
             "video_url": "",
             "width": "50",
-            "height": 500,
+            "height": 700,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         }
       },
