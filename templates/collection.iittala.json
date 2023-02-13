@@ -135,7 +135,7 @@
             "image": "shopify:\/\/shop_images\/iittala-new-arrivals-2023.png",
             "video_url": "",
             "width": "100",
-            "height": 500,
+            "height": 700,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#fff"
@@ -157,7 +157,7 @@
     "5ae1376e-d798-4564-ae92-2e1cf2aa1575": {
       "type": "featured-collection",
       "settings": {
-        "title": "Classics Reborn",
+        "title": "",
         "home_featured_products": "new-arrivals-from-iittala",
         "count": 5,
         "mobile_scrollable": true,
