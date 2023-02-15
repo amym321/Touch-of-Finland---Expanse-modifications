@@ -126,12 +126,6 @@
       "settings": {
       }
     },
-    "recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "product_recommendations_heading": "Frequently bought together"
-      }
-    },
     "1630717068cbc2fb21": {
       "type": "apps",
       "blocks": {
@@ -147,6 +141,12 @@
       "settings": {
         "full_width": false,
         "space_around": false
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Frequently bought together"
       }
     },
     "more-products-collection": {
@@ -171,8 +171,8 @@
     "main",
     "sub",
     "recently-viewed",
-    "recommendations",
     "1630717068cbc2fb21",
+    "recommendations",
     "more-products-collection",
     "more-products-vendor",
     "collection-return"
