@@ -3,12 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "7d9b2947-7144-4559-9aa8-9a44f8868fad": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -17,15 +11,8 @@
         "inventory_status": {
           "type": "inventory_status",
           "settings": {
-            "inventory_threshold": 4,
+            "inventory_threshold": 2,
             "inventory_transfers_enable": true
-          }
-        },
-        "29ba2e57-6ca5-4100-9a5b-4714c71baafd": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "truck",
-            "text": "Free Shipping on orders $99+ (US 48 only)"
           }
         },
         "variant_picker": {
@@ -34,6 +21,13 @@
             "variant_labels": true,
             "picker_type": "button",
             "color_swatches": false
+          }
+        },
+        "29ba2e57-6ca5-4100-9a5b-4714c71baafd": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Free Shipping on orders $99+ (US 48 only)"
           }
         },
         "3c725b60-6084-44c9-a926-2c429dae1572": {
@@ -48,6 +42,12 @@
             "surface_pickup_enable": true
           }
         },
+        "cceaea78-b70e-4866-949a-226d58a4d43c": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
         "53bbc097-a7ca-4f92-ae29-3fd358ad6986": {
           "type": "share",
           "settings": {
@@ -55,13 +55,13 @@
         }
       },
       "block_order": [
-        "7d9b2947-7144-4559-9aa8-9a44f8868fad",
         "price",
         "inventory_status",
-        "29ba2e57-6ca5-4100-9a5b-4714c71baafd",
         "variant_picker",
+        "29ba2e57-6ca5-4100-9a5b-4714c71baafd",
         "3c725b60-6084-44c9-a926-2c429dae1572",
         "buy_buttons",
+        "cceaea78-b70e-4866-949a-226d58a4d43c",
         "53bbc097-a7ca-4f92-ae29-3fd358ad6986"
       ],
       "settings": {
@@ -79,6 +79,7 @@
     },
     "sub": {
       "type": "product-full-width",
+      "disabled": true,
       "blocks": {
         "4496f1e9-fd2d-40dc-9572-e90f0491f8e4": {
           "type": "text",

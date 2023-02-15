@@ -75,6 +75,7 @@
     "cart_terms_conditions_enable": false,
     "social_facebook_link": "https:\/\/www.facebook.com\/touchoffinland",
     "social_instagram_link": "https:\/\/www.instagram.com\/touchoffinland",
+    "share_twitter": false,
     "favicon": "shopify:\/\/shop_images\/TOFSYMBOL_e9694ea3-b37d-4ff0-a3f0-476552a32401.png",
     "search_type": "product",
     "predictive_search_enabled": false,
