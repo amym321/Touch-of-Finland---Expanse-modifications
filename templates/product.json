@@ -155,15 +155,15 @@
       "settings": {
       }
     },
+    "more-products-vendor": {
+      "type": "more-products-vendor",
+      "settings": {
+      }
+    },
     "collection-return": {
       "type": "collection-return",
       "settings": {
         "color_scheme": "1"
-      }
-    },
-    "more-products-vendor": {
-      "type": "more-products-vendor",
-      "settings": {
       }
     }
   },
@@ -174,7 +174,7 @@
     "1630717068cbc2fb21",
     "recommendations",
     "more-products-collection",
-    "collection-return",
-    "more-products-vendor"
+    "more-products-vendor",
+    "collection-return"
   ]
 }
