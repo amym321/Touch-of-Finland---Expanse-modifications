@@ -49,11 +49,6 @@
             "is_tab": false
           }
         },
-        "53bbc097-a7ca-4f92-ae29-3fd358ad6986": {
-          "type": "share",
-          "settings": {
-          }
-        },
         "5b358da3-0174-4d57-972d-63398bfeedf3": {
           "type": "tab",
           "settings": {
@@ -69,6 +64,11 @@
             "content": "<p>Buy with confidence. Easily return unwanted items within 365 days of original purchase. View full return policy.<\/p>",
             "page": "return-policy"
           }
+        },
+        "53bbc097-a7ca-4f92-ae29-3fd358ad6986": {
+          "type": "share",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -79,9 +79,9 @@
         "3c725b60-6084-44c9-a926-2c429dae1572",
         "buy_buttons",
         "cceaea78-b70e-4866-949a-226d58a4d43c",
-        "53bbc097-a7ca-4f92-ae29-3fd358ad6986",
         "5b358da3-0174-4d57-972d-63398bfeedf3",
-        "92a3ae06-83ae-436b-a8e9-71474e2f299e"
+        "92a3ae06-83ae-436b-a8e9-71474e2f299e",
+        "53bbc097-a7ca-4f92-ae29-3fd358ad6986"
       ],
       "settings": {
         "sku_enable": true,
