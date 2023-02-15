@@ -53,7 +53,7 @@
           "type": "tab",
           "settings": {
             "title": "Free Shipping on orders $99+",
-            "content": "<ul><li><strong>Spend $99+ and receive FREE SHIPPING (US 48 only).<\/strong><\/li><li>Otherwise, pay just $5.95 flat rate.<\/li><li><em>All international shipping rates are calculated at checkout.<\/em><\/li><\/ul>",
+            "content": "<ul><li><strong>Purchases of $99+ receive FREE SHIPPING.<\/strong><\/li><li>Otherwise, pay just $5.95 flat rate.<\/li><li><em>All international shipping rates are calculated at checkout.<\/em><\/li><\/ul>",
             "page": ""
           }
         },
@@ -61,7 +61,7 @@
           "type": "tab",
           "settings": {
             "title": "90-Day Returns",
-            "content": "<p>Buy with confidence. Easily return unwanted items within 365 days of original purchase. View full return policy.<\/p>",
+            "content": "<p>Buy with confidence. Easily return unwanted items within 365 days of original purchase. <a href=\"\/pages\/return-policy\" title=\"Return Policy\">View full return policy.<\/a><\/p>",
             "page": "return-policy"
           }
         },
