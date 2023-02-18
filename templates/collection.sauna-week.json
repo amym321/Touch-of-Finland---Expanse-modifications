@@ -1,7 +1,42 @@
 {
   "sections": {
+    "7ed0743d-5439-4e08-98ec-afb69ff12e48": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18048710377786__7ed0743d-5439-4e08-98ec-afb69ff12e48-1676741620b80c2269-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "<p>National Sauna Week Sale!<\/p>",
+            "title_size": 70,
+            "subheading": "All Sauna & Bath on Sale!",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/68859977_2424637234241194_1019257251862413312_n.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18048710377786__7ed0743d-5439-4e08-98ec-afb69ff12e48-1676741620b80c2269-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": -70,
+        "mobile_size": -50,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "collection-header": {
       "type": "collection-header",
+      "disabled": true,
       "settings": {
         "enable": true,
         "collection_image_enable": true,
@@ -71,6 +106,7 @@
     }
   },
   "order": [
+    "7ed0743d-5439-4e08-98ec-afb69ff12e48",
     "collection-header",
     "1632970932008cb5bb",
     "main-collection",
