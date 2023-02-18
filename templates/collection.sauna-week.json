@@ -16,7 +16,7 @@
             "link_text_2": "",
             "color_accent": "#fff",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/68859977_2424637234241194_1019257251862413312_n.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled_design_14.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -27,8 +27,8 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": -70,
-        "mobile_size": -50,
+        "desktop_size": 0,
+        "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
