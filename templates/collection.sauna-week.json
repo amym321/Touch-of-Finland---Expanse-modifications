@@ -14,7 +14,7 @@
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/Untitled_design_14.jpg",
             "overlay_opacity": 0,
@@ -28,7 +28,7 @@
       "settings": {
         "full_width": true,
         "desktop_size": 0,
-        "mobile_size": 0,
+        "mobile_size": 40,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
