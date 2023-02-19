@@ -67,6 +67,24 @@
         "space_below": false
       }
     },
+    "792b2f81-b8d3-4945-8e75-b76fd21bb8cb": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Iittala-Kartio-Ultramarine-Blue-Pitcher-3.png",
+        "image2": "shopify:\/\/shop_images\/iittala-new-for-2023-items.png",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "New for Spring",
+        "text": "<p>See what's new for spring. Discover the new Tundra glassware and Ultramarine Blue color.<\/p>",
+        "button_label": "See New Arrivals",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "color_scheme": "2",
+        "divider": true
+      }
+    },
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981": {
       "type": "featured-collection",
       "settings": {
@@ -327,6 +345,7 @@
     "collection-header",
     "main-collection",
     "1632970932008cb5bb",
+    "792b2f81-b8d3-4945-8e75-b76fd21bb8cb",
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "12f46367-d9a2-46c4-ae52-eeb220c44850",
     "0237957c-2aee-4e35-a559-ae1031944355",
