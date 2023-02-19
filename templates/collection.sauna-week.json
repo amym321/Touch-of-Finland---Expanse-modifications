@@ -46,6 +46,44 @@
     "1632970932008cb5bb": {
       "type": "promo-grid",
       "blocks": {
+        "ed7a7fcb-02c1-404f-9928-e3d841aab16a": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Sauna Accessories",
+            "textarea": "",
+            "cta_text1": "Shop Now",
+            "cta_link1": "shopify:\/\/collections\/sauna-accessories",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-02-18T222623.693.png",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-bottom horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        },
+        "62f21644-dd05-4d26-add7-acbe8850034e": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Bath & Body",
+            "textarea": "",
+            "cta_text1": "Shop Now",
+            "cta_link1": "shopify:\/\/collections\/bath-body",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/EHS-hero-img2.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_align": "vertical-bottom horizontal-left",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        },
         "1c50f903-5743-4eb1-8369-60581ee02f35": {
           "type": "banner",
           "settings": {
@@ -58,13 +96,15 @@
         }
       },
       "block_order": [
+        "ed7a7fcb-02c1-404f-9928-e3d841aab16a",
+        "62f21644-dd05-4d26-add7-acbe8850034e",
         "1c50f903-5743-4eb1-8369-60581ee02f35"
       ],
       "settings": {
         "full_width": false,
-        "gutter_size": 5,
+        "gutter_size": 40,
         "space_above": true,
-        "space_below": true
+        "space_below": false
       }
     },
     "main-collection": {
@@ -72,6 +112,7 @@
       "blocks": {
         "subcollections": {
           "type": "subcollections",
+          "disabled": true,
           "settings": {
           }
         },
