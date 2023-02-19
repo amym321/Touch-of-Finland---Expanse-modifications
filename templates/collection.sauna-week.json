@@ -17,7 +17,7 @@
           "settings": {
             "top_subheading": "",
             "title": "<p>National Sauna<\/p><p>Week Sale<\/p>",
-            "title_size": 70,
+            "title_size": 65,
             "subheading": "",
             "link": "",
             "link_text": "",
@@ -37,7 +37,7 @@
       "settings": {
         "full_width": true,
         "desktop_size": -10,
-        "mobile_size": 30,
+        "mobile_size": 20,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
