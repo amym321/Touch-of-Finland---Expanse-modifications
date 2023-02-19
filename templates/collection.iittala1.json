@@ -152,6 +152,40 @@
         "divider": false
       }
     },
+    "862d0ff5-9b92-40ad-be3c-6f6b10a928f9": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18058973446458__862d0ff5-9b92-40ad-be3c-6f6b10a928f9-16768331067b145c4d-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "while supplies last",
+            "title": "<p>Retired Sale<\/p>",
+            "title_size": 70,
+            "subheading": "Save up to 65% off on select items",
+            "link": "",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#941d1d",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Iittala_2022_Recycled_collection_1_2.jpg",
+            "overlay_opacity": 44,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18058973446458__862d0ff5-9b92-40ad-be3c-6f6b10a928f9-16768331067b145c4d-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": -10,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "6ebd7579-11a1-4331-9007-ceed76500717": {
       "type": "featured-collection",
       "settings": {
@@ -296,6 +330,7 @@
     "1632970932008cb5bb",
     "12f46367-d9a2-46c4-ae52-eeb220c44850",
     "0237957c-2aee-4e35-a559-ae1031944355",
+    "862d0ff5-9b92-40ad-be3c-6f6b10a928f9",
     "6ebd7579-11a1-4331-9007-ceed76500717",
     "05188078-51f7-4952-a49b-ce21ca9afe80",
     "7ba56d12-5104-4719-b15b-c94ad3d6efa9",
