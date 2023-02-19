@@ -90,7 +90,7 @@
         "focal_point": "center",
         "layout": "left",
         "height": 550,
-        "parallax": true
+        "parallax": false
       }
     },
     "0237957c-2aee-4e35-a559-ae1031944355": {
