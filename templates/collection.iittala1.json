@@ -88,9 +88,9 @@
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981": {
       "type": "featured-collection",
       "settings": {
-        "title": "New for Spring",
+        "title": "New Arrivals",
         "home_featured_products": "new-arrivals-from-iittala",
-        "count": 5,
+        "count": 10,
         "mobile_scrollable": true,
         "view_all": true,
         "divider": false
