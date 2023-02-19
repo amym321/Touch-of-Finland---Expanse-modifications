@@ -36,7 +36,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -10,
         "mobile_size": 30,
         "style": "arrows",
         "autoplay": true,
@@ -82,7 +82,7 @@
             "height": 500,
             "text_align": "vertical-bottom horizontal-left",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "62f21644-dd05-4d26-add7-acbe8850034e": {
@@ -101,7 +101,7 @@
             "height": 500,
             "text_align": "vertical-bottom horizontal-left",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "1c50f903-5743-4eb1-8369-60581ee02f35": {
