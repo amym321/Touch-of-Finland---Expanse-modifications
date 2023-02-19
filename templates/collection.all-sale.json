@@ -1,1 +1,103 @@
-{"sections":{"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":true,"parallax":false}},"1632970932008cb5bb":{"type":"promo-grid","disabled":true,"blocks":{"84a24fb9-57f7-468e-9bdf-e8353a7e471e":{"type":"banner","disabled":true,"settings":{"heading":"Finnish Candy Sale","text":"","link":"shopify:\/\/collections\/finnish-candy-and-food","label":"Shop Candy Sale","color_scheme":"3"}},"24e34243-7746-4047-afc9-7da0488441ec":{"type":"banner","disabled":true,"settings":{"heading":"15% off Kitchen Towels","text":"*some exclusions","link":"shopify:\/\/collections\/kitchen-towels","label":"Shop Now","color_scheme":"1"}},"caf56439-37f5-4427-9686-2a8dd329046e":{"type":"banner","disabled":true,"settings":{"heading":"Buy 3 Get 1 Free","text":"All Swedish Dishcloths","link":"shopify:\/\/collections\/swedish-dishcloths","label":"Shop Deal","color_scheme":"5"}}},"block_order":["84a24fb9-57f7-468e-9bdf-e8353a7e471e","24e34243-7746-4047-afc9-7da0488441ec","caf56439-37f5-4427-9686-2a8dd329046e"],"settings":{"full_width":false,"gutter_size":20,"space_above":true,"space_below":false}},"main-collection":{"type":"main-collection","blocks":{"subcollections":{"type":"subcollections","settings":{}},"product_grid":{"type":"product_grid","settings":{"grid_style":"small"}},"collection_description":{"type":"collection_description","settings":{}}},"block_order":["subcollections","product_grid","collection_description"],"settings":{"enable_sidebar":true,"collapse_filters":false,"enable_color_swatches":false,"enable_sort":true}},"recently-viewed":{"type":"recently-viewed","settings":{}}},"order":["collection-header","1632970932008cb5bb","main-collection","recently-viewed"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": false
+      }
+    },
+    "1632970932008cb5bb": {
+      "type": "promo-grid",
+      "blocks": {
+        "84a24fb9-57f7-468e-9bdf-e8353a7e471e": {
+          "type": "banner",
+          "settings": {
+            "heading": "Sauna Week Sale",
+            "text": "All Sauna & Bath on sale thru Feb 25!",
+            "link": "shopify:\/\/collections\/sauna-accessories",
+            "label": "Shop  Sauna",
+            "color_scheme": "3"
+          }
+        },
+        "24e34243-7746-4047-afc9-7da0488441ec": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "15% off Kitchen Towels",
+            "text": "*some exclusions",
+            "link": "shopify:\/\/collections\/kitchen-towels",
+            "label": "Shop Now",
+            "color_scheme": "1"
+          }
+        },
+        "caf56439-37f5-4427-9686-2a8dd329046e": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Buy 3 Get 1 Free",
+            "text": "All Swedish Dishcloths",
+            "link": "shopify:\/\/collections\/swedish-dishcloths",
+            "label": "Shop Deal",
+            "color_scheme": "5"
+          }
+        }
+      },
+      "block_order": [
+        "84a24fb9-57f7-468e-9bdf-e8353a7e471e",
+        "24e34243-7746-4047-afc9-7da0488441ec",
+        "caf56439-37f5-4427-9686-2a8dd329046e"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "small"
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid",
+        "collection_description"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapse_filters": false,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1632970932008cb5bb",
+    "main-collection",
+    "recently-viewed"
+  ]
+}
