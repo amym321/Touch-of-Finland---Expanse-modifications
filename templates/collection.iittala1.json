@@ -8,6 +8,40 @@
         "parallax": false
       }
     },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "disabled": true,
+          "settings": {
+            "grid_style": "small"
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "product_grid",
+        "collection_description"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
     "1632970932008cb5bb": {
       "type": "promo-grid",
       "blocks": {
@@ -32,38 +66,6 @@
         "space_below": true
       }
     },
-    "main-collection": {
-      "type": "main-collection",
-      "blocks": {
-        "subcollections": {
-          "type": "subcollections",
-          "settings": {
-          }
-        },
-        "product_grid": {
-          "type": "product_grid",
-          "settings": {
-            "grid_style": "small"
-          }
-        },
-        "collection_description": {
-          "type": "collection_description",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "subcollections",
-        "product_grid",
-        "collection_description"
-      ],
-      "settings": {
-        "enable_sidebar": true,
-        "collapse_filters": true,
-        "enable_color_swatches": false,
-        "enable_sort": true
-      }
-    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
@@ -72,8 +74,8 @@
   },
   "order": [
     "collection-header",
-    "1632970932008cb5bb",
     "main-collection",
+    "1632970932008cb5bb",
     "recently-viewed"
   ]
 }
