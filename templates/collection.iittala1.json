@@ -42,17 +42,6 @@
         "enable_sort": true
       }
     },
-    "5fc62ce0-52bd-43ec-afb1-0525f4d53981": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New for Spring",
-        "home_featured_products": "new-arrivals-from-iittala",
-        "count": 5,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "1632970932008cb5bb": {
       "type": "promo-grid",
       "disabled": true,
@@ -64,7 +53,7 @@
             "text": "with any purchase of $99+ (US 48 Only)",
             "link": "shopify:\/\/pages\/shipping",
             "label": "Details Here",
-            "color_scheme": "1"
+            "color_scheme": "3"
           }
         }
       },
@@ -72,10 +61,21 @@
         "1c50f903-5743-4eb1-8369-60581ee02f35"
       ],
       "settings": {
-        "full_width": false,
-        "gutter_size": 5,
-        "space_above": true,
-        "space_below": true
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "5fc62ce0-52bd-43ec-afb1-0525f4d53981": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New for Spring",
+        "home_featured_products": "new-arrivals-from-iittala",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "12f46367-d9a2-46c4-ae52-eeb220c44850": {
@@ -326,8 +326,8 @@
   "order": [
     "collection-header",
     "main-collection",
-    "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "1632970932008cb5bb",
+    "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "12f46367-d9a2-46c4-ae52-eeb220c44850",
     "0237957c-2aee-4e35-a559-ae1031944355",
     "862d0ff5-9b92-40ad-be3c-6f6b10a928f9",
