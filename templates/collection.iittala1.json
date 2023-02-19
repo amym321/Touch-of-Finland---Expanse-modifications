@@ -42,31 +42,6 @@
         "enable_sort": true
       }
     },
-    "1632970932008cb5bb": {
-      "type": "promo-grid",
-      "disabled": true,
-      "blocks": {
-        "1c50f903-5743-4eb1-8369-60581ee02f35": {
-          "type": "banner",
-          "settings": {
-            "heading": "Free Shipping",
-            "text": "with any purchase of $99+ (US 48 Only)",
-            "link": "shopify:\/\/pages\/shipping",
-            "label": "Details Here",
-            "color_scheme": "3"
-          }
-        }
-      },
-      "block_order": [
-        "1c50f903-5743-4eb1-8369-60581ee02f35"
-      ],
-      "settings": {
-        "full_width": true,
-        "gutter_size": 0,
-        "space_above": false,
-        "space_below": false
-      }
-    },
     "12f46367-d9a2-46c4-ae52-eeb220c44850": {
       "type": "background-image-text",
       "settings": {
@@ -141,6 +116,31 @@
         "divider": false
       }
     },
+    "1632970932008cb5bb": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "1c50f903-5743-4eb1-8369-60581ee02f35": {
+          "type": "banner",
+          "settings": {
+            "heading": "Browse all collections",
+            "text": "",
+            "link": "shopify:\/\/pages\/shipping",
+            "label": "Iittala Collections",
+            "color_scheme": "3"
+          }
+        }
+      },
+      "block_order": [
+        "1c50f903-5743-4eb1-8369-60581ee02f35"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
     "792b2f81-b8d3-4945-8e75-b76fd21bb8cb": {
       "type": "text-and-image",
       "settings": {
@@ -156,7 +156,7 @@
         "align_text": "left",
         "layout": "left",
         "color_scheme": "1",
-        "divider": true
+        "divider": false
       }
     },
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981": {
@@ -344,9 +344,9 @@
   "order": [
     "collection-header",
     "main-collection",
-    "1632970932008cb5bb",
     "12f46367-d9a2-46c4-ae52-eeb220c44850",
     "0237957c-2aee-4e35-a559-ae1031944355",
+    "1632970932008cb5bb",
     "792b2f81-b8d3-4945-8e75-b76fd21bb8cb",
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "862d0ff5-9b92-40ad-be3c-6f6b10a928f9",
