@@ -71,7 +71,7 @@
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-left",
             "image": "shopify:\/\/shop_images\/Untitled_design_9.jpg",
-            "overlay_opacity": 0,
+            "overlay_opacity": 20,
             "focal_point": "center center"
           }
         }
