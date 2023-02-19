@@ -42,8 +42,20 @@
         "enable_sort": true
       }
     },
+    "5fc62ce0-52bd-43ec-afb1-0525f4d53981": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New for Spring",
+        "home_featured_products": "new-arrivals-from-iittala",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "1632970932008cb5bb": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "1c50f903-5743-4eb1-8369-60581ee02f35": {
           "type": "banner",
@@ -70,12 +82,224 @@
       "type": "recently-viewed",
       "settings": {
       }
+    },
+    "12f46367-d9a2-46c4-ae52-eeb220c44850": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Collections by Iittala",
+        "text": "<p>Iittala's collections are a testament to the brand's unwavering commitment to quality and design.<\/p>",
+        "button_label": "Explore All Collections",
+        "button_link": "shopify:\/\/collections\/collections-by-iittala",
+        "image": "shopify:\/\/shop_images\/Iittala-Kartio-Ultramarine-Blue-Pitcher-3.png",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "parallax": false
+      }
+    },
+    "0237957c-2aee-4e35-a559-ae1031944355": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-alvar-aalto",
+            "title": "Alvar Aalto"
+          }
+        },
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-toikka-birds",
+            "title": "Birds by Toikka"
+          }
+        },
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-ultima-thule",
+            "title": "Ultima Thule"
+          }
+        },
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-taika",
+            "title": "Taika"
+          }
+        },
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-aino-aalto",
+            "title": "Aino Aalto"
+          }
+        },
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-kastehelmi-dewdrop",
+            "title": "Kastehelmi"
+          }
+        }
+      },
+      "block_order": [
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-0",
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-3",
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-1",
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-2",
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-4",
+        "template--18058973446458__0237957c-2aee-4e35-a559-ae1031944355-1676831228afdaea79-5"
+      ],
+      "settings": {
+        "title": "Iconic Collections",
+        "divider": false
+      }
+    },
+    "6ebd7579-11a1-4331-9007-ceed76500717": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Retired Sale",
+        "home_featured_products": "iittala-sale",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "05188078-51f7-4952-a49b-ce21ca9afe80": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--18058973446458__05188078-51f7-4952-a49b-ce21ca9afe80-1676831422eab8d3b0-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Tableware",
+            "title_size": 48,
+            "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
+            "link": "",
+            "link_text": "Shop Tableware",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/iittala-taika-serving-bowl-black-1.45-inspiration_2400x_1.webp",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "template--18058973446458__05188078-51f7-4952-a49b-ce21ca9afe80-1676831422eab8d3b0-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "7ba56d12-5104-4719-b15b-c94ad3d6efa9": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "glassware-stemware",
+            "title": "Glassware"
+          }
+        },
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-plates-bowls",
+            "title": "Plates & Bowls"
+          }
+        },
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-mugs-cups",
+            "title": "Mugs & Cups"
+          }
+        },
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-serving-dishes",
+            "title": "Serving Dishes"
+          }
+        },
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "iittala-wine-barware",
+            "title": "Wine & Barware"
+          }
+        }
+      },
+      "block_order": [
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-3",
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-2",
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-1",
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-0",
+        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-4"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false
+      }
+    },
+    "db1212b2-f4bf-4f96-8536-a235c28704a9": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--18058973446458__db1212b2-f4bf-4f96-8536-a235c28704a9-1676831422eab8d3b0-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Home Accents",
+            "title_size": 48,
+            "subheading": "Repurpose your product photography with our \"Indented\" image option",
+            "link": "",
+            "link_text": "Shop Home Accents",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/iittala-new-for-2023-items.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "template--18058973446458__db1212b2-f4bf-4f96-8536-a235c28704a9-1676831422eab8d3b0-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
     }
   },
   "order": [
     "collection-header",
     "main-collection",
+    "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "1632970932008cb5bb",
-    "recently-viewed"
+    "recently-viewed",
+    "12f46367-d9a2-46c4-ae52-eeb220c44850",
+    "0237957c-2aee-4e35-a559-ae1031944355",
+    "6ebd7579-11a1-4331-9007-ceed76500717",
+    "05188078-51f7-4952-a49b-ce21ca9afe80",
+    "7ba56d12-5104-4719-b15b-c94ad3d6efa9",
+    "db1212b2-f4bf-4f96-8536-a235c28704a9"
   ]
 }
