@@ -78,11 +78,6 @@
         "space_below": true
       }
     },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {
-      }
-    },
     "12f46367-d9a2-46c4-ae52-eeb220c44850": {
       "type": "background-image-text",
       "settings": {
@@ -287,6 +282,11 @@
         "autoplay": true,
         "autoplay_speed": 7
       }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -294,12 +294,12 @@
     "main-collection",
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "1632970932008cb5bb",
-    "recently-viewed",
     "12f46367-d9a2-46c4-ae52-eeb220c44850",
     "0237957c-2aee-4e35-a559-ae1031944355",
     "6ebd7579-11a1-4331-9007-ceed76500717",
     "05188078-51f7-4952-a49b-ce21ca9afe80",
     "7ba56d12-5104-4719-b15b-c94ad3d6efa9",
-    "db1212b2-f4bf-4f96-8536-a235c28704a9"
+    "db1212b2-f4bf-4f96-8536-a235c28704a9",
+    "recently-viewed"
   ]
 }
