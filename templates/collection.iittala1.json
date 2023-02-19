@@ -88,7 +88,7 @@
         "button_link": "shopify:\/\/collections\/collections-by-iittala",
         "image": "shopify:\/\/shop_images\/Iittala-Kartio-Ultramarine-Blue-Pitcher-3.png",
         "focal_point": "center",
-        "layout": "left",
+        "layout": "right",
         "height": 550,
         "parallax": false
       }
