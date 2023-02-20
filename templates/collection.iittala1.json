@@ -22,7 +22,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p>{{ collection.metafields.custom.iittala_logo.value }} <\/p>"
+            "text": ""
           }
         },
         "template--18058973446458__254e10d9-aff5-4267-9789-b462634efa0c-1676906610496832e0-1": {
