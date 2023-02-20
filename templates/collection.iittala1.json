@@ -8,38 +8,43 @@
         "parallax": false
       }
     },
-    "main-collection": {
-      "type": "main-collection",
+    "254e10d9-aff5-4267-9789-b462634efa0c": {
+      "type": "rich-text",
       "blocks": {
-        "subcollections": {
-          "type": "subcollections",
-          "disabled": true,
+        "template--18058973446458__254e10d9-aff5-4267-9789-b462634efa0c-1676906610496832e0-0": {
+          "type": "heading",
           "settings": {
+            "title": "Timeless Finnish Design"
           }
         },
-        "product_grid": {
-          "type": "product_grid",
-          "disabled": true,
+        "template--18058973446458__254e10d9-aff5-4267-9789-b462634efa0c-1676906610496832e0-1": {
+          "type": "text",
           "settings": {
-            "grid_style": "small"
-          }
-        },
-        "collection_description": {
-          "type": "collection_description",
-          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Iittala is a Finnish design brand renowned for its exceptional glassware and dinnerware collections that embody the essence of Finnish design. Established in 1881, Iittala has a rich history of producing beautifully crafted products that seamlessly blend form and function. From its focus on clean lines and minimalist designs, Iittala's collections are a true representation of the timeless appeal of Finnish design.<\/p><p><\/p><p>At Iittala, quality and design are the foundation of each and every product. Whether you are searching for the perfect piece to add to your collection or simply looking to elevate your everyday dining experience, Iittala has something to offer. From delicate glassware to durable dinnerware, Iittala's products are designed to be used and cherished for years to come.<\/p>"
           }
         }
       },
       "block_order": [
-        "subcollections",
-        "product_grid",
-        "collection_description"
+        "template--18058973446458__254e10d9-aff5-4267-9789-b462634efa0c-1676906610496832e0-0",
+        "template--18058973446458__254e10d9-aff5-4267-9789-b462634efa0c-1676906610496832e0-1"
       ],
       "settings": {
-        "enable_sidebar": false,
-        "collapse_filters": true,
-        "enable_color_swatches": false,
-        "enable_sort": true
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "04b7c3c2-f1da-4174-8d86-d469bd7e59a5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular Gifts",
+        "home_featured_products": "most-popular-gifts-from-iittala",
+        "count": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": true
       }
     },
     "8c414ec7-787b-4a11-83bd-3d7eef081d56": {
@@ -281,11 +286,46 @@
       "type": "recently-viewed",
       "settings": {
       }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "disabled": true,
+          "settings": {
+            "grid_style": "small"
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "collection_description",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapse_filters": true,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
     }
   },
   "order": [
     "collection-header",
-    "main-collection",
+    "254e10d9-aff5-4267-9789-b462634efa0c",
+    "04b7c3c2-f1da-4174-8d86-d469bd7e59a5",
     "8c414ec7-787b-4a11-83bd-3d7eef081d56",
     "0237957c-2aee-4e35-a559-ae1031944355",
     "792b2f81-b8d3-4945-8e75-b76fd21bb8cb",
@@ -294,6 +334,7 @@
     "6ebd7579-11a1-4331-9007-ceed76500717",
     "05188078-51f7-4952-a49b-ce21ca9afe80",
     "db1212b2-f4bf-4f96-8536-a235c28704a9",
-    "recently-viewed"
+    "recently-viewed",
+    "main-collection"
   ]
 }
