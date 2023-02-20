@@ -42,19 +42,38 @@
         "enable_sort": true
       }
     },
-    "12f46367-d9a2-46c4-ae52-eeb220c44850": {
-      "type": "background-image-text",
+    "8c414ec7-787b-4a11-83bd-3d7eef081d56": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--18058973446458__8c414ec7-787b-4a11-83bd-3d7eef081d56-1676905188bd4c2f40-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "Collections by Iittala",
+            "title_size": 48,
+            "subheading": "Iittala's collections are a testament to the brand's unwavering commitment to quality and design.",
+            "link": "",
+            "link_text": "Explore All Collections",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/iittala_collections.jpg",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--18058973446458__8c414ec7-787b-4a11-83bd-3d7eef081d56-1676905188bd4c2f40-0"
+      ],
       "settings": {
-        "subtitle": "",
-        "title": "Collections by Iittala",
-        "text": "<p>Iittala's collections are a testament to the brand's unwavering commitment to quality and design.<\/p>",
-        "button_label": "Explore All Collections",
-        "button_link": "shopify:\/\/collections\/collections-by-iittala",
-        "image": "shopify:\/\/shop_images\/Iittala-Kartio-Ultramarine-Blue-Pitcher-3.png",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "parallax": false
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
       }
     },
     "0237957c-2aee-4e35-a559-ae1031944355": {
@@ -114,31 +133,6 @@
       "settings": {
         "title": "Iconic Collections",
         "divider": false
-      }
-    },
-    "1632970932008cb5bb": {
-      "type": "promo-grid",
-      "disabled": true,
-      "blocks": {
-        "1c50f903-5743-4eb1-8369-60581ee02f35": {
-          "type": "banner",
-          "settings": {
-            "heading": "Browse all collections",
-            "text": "",
-            "link": "shopify:\/\/pages\/shipping",
-            "label": "Iittala Collections",
-            "color_scheme": "3"
-          }
-        }
-      },
-      "block_order": [
-        "1c50f903-5743-4eb1-8369-60581ee02f35"
-      ],
-      "settings": {
-        "full_width": true,
-        "gutter_size": 0,
-        "space_above": false,
-        "space_below": false
       }
     },
     "792b2f81-b8d3-4945-8e75-b76fd21bb8cb": {
@@ -249,58 +243,6 @@
         "autoplay_speed": 7
       }
     },
-    "7ba56d12-5104-4719-b15b-c94ad3d6efa9": {
-      "type": "featured-collections",
-      "disabled": true,
-      "blocks": {
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "glassware-stemware",
-            "title": "Glassware"
-          }
-        },
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "iittala-plates-bowls",
-            "title": "Plates & Bowls"
-          }
-        },
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "iittala-mugs-cups",
-            "title": "Mugs & Cups"
-          }
-        },
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "iittala-serving-dishes",
-            "title": "Serving Dishes"
-          }
-        },
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "iittala-wine-barware",
-            "title": "Wine & Barware"
-          }
-        }
-      },
-      "block_order": [
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-3",
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-2",
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-1",
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-0",
-        "template--18058973446458__7ba56d12-5104-4719-b15b-c94ad3d6efa9-1676831228afdaea79-4"
-      ],
-      "settings": {
-        "title": "",
-        "divider": false
-      }
-    },
     "db1212b2-f4bf-4f96-8536-a235c28704a9": {
       "type": "slideshow-split",
       "blocks": {
@@ -344,15 +286,13 @@
   "order": [
     "collection-header",
     "main-collection",
-    "12f46367-d9a2-46c4-ae52-eeb220c44850",
+    "8c414ec7-787b-4a11-83bd-3d7eef081d56",
     "0237957c-2aee-4e35-a559-ae1031944355",
-    "1632970932008cb5bb",
     "792b2f81-b8d3-4945-8e75-b76fd21bb8cb",
     "5fc62ce0-52bd-43ec-afb1-0525f4d53981",
     "862d0ff5-9b92-40ad-be3c-6f6b10a928f9",
     "6ebd7579-11a1-4331-9007-ceed76500717",
     "05188078-51f7-4952-a49b-ce21ca9afe80",
-    "7ba56d12-5104-4719-b15b-c94ad3d6efa9",
     "db1212b2-f4bf-4f96-8536-a235c28704a9",
     "recently-viewed"
   ]
