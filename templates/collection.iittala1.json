@@ -5,7 +5,7 @@
       "settings": {
         "enable": true,
         "collection_image_enable": true,
-        "parallax": false
+        "parallax": true
       }
     },
     "254e10d9-aff5-4267-9789-b462634efa0c": {
