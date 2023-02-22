@@ -159,7 +159,7 @@
         "title": "New for Spring",
         "text": "<p>Featuring the stunning new Tundra collection, a captivating Ultramarine Blue color, Birds by Toikka and more!<\/p>",
         "button_label": "See New Arrivals",
-        "button_link": "",
+        "button_link": "shopify:\/\/collections\/new-arrivals-from-iittala",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
