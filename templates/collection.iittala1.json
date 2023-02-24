@@ -152,11 +152,11 @@
     "792b2f81-b8d3-4945-8e75-b76fd21bb8cb": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Iittala-Kartio-Ultramarine-Blue-Pitcher-3.png",
-        "image2": "shopify:\/\/shop_images\/iittala-new-for-2023-items.png",
+        "image": "shopify:\/\/shop_images\/new_tundra.jpg",
+        "image2": "shopify:\/\/shop_images\/new_iittala_256db051-c732-4001-a7e5-3a07ec612c6f.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "New for Spring",
+        "title": "New for 2023",
         "text": "<p>Featuring the stunning new Tundra collection, a captivating Ultramarine Blue color, Birds by Toikka and more!<\/p>",
         "button_label": "See New Arrivals",
         "button_link": "shopify:\/\/collections\/new-arrivals-from-iittala",
