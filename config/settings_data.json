@@ -239,6 +239,7 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p><a href=\"\/collections\/sauna\" title=\"Sauna\"><strong>National Sauna Week Sale! Shop Now<\/strong><\/a><\/p>",
               "richtext_mobile": "<p><a href=\"\/collections\/sauna\" title=\"Sauna\"><strong>National Sauna Week Sale! Shop Now<\/strong><\/a><\/p>"

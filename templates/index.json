@@ -2,11 +2,9 @@
   "sections": {
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
-          "disabled": true,
           "settings": {
             "subheading": "",
             "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_2_d6d300cf-e71b-4ed8-8576-de6babc4fa60.png?v=1657805595\" alt=\"iittala\" width=\"150\">",
@@ -37,6 +35,7 @@
     },
     "695b845f-4726-41c6-ad13-342155b6705c": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__695b845f-4726-41c6-ad13-342155b6705c-1671065729b2d7b402-0": {
           "type": "hero",
