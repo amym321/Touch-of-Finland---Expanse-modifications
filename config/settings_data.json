@@ -239,10 +239,9 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/sauna\" title=\"Sauna\"><strong>National Sauna Week Sale! Shop Now<\/strong><\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"\/collections\/sauna\" title=\"Sauna\"><strong>National Sauna Week Sale! Shop Now<\/strong><\/a><\/p>"
+              "richtext": "<p><a href=\"\/collections\/swedish-dishcloths\" title=\"Swedish Dishcloths\"><strong>Swedish Dishcloths: Buy 3 Get 1 Free!<\/strong><\/a><\/p>",
+              "richtext_mobile": ""
             }
           },
           "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad": {
