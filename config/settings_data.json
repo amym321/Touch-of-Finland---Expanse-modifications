@@ -14,7 +14,7 @@
     "color_large_image_bg": "#f9fafb",
     "color_header": "#ffffff",
     "color_header_text": "#464646",
-    "color_announcement": "#faaa31",
+    "color_announcement": "#964ad1",
     "color_announcement_text": "#ffffff",
     "color_header_search": "#f9fafb",
     "color_footer": "#f9f9fb",
@@ -239,9 +239,8 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/swedish-dishcloths\" title=\"Swedish Dishcloths\"><strong>Swedish Dishcloths: Buy 3 Get 1 Free!<\/strong><\/a><\/p>",
+              "richtext": "<p><a href=\"\/collections\/st-urhos-sale\" title=\"St. Urho's Sale\"><strong>St. Urho's Day Sale | 500+ items included!<\/strong><\/a><\/p>",
               "richtext_mobile": ""
             }
           },
