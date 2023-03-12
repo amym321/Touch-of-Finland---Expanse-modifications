@@ -18,7 +18,7 @@
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/Untitled-5_1.png",
             "overlay_opacity": 0,
-            "focal_point": "bottom center"
+            "focal_point": "center center"
           }
         }
       },
