@@ -1,7 +1,42 @@
 {
   "sections": {
+    "21f8baa2-4321-428a-b368-475c55a1540e": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14724126474318__21f8baa2-4321-428a-b368-475c55a1540e-1678628553e332419a-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "500+ items on sale",
+            "title": "St. Urho's Day Sale",
+            "title_size": 65,
+            "subheading": "Grasshoppers have infested our website and slashed prices! Shop sale prices thru March 15th until St. Urho arrives!",
+            "link": "shopify:\/\/collections\/st-urhos-sale",
+            "link_text": "Shop Sale",
+            "link_2": "shopify:\/\/blogs\/finnish-holidays\/the-legend-of-st-urho",
+            "link_text_2": "Read about St. Urho",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Untitled_design_29.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "4"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__21f8baa2-4321-428a-b368-475c55a1540e-1678628553e332419a-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
@@ -40,18 +75,18 @@
         "template--14724126474318__695b845f-4726-41c6-ad13-342155b6705c-1671065729b2d7b402-0": {
           "type": "hero",
           "settings": {
-            "top_subheading": "NATIONAL SAUNA WEEK",
-            "title": "<p>Sauna Sale<\/p>",
+            "top_subheading": "",
+            "title": "<p>St. Urho's Day Sale<\/p>",
             "title_size": 70,
-            "subheading": "All Sauna & Bath on Sale!",
-            "link": "shopify:\/\/collections\/sauna",
-            "link_text": "Shop Now",
+            "subheading": "",
+            "link": "shopify:\/\/collections\/st-urhos-sale",
+            "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Untitled_design_9.jpg",
-            "overlay_opacity": 30,
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_29.png",
+            "overlay_opacity": 0,
             "focal_point": "center center"
           }
         }
@@ -62,7 +97,7 @@
       "settings": {
         "full_width": true,
         "desktop_size": 0,
-        "mobile_size": 20,
+        "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
@@ -458,6 +493,7 @@
     }
   },
   "order": [
+    "21f8baa2-4321-428a-b368-475c55a1540e",
     "022c48d7-bccd-47ba-a9c9-28275f7283ff",
     "695b845f-4726-41c6-ad13-342155b6705c",
     "baa21042-7da6-44d4-9f8c-2dda46dc6568",
