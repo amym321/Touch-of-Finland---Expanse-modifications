@@ -14,7 +14,7 @@
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#ffffff",
+            "color_accent": "#064e82",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/Untitled-5_1.png",
             "overlay_opacity": 0,
@@ -71,6 +71,9 @@
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-0",
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-1",
         "280bb19c-37ee-4363-88ba-9a07e2516706"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "align_text": "center",
