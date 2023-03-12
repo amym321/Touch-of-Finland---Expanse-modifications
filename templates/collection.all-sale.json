@@ -10,6 +10,7 @@
     },
     "1632970932008cb5bb": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "84a24fb9-57f7-468e-9bdf-e8353a7e471e": {
           "type": "banner",
@@ -35,6 +36,7 @@
         },
         "caf56439-37f5-4427-9686-2a8dd329046e": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "heading": "Limited time offer!",
             "text": "Buy 3 Get 1 Free all Swedish Dishcloths",
