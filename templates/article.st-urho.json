@@ -1,1 +1,95 @@
-{"sections":{"main":{"type":"article-template","settings":{"blog_capitalize_first":false,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":true,"blog_show_author":false}},"sidebar":{"type":"blog-sidebar","blocks":{"share":{"type":"share","settings":{}},"b9a06bc1-e992-4648-8abc-a1e5c9a3afb6":{"type":"product","settings":{"featured_product":""}}},"block_order":["share","b9a06bc1-e992-4648-8abc-a1e5c9a3afb6"],"settings":{}},"1646762569be776c52":{"type":"advanced-content","disabled":true,"blocks":{"3f83d470-8524-475b-9409-5d1636a160e3":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/300_items_on_sale.png","link":"shopify:\/\/collections\/st-urho-day-sale","width":"66%","alignment":"center"}},"1646762569231ebc89-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Prices_valid_thru_March_16th_4.png","link":"shopify:\/\/collections\/st-urho-day-sale","width":"66%","alignment":"center"}}},"block_order":["3f83d470-8524-475b-9409-5d1636a160e3","1646762569231ebc89-0"],"settings":{"full_width":false,"space_around":false}}},"order":["main","sidebar","1646762569be776c52"],"wrapper":"div.page-width.page-content.blog-layout"}
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "settings": {
+        "blog_capitalize_first": false,
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": true,
+        "blog_show_author": true
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "blocks": {
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "b9a06bc1-e992-4648-8abc-a1e5c9a3afb6": {
+          "type": "product",
+          "settings": {
+            "featured_product": "finland-distressed-arch-t-shirt"
+          }
+        },
+        "2eab3e24-73df-499f-a016-4e205b7f0a24": {
+          "type": "product",
+          "settings": {
+            "featured_product": "welcome-mat-finnish-tervetuloa-rosemaling-scroll"
+          }
+        },
+        "9885ed2d-2f85-4a57-ba12-25fc4c8ac9b4": {
+          "type": "product",
+          "settings": {
+            "featured_product": "aarikka-jalava-earrings-natural"
+          }
+        },
+        "c0f5c639-4e67-4aaf-a6f6-234117432a0b": {
+          "type": "product",
+          "settings": {
+            "featured_product": "bianco-blu-finnish-glass-bird-peacock-turquoise-chickadee"
+          }
+        }
+      },
+      "block_order": [
+        "share",
+        "b9a06bc1-e992-4648-8abc-a1e5c9a3afb6",
+        "2eab3e24-73df-499f-a016-4e205b7f0a24",
+        "9885ed2d-2f85-4a57-ba12-25fc4c8ac9b4",
+        "c0f5c639-4e67-4aaf-a6f6-234117432a0b"
+      ],
+      "settings": {
+      }
+    },
+    "1646762569be776c52": {
+      "type": "advanced-content",
+      "disabled": true,
+      "blocks": {
+        "3f83d470-8524-475b-9409-5d1636a160e3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_items_on_sale.png",
+            "link": "shopify:\/\/collections\/st-urho-day-sale",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "1646762569231ebc89-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Prices_valid_thru_March_16th_4.png",
+            "link": "shopify:\/\/collections\/st-urho-day-sale",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "3f83d470-8524-475b-9409-5d1636a160e3",
+        "1646762569231ebc89-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sidebar",
+    "1646762569be776c52"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}
