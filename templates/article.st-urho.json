@@ -62,12 +62,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/300_items_on_sale.png",
             "link": "shopify:\/\/collections\/st-urho-day-sale",
-            "width": "66%",
+            "width": "50%",
             "alignment": "center"
           }
         },
         "1646762569231ebc89-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Prices_valid_thru_March_16th_4.png",
             "link": "shopify:\/\/collections\/st-urho-day-sale",
