@@ -15,11 +15,10 @@
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/THE_LEGEND_OF_3.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/THE-LEGEND-OF-_800-x-800-px_-_2.png",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled-5_1.png",
             "overlay_opacity": 0,
-            "focal_point": "center center"
+            "focal_point": "bottom center"
           }
         }
       },
@@ -28,7 +27,7 @@
       ],
       "settings": {
         "full_width": true,
-        "desktop_size": 0,
+        "desktop_size": -10,
         "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
@@ -50,21 +49,21 @@
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-0": {
           "type": "heading",
           "settings": {
-            "title": "Heikki Lunta brings you savings!"
+            "title": "St. Urho's Day Sale"
           }
         },
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-1": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Prices are falling like snow on over 500 products, including top sellers and new arrivals!<\/p>"
+            "text": "<p>Grasshoppers have infested our website, eating away prices! Shop 500+ items on sale, including top sellers and new arrivals.<\/p><p><em>Prices valid online only thru March 15th.<\/em><\/p>"
           }
         },
         "280bb19c-37ee-4363-88ba-9a07e2516706": {
           "type": "button",
           "settings": {
-            "link": "shopify:\/\/pages\/the-legend-of-heikki-lunta",
-            "link_text": "Learn about Heikki Lunta"
+            "link": "shopify:\/\/blogs\/finnish-holidays\/the-legend-of-st-urho",
+            "link_text": "Learn about St. Urho's Day"
           }
         }
       },
