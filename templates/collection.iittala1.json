@@ -21,12 +21,13 @@
         "4bf249bc-5188-447b-a1ec-f8a296d7b06b": {
           "type": "text",
           "settings": {
-            "enlarge_text": false,
-            "text": "<p>{{ collection.metafields.custom.iittala_logo.value }}<\/p>"
+            "enlarge_text": true,
+            "text": "<p>{{ collection.metafields.custom.iittala_logo.value }}<\/p><p>Iittala is a Finnish design brand renowned for its exceptional glassware and dinnerware collections that embody the essence of Finnish design. Established in 1881, Iittala has a rich history of producing beautifully crafted products that seamlessly blend form and function. From its focus on clean lines and minimalist designs, Iittala's collections are a true representation of the timeless appeal of Finnish design.<\/p><p>At Iittala, quality and design are the foundation of each and every product. Whether you are searching for the perfect piece to add to your collection or simply looking to elevate your everyday dining experience, Iittala has something to offer. From delicate glassware to durable dinnerware, Iittala's products are designed to be used and cherished for years to come.<\/p>"
           }
         },
         "template--18058973446458__254e10d9-aff5-4267-9789-b462634efa0c-1676906610496832e0-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "enlarge_text": true,
             "text": "<p>Iittala is a Finnish design brand renowned for its exceptional glassware and dinnerware collections that embody the essence of Finnish design. Established in 1881, Iittala has a rich history of producing beautifully crafted products that seamlessly blend form and function. From its focus on clean lines and minimalist designs, Iittala's collections are a true representation of the timeless appeal of Finnish design.<\/p><p><\/p><p>At Iittala, quality and design are the foundation of each and every product. Whether you are searching for the perfect piece to add to your collection or simply looking to elevate your everyday dining experience, Iittala has something to offer. From delicate glassware to durable dinnerware, Iittala's products are designed to be used and cherished for years to come.<\/p>"
