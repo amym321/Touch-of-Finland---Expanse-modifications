@@ -48,12 +48,14 @@
       "blocks": {
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "St. Urho's Day Sale"
           }
         },
         "template--17701814534458__235ac7e4-3a8f-4dc1-be1a-5b0d4e878ff5-1674336116ffd931b9-1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "enlarge_text": true,
             "text": "<p>Grasshoppers have infested our website, eating away prices! Shop 500+ items on sale, including top sellers and new arrivals.<\/p><p><em>Prices valid online only thru March 15th.<\/em><\/p>"
@@ -84,6 +86,7 @@
     },
     "main-collection": {
       "type": "main-collection",
+      "disabled": true,
       "blocks": {
         "subcollections": {
           "type": "subcollections",
