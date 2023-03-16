@@ -45,6 +45,30 @@
         "divider": false
       }
     },
+    "65831a85-6087-4db1-a5ef-98897033a929": {
+      "type": "promo-grid",
+      "blocks": {
+        "bee2290b-9f22-4ea5-89b2-00c5a71ca0cc": {
+          "type": "banner",
+          "settings": {
+            "heading": "iittala Seasonal Sale",
+            "text": "20-60% OFF ALL IITTALA!",
+            "link": "",
+            "label": "Shop now",
+            "color_scheme": "4"
+          }
+        }
+      },
+      "block_order": [
+        "bee2290b-9f22-4ea5-89b2-00c5a71ca0cc"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
     "04b7c3c2-f1da-4174-8d86-d469bd7e59a5": {
       "type": "featured-collection",
       "settings": {
@@ -335,6 +359,7 @@
   "order": [
     "collection-header",
     "254e10d9-aff5-4267-9789-b462634efa0c",
+    "65831a85-6087-4db1-a5ef-98897033a929",
     "04b7c3c2-f1da-4174-8d86-d469bd7e59a5",
     "8c414ec7-787b-4a11-83bd-3d7eef081d56",
     "0237957c-2aee-4e35-a559-ae1031944355",
