@@ -122,7 +122,7 @@
 <!--Gem_Page_Header_Script-->
 {% render 'gem-app-header-scripts' %}
 <!--End_Gem_Page_Header_Script-->
-</head>
+{% include 'sales-motivator-init' %}</head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-transitions="{{ settings.animate_page_transitions }}" data-button_style="{{ settings.button_style }}" data-edges="{{ settings.roundness }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" data-grid-style="{{ settings.product_grid_style }}">
 
