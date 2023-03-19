@@ -230,11 +230,11 @@
             "title": "Knives & Axes"
           }
         },
-        "926b78ad-9176-44af-8459-bf885f814966": {
+        "1b070acb-47c0-4fbd-9552-bedcd00edbbb": {
           "type": "collection",
           "settings": {
-            "collection": "novita-knits-wool-yarn",
-            "title": "Wool Yarn"
+            "collection": "lumene",
+            "title": "Lumene"
           }
         },
         "960c96b3-87b3-4030-9480-e2dd6c140c3a": {
@@ -244,11 +244,11 @@
             "title": "Swedish Dishcloths"
           }
         },
-        "1b070acb-47c0-4fbd-9552-bedcd00edbbb": {
+        "926b78ad-9176-44af-8459-bf885f814966": {
           "type": "collection",
           "settings": {
-            "collection": "christmas-decorations",
-            "title": "Christmas Decor"
+            "collection": "novita-knits-wool-yarn",
+            "title": "Wool Yarn"
           }
         }
       },
@@ -262,9 +262,9 @@
         "7bc8cdeb-bbc9-4f9d-9005-deb92ee7c822",
         "925a3a93-bc26-4bcf-9fb3-cea47d4ee009",
         "6b200743-5b8e-4f97-917d-c9a6dc31759f",
-        "926b78ad-9176-44af-8459-bf885f814966",
+        "1b070acb-47c0-4fbd-9552-bedcd00edbbb",
         "960c96b3-87b3-4030-9480-e2dd6c140c3a",
-        "1b070acb-47c0-4fbd-9552-bedcd00edbbb"
+        "926b78ad-9176-44af-8459-bf885f814966"
       ],
       "settings": {
         "title": "",
