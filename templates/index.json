@@ -14,7 +14,7 @@
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
-            "color_accent": "#fff",
+            "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/lumene_66.jpg",
             "image_mobile": "shopify:\/\/shop_images\/mobile_lumene.jpg",
@@ -42,7 +42,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/free_gift_candy.jpg",
+            "image": "shopify:\/\/shop_images\/FREE_CANDY_5.jpg",
             "image_width": 650,
             "title": "",
             "text": "",
@@ -94,7 +94,7 @@
             "height": 800,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "eb9ff739-d3ab-4cb7-af98-940e9b78397b": {
@@ -112,7 +112,7 @@
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         }
       },
