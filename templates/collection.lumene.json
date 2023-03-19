@@ -18,9 +18,9 @@
             "image": "shopify:\/\/shop_images\/Nordic_C.jpg",
             "image_width": 650,
             "title": "Nordic-C",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "text": "<p>Lumene's Nordic-C collection is a line of skincare products that are designed to brighten and even out skin tone. Infused with antioxidant-rich Nordic cloudberry and pure Arctic spring water, these products are formulated to provide the skin with intense hydration and nourishment while improving its radiance and glow.<\/p>",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/lumene-nordic-c"
           }
         },
         "template--18385616208186__f58dfc5e-34e4-44d6-870e-28faddb0e9b8-16791873793f39f652-1": {
@@ -30,9 +30,9 @@
             "image": "shopify:\/\/shop_images\/Nordic_Hydra.jpg",
             "image_width": 650,
             "title": "Nordic Hydra",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "text": "<p>Lumene's Nordic Hydra collection is a range of skincare products that are specifically formulated to provide deep hydration to the skin. Infused with pure Arctic spring water and antioxidant-rich Nordic birch sap, these products are designed to replenish and revitalize the skin, leaving it soft, smooth, and radiant.<\/p>",
             "button_label": "Shop Now",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/lumene-nordic-hydra"
           }
         },
         "2a7725bc-a328-496c-be4f-bd80b92445da": {
@@ -42,7 +42,7 @@
             "image": "shopify:\/\/shop_images\/cc_lumene.jpg",
             "image_width": 650,
             "title": "CC",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "text": "<p>Lumene's CC collection offers color-correcting skincare creams that help even out skin tone and conceal imperfections. Infused with antioxidant-rich Arctic cloudberry and vitamin C, these products not only provide coverage but also help brighten and protect the skin from environmental stressors.<\/p>",
             "button_label": "Shop Now",
             "button_link": ""
           }
@@ -87,11 +87,6 @@
     "main-collection": {
       "type": "main-collection",
       "blocks": {
-        "collection_description": {
-          "type": "collection_description",
-          "settings": {
-          }
-        },
         "subcollections": {
           "type": "subcollections",
           "settings": {
@@ -102,12 +97,17 @@
           "settings": {
             "grid_style": "small"
           }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "collection_description",
         "subcollections",
-        "product_grid"
+        "product_grid",
+        "collection_description"
       ],
       "settings": {
         "enable_sidebar": true,
