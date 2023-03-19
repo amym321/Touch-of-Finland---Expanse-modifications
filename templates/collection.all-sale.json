@@ -10,24 +10,22 @@
     },
     "1632970932008cb5bb": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "84a24fb9-57f7-468e-9bdf-e8353a7e471e": {
           "type": "banner",
-          "disabled": true,
           "settings": {
-            "heading": "Sauna Week Sale",
-            "text": "All Sauna & Bath on sale thru Feb 25!",
-            "link": "shopify:\/\/collections\/sauna-accessories",
-            "label": "Shop  Sauna",
-            "color_scheme": "3"
+            "heading": "IITTALA SEASONAL SALE",
+            "text": "Up to 50% off thru 3\/26",
+            "link": "shopify:\/\/collections\/iittala",
+            "label": "Shop the Sale",
+            "color_scheme": "4"
           }
         },
         "24e34243-7746-4047-afc9-7da0488441ec": {
           "type": "banner",
           "disabled": true,
           "settings": {
-            "heading": "15% off Kitchen Towels",
+            "heading": "",
             "text": "*some exclusions",
             "link": "shopify:\/\/collections\/kitchen-towels",
             "label": "Shop Now",
