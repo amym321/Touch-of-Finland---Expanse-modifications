@@ -8,6 +8,35 @@
         "parallax": false
       }
     },
+    "388ae096-c31c-4b1c-8f34-98beea572bd3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18385616208186__388ae096-c31c-4b1c-8f34-98beea572bd3-16791887139b721d69-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--18385616208186__388ae096-c31c-4b1c-8f34-98beea572bd3-16791887139b721d69-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Lumene is a skincare brand that draws inspiration from the natural beauty and purity of the Nordic region. Their products are formulated with high-quality ingredients, including Arctic spring water and Nordic plant extracts, to help improve the appearance and health of the skin. With a focus on simplicity and effectiveness, Lumene offers a range of products that cater to various skin types and concerns, from hydrating creams to brightening serums. Made in Finland.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18385616208186__388ae096-c31c-4b1c-8f34-98beea572bd3-16791887139b721d69-0",
+        "template--18385616208186__388ae096-c31c-4b1c-8f34-98beea572bd3-16791887139b721d69-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
     "f58dfc5e-34e4-44d6-870e-28faddb0e9b8": {
       "type": "text-columns",
       "blocks": {
@@ -124,6 +153,7 @@
   },
   "order": [
     "collection-header",
+    "388ae096-c31c-4b1c-8f34-98beea572bd3",
     "f58dfc5e-34e4-44d6-870e-28faddb0e9b8",
     "1632970932008cb5bb",
     "main-collection",
