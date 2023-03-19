@@ -1,43 +1,77 @@
 {
   "sections": {
-    "21f8baa2-4321-428a-b368-475c55a1540e": {
-      "type": "slideshow-split",
-      "disabled": true,
+    "97840a68-e35b-4532-955b-ba86e0343cce": {
+      "type": "slideshow",
       "blocks": {
-        "template--14724126474318__21f8baa2-4321-428a-b368-475c55a1540e-1678628553e332419a-0": {
-          "type": "slide",
-          "disabled": true,
+        "template--14724126474318__97840a68-e35b-4532-955b-ba86e0343cce-1679236405a5def5e8-0": {
+          "type": "hero",
           "settings": {
-            "top_subheading": "500+ items on sale",
-            "title": "St. Urho's Day Sale",
-            "title_size": 65,
-            "subheading": "Grasshoppers have infested our website and slashed prices! Shop sale prices thru March 15th until St. Urho arrives!",
-            "link": "shopify:\/\/collections\/st-urhos-sale",
-            "link_text": "Shop the Sale",
-            "link_2": "shopify:\/\/blogs\/finnish-holidays\/the-legend-of-st-urho",
-            "link_text_2": "Read about St. Urho",
-            "text_position": "right",
-            "image": "shopify:\/\/shop_images\/Untitled_design_29.png",
-            "indent_image": false,
-            "focal_point": "center center",
-            "color_scheme": "4"
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/lumene",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/lumene_66.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_lumene.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "template--14724126474318__21f8baa2-4321-428a-b368-475c55a1540e-1678628553e332419a-0"
+        "template--14724126474318__97840a68-e35b-4532-955b-ba86e0343cce-1679236405a5def5e8-0"
       ],
       "settings": {
         "full_width": true,
-        "height": 650,
-        "height_mobile": 450,
+        "desktop_size": 0,
+        "mobile_size": 0,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
       }
     },
+    "6351a68e-ca8f-45cd-9c31-f73a07a7fead": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "template--14724126474318__6351a68e-ca8f-45cd-9c31-f73a07a7fead-167923634118ffc90e-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "shopify:\/\/collections\/lumene",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/lumene_66.jpg",
+            "video_url": "",
+            "width": "100",
+            "height": 600,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__6351a68e-ca8f-45cd-9c31-f73a07a7fead-167923634118ffc90e-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false
+      }
+    },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
@@ -494,7 +528,8 @@
     }
   },
   "order": [
-    "21f8baa2-4321-428a-b368-475c55a1540e",
+    "97840a68-e35b-4532-955b-ba86e0343cce",
+    "6351a68e-ca8f-45cd-9c31-f73a07a7fead",
     "022c48d7-bccd-47ba-a9c9-28275f7283ff",
     "695b845f-4726-41c6-ad13-342155b6705c",
     "baa21042-7da6-44d4-9f8c-2dda46dc6568",
