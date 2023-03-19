@@ -349,6 +349,13 @@
             "link": "shopify:\/\/collections\/lemon-juice-glycerine"
           }
         },
+        "64e541e3-5ca9-4988-aeb7-aac5574d3a12": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/lumene.png",
+            "link": "shopify:\/\/collections\/lumene"
+          }
+        },
         "31039a79-71e7-479c-9fad-227579bfb910": {
           "type": "logo_image",
           "settings": {
@@ -362,22 +369,15 @@
             "image": "shopify:\/\/shop_images\/us-retailer-Marttiini.png",
             "link": "shopify:\/\/collections\/marttiini-knives"
           }
-        },
-        "64e541e3-5ca9-4988-aeb7-aac5574d3a12": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/us-retailer-meira-finnish-cardamom.png",
-            "link": "shopify:\/\/collections\/meira"
-          }
         }
       },
       "block_order": [
         "d3632632-aef3-431b-b915-8b394539197d",
         "492574d7-264c-4b8a-8aea-ec7ccc751fcb",
         "28d17220-ca7e-45fb-a5a1-2c7abb492160",
+        "64e541e3-5ca9-4988-aeb7-aac5574d3a12",
         "31039a79-71e7-479c-9fad-227579bfb910",
-        "16331386050257aff5-0",
-        "64e541e3-5ca9-4988-aeb7-aac5574d3a12"
+        "16331386050257aff5-0"
       ],
       "settings": {
         "title": "",
