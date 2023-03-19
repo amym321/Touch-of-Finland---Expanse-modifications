@@ -31,9 +31,9 @@
         "template--18385616208186__388ae096-c31c-4b1c-8f34-98beea572bd3-16791887139b721d69-1"
       ],
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "color_scheme": "1",
+        "align_text": "left",
+        "narrow_column": false,
+        "color_scheme": "none",
         "divider": false
       }
     },
