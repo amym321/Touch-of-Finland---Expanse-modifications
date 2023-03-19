@@ -35,6 +35,45 @@
         "autoplay_speed": 7
       }
     },
+    "144966fb-e1c3-45de-940f-847c8ae89477": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14724126474318__144966fb-e1c3-45de-940f-847c8ae89477-1679237948b693743e-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/free_gift_candy.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/products\/fazer-milk-chocolate-bar-200g-1"
+          }
+        },
+        "template--14724126474318__144966fb-e1c3-45de-940f-847c8ae89477-1679237948b693743e-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/iittala_5.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/collections-by-iittala"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__144966fb-e1c3-45de-940f-847c8ae89477-1679237948b693743e-0",
+        "template--14724126474318__144966fb-e1c3-45de-940f-847c8ae89477-1679237948b693743e-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "1"
+      }
+    },
     "6351a68e-ca8f-45cd-9c31-f73a07a7fead": {
       "type": "promo-grid",
       "disabled": true,
@@ -49,10 +88,28 @@
             "cta_link1": "shopify:\/\/collections\/lumene",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/lumene_66.jpg",
+            "image": "shopify:\/\/shop_images\/free_gift_candy_346bc1da-e6fb-4826-9f11-319372a8cf38.jpg",
             "video_url": "",
-            "width": "100",
-            "height": 600,
+            "width": "50",
+            "height": 800,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "#fff"
+          }
+        },
+        "eb9ff739-d3ab-4cb7-af98-940e9b78397b": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
             "color_accent": "#fff"
@@ -60,12 +117,13 @@
         }
       },
       "block_order": [
-        "template--14724126474318__6351a68e-ca8f-45cd-9c31-f73a07a7fead-167923634118ffc90e-0"
+        "template--14724126474318__6351a68e-ca8f-45cd-9c31-f73a07a7fead-167923634118ffc90e-0",
+        "eb9ff739-d3ab-4cb7-af98-940e9b78397b"
       ],
       "settings": {
         "full_width": true,
         "gutter_size": 0,
-        "space_above": false,
+        "space_above": true,
         "space_below": false
       }
     },
@@ -529,6 +587,7 @@
   },
   "order": [
     "97840a68-e35b-4532-955b-ba86e0343cce",
+    "144966fb-e1c3-45de-940f-847c8ae89477",
     "6351a68e-ca8f-45cd-9c31-f73a07a7fead",
     "022c48d7-bccd-47ba-a9c9-28275f7283ff",
     "695b845f-4726-41c6-ad13-342155b6705c",
