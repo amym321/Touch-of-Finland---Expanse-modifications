@@ -8,6 +8,58 @@
         "parallax": false
       }
     },
+    "f58dfc5e-34e4-44d6-870e-28faddb0e9b8": {
+      "type": "text-columns",
+      "blocks": {
+        "template--18385616208186__f58dfc5e-34e4-44d6-870e-28faddb0e9b8-16791873793f39f652-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Nordic_C.jpg",
+            "image_width": 650,
+            "title": "Nordic-C",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "template--18385616208186__f58dfc5e-34e4-44d6-870e-28faddb0e9b8-16791873793f39f652-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Nordic_Hydra.jpg",
+            "image_width": 650,
+            "title": "Nordic Hydra",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "2a7725bc-a328-496c-be4f-bd80b92445da": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/cc_lumene.jpg",
+            "image_width": 650,
+            "title": "CC",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18385616208186__f58dfc5e-34e4-44d6-870e-28faddb0e9b8-16791873793f39f652-0",
+        "template--18385616208186__f58dfc5e-34e4-44d6-870e-28faddb0e9b8-16791873793f39f652-1",
+        "2a7725bc-a328-496c-be4f-bd80b92445da"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "none"
+      }
+    },
     "1632970932008cb5bb": {
       "type": "promo-grid",
       "blocks": {
@@ -72,6 +124,7 @@
   },
   "order": [
     "collection-header",
+    "f58dfc5e-34e4-44d6-870e-28faddb0e9b8",
     "1632970932008cb5bb",
     "main-collection",
     "recently-viewed"
