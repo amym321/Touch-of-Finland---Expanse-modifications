@@ -17,6 +17,7 @@
             "color_accent": "#064e82",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify:\/\/shop_images\/candy_sale_753639d4-47e9-4ded-abdf-de8eae0cb292.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/candy5.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
