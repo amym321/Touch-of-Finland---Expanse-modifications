@@ -51,8 +51,8 @@
         "desktop_size": 0,
         "mobile_size": 0,
         "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
+        "autoplay": false,
+        "autoplay_speed": 10
       }
     },
     "144966fb-e1c3-45de-940f-847c8ae89477": {
