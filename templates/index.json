@@ -21,10 +21,30 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
+        },
+        "34483df7-fc31-47c2-8f9f-3fa1a23868dd": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/bath-body",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/bath_sale.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/bath_sale_mobile.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
         }
       },
       "block_order": [
-        "template--14724126474318__97840a68-e35b-4532-955b-ba86e0343cce-1679236405a5def5e8-0"
+        "template--14724126474318__97840a68-e35b-4532-955b-ba86e0343cce-1679236405a5def5e8-0",
+        "34483df7-fc31-47c2-8f9f-3fa1a23868dd"
       ],
       "settings": {
         "full_width": true,
