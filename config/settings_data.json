@@ -239,6 +239,7 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p><a href=\"\/collections\/iittala\" title=\"iittala\"><strong>ENDS TONIGHT!<\/strong><\/a><\/p><p><a href=\"\/collections\/iittala\" title=\"iittala\"><strong>iittala Seasonal Sale: Up to 50% off <\/strong><\/a><\/p>",
               "richtext_mobile": ""
