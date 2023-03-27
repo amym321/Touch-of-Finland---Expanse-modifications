@@ -47,6 +47,7 @@
     },
     "65831a85-6087-4db1-a5ef-98897033a929": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "bee2290b-9f22-4ea5-89b2-00c5a71ca0cc": {
           "type": "banner",
