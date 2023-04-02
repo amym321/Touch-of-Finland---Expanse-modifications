@@ -55,6 +55,7 @@
     },
     "792c548d-fcec-4d90-b3ab-8a92a29d94ad": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__792c548d-fcec-4d90-b3ab-8a92a29d94ad-16804495236a270161-0": {
           "type": "advanced",
