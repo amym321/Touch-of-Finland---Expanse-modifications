@@ -239,17 +239,15 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/finnish-candy-and-food\" title=\"Finnish Candy and Food\"><strong>All Finnish Candy on Sale! <\/strong><em><strong>Shop Now<\/strong><\/em><\/a><\/p>",
+              "richtext": "<p><a href=\"\/collections\/finlayson\" title=\"Finlayson\"><strong>All Finlayson on Sale! <\/strong><em><strong>SHOP THE SALE..<\/strong><\/em><\/a><\/p>",
               "richtext_mobile": ""
             }
           },
           "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/sauna-accessories\" title=\"Sauna Accessories\"><strong>SAUNA STOCK UP SALE | SHOP HERE<\/strong><\/a><\/p>",
+              "richtext": "<p><a href=\"\/collections\/vallila\" title=\"Vallila\"><strong>All Vallila on Sale! <\/strong><em><strong>SHOP THE SALE..<\/strong><\/em><\/a><\/p>",
               "richtext_mobile": ""
             }
           }
