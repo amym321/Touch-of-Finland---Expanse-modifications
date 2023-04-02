@@ -53,58 +53,6 @@
         "autoplay_speed": 7
       }
     },
-    "138765a8-f19a-4aef-9bfd-1e88970c7e8f": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-0": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-1": {
-          "type": "description",
-          "settings": {
-            "is_tab": true
-          }
-        },
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-2": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_labels": true,
-            "picker_type": "button",
-            "color_swatches": false
-          }
-        },
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "surface_pickup_enable": false
-          }
-        }
-      },
-      "block_order": [
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-0",
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-1",
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-2",
-        "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-3"
-      ],
-      "settings": {
-        "featured_product": "fazer-milk-chocolate-bar-200g",
-        "divider": false,
-        "sku_enable": false,
-        "image_position": "left",
-        "image_container_size": "medium",
-        "product_image_size": "square",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
-        "thumbnail_arrows": false,
-        "mobile_layout": "partial",
-        "enable_video_looping": true,
-        "product_video_style": "muted"
-      }
-    },
     "792c548d-fcec-4d90-b3ab-8a92a29d94ad": {
       "type": "promo-grid",
       "blocks": {
@@ -782,7 +730,6 @@
   },
   "order": [
     "c7b79270-4833-43af-997c-e449840d2389",
-    "138765a8-f19a-4aef-9bfd-1e88970c7e8f",
     "792c548d-fcec-4d90-b3ab-8a92a29d94ad",
     "97840a68-e35b-4532-955b-ba86e0343cce",
     "144966fb-e1c3-45de-940f-847c8ae89477",
