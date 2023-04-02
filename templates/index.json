@@ -1,5 +1,58 @@
 {
   "sections": {
+    "c7b79270-4833-43af-997c-e449840d2389": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "ONLINE ONLY!",
+            "title": "Finlayson Sale",
+            "title_size": 65,
+            "subheading": "All Finlayson on Sale Today!",
+            "link": "shopify:\/\/collections\/finlayson",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/reiluraita_reilu_feeling_720x_792de07c-1c80-43d3-8a32-be7ac3356e85.webp",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        },
+        "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "ONLINE ONLY!",
+            "title": "Vallila Sale",
+            "title_size": 65,
+            "subheading": "All Vallila on Sale Today!",
+            "link": "shopify:\/\/collections\/vallila",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify:\/\/shop_images\/VA9E43_1.jpg",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "2"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0",
+        "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 650,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "97840a68-e35b-4532-955b-ba86e0343cce": {
       "type": "slideshow",
       "disabled": true,
@@ -151,6 +204,7 @@
     },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
@@ -607,6 +661,7 @@
     }
   },
   "order": [
+    "c7b79270-4833-43af-997c-e449840d2389",
     "97840a68-e35b-4532-955b-ba86e0343cce",
     "144966fb-e1c3-45de-940f-847c8ae89477",
     "6351a68e-ca8f-45cd-9c31-f73a07a7fead",
