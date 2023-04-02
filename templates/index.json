@@ -55,6 +55,7 @@
     },
     "138765a8-f19a-4aef-9bfd-1e88970c7e8f": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__138765a8-f19a-4aef-9bfd-1e88970c7e8f-1680449539a195bc7c-0": {
           "type": "price",
@@ -106,7 +107,6 @@
     },
     "792c548d-fcec-4d90-b3ab-8a92a29d94ad": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__792c548d-fcec-4d90-b3ab-8a92a29d94ad-16804495236a270161-0": {
           "type": "advanced",
@@ -124,7 +124,7 @@
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "template--14724126474318__792c548d-fcec-4d90-b3ab-8a92a29d94ad-16804495236a270161-1": {
@@ -143,21 +143,21 @@
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
         "9aee03fe-d43f-4fe3-a6fd-73cb3d13e3c5": {
           "type": "product",
           "settings": {
-            "product": "",
-            "subheading": "",
-            "heading": "Announce your product",
-            "textarea": "Include text explaining your featured product.",
-            "link_label": "Shop",
-            "label": "New",
+            "product": "fazer-milk-chocolate-bar-200g",
+            "subheading": "ONLINE ONLY",
+            "heading": "40% OFF TODAY!",
+            "textarea": "FAZER MILK CHOCOLATE BARS (200G)",
+            "link_label": "Shop Here",
+            "label": "40% OFF!",
             "enable_price": false,
             "width": "100",
-            "color_scheme": "none"
+            "color_scheme": "1"
           }
         }
       },
@@ -170,7 +170,7 @@
         "full_width": false,
         "gutter_size": 20,
         "space_above": true,
-        "space_below": true
+        "space_below": false
       }
     },
     "97840a68-e35b-4532-955b-ba86e0343cce": {
