@@ -231,10 +231,9 @@
         "blocks": {
           "66861402-f063-4c1a-a2f3-d833ad59a823": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/finlayson\" title=\"Finlayson\"><strong>Up to 40% off Finlayson | Shop Now<\/strong><\/a><\/p>",
-              "richtext_mobile": "<p><a href=\"\/collections\/finlayson\" title=\"Finlayson\"><strong>Up to 40% off Finlayson | Shop Now<\/strong><\/a><\/p>"
+              "richtext": "<p><em><strong>TODAY ONLY!<\/strong><\/em> <a href=\"\/products\/fazer-milk-chocolate-bar-200g\" title=\"Fazer Milk Chocolate Bar (200g)\"><strong>40% OFF FAZER MILK CHOCOLATE BARS!<\/strong><\/a><\/p>",
+              "richtext_mobile": "<p><a href=\"\/products\/fazer-milk-chocolate-bar-200g\" title=\"Fazer Milk Chocolate Bar (200g)\"><strong>40% OFF FAZER MILK CHOCOLATE BARS!<\/strong><\/a><\/p>"
             }
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
