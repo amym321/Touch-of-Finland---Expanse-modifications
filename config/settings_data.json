@@ -239,6 +239,7 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p><a href=\"\/collections\/finnish-candy-and-food\" title=\"Finnish Candy and Food\"><strong>All Finnish Candy on Sale! <\/strong><em><strong>Shop Now<\/strong><\/em><\/a><\/p>",
               "richtext_mobile": ""
