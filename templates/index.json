@@ -2,9 +2,11 @@
   "sections": {
     "c7b79270-4833-43af-997c-e449840d2389": {
       "type": "slideshow-split",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "top_subheading": "ONLINE ONLY!",
             "title": "Finlayson Sale",
@@ -23,6 +25,7 @@
         },
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "top_subheading": "ONLINE ONLY!",
             "title": "Vallila Sale",
@@ -273,7 +276,6 @@
     },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",

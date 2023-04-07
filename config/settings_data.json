@@ -240,12 +240,13 @@
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/finlayson\" title=\"Finlayson\"><strong>All Finlayson on Sale! <\/strong><em><strong>SHOP THE SALE..<\/strong><\/em><\/a><\/p>",
+              "richtext": "<p>Free Shipping on orders $99+ (US 48 Only)<\/p>",
               "richtext_mobile": ""
             }
           },
           "f55dfdd7-92a0-49ca-9d1e-ccdb49bc22ad": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p><a href=\"\/collections\/vallila\" title=\"Vallila\"><strong>All Vallila on Sale! <\/strong><em><strong>SHOP THE SALE..<\/strong><\/em><\/a><\/p>",
               "richtext_mobile": ""
