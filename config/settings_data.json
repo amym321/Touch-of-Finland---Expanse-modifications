@@ -362,6 +362,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "17992116214976573926": {
+        "type": "shopify:\/\/apps\/seo-manager-venntov\/blocks\/seomanager\/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
