@@ -1,1 +1,151 @@
-{"sections":{"collection-header":{"type":"collection-header","settings":{"enable":true,"collection_image_enable":false,"parallax":false}},"1645978457d67870fe":{"type":"advanced-content","blocks":{"da83fbb4-0f04-4da6-ae64-a3b8c0be7edb":{"type":"liquid","settings":{"code":"<br>","width":"100%","alignment":"center"}}},"block_order":["da83fbb4-0f04-4da6-ae64-a3b8c0be7edb"],"settings":{"full_width":false,"space_around":false}},"1632970932008cb5bb":{"type":"promo-grid","blocks":{"1c50f903-5743-4eb1-8369-60581ee02f35":{"type":"banner","disabled":true,"settings":{"heading":"Novita Yarn: Buy 3 Get 1 Free!","text":"Mix & Match | No Limits","link":"","label":"","color_scheme":"3"}},"773a9609-ae03-4f01-80d8-047a71ab517d":{"type":"banner","settings":{"heading":"FREE PATTERNS from Novita","text":"","link":"shopify:\/\/collections\/novita-knits-patterns","label":"Browse Now","color_scheme":"1"}}},"block_order":["1c50f903-5743-4eb1-8369-60581ee02f35","773a9609-ae03-4f01-80d8-047a71ab517d"],"settings":{"full_width":false,"gutter_size":15,"space_above":false,"space_below":false}},"main-collection":{"type":"main-collection","blocks":{"subcollections":{"type":"subcollections","disabled":true,"settings":{}},"collection_description":{"type":"collection_description","settings":{}},"product_grid":{"type":"product_grid","settings":{"grid_style":"small"}}},"block_order":["subcollections","collection_description","product_grid"],"settings":{"enable_sidebar":false,"collapse_filters":false,"enable_color_swatches":false,"enable_sort":true}},"164597694199f20076":{"type":"slideshow-split","disabled":true,"blocks":{"164597694131d407d7-0":{"type":"slide","settings":{"top_subheading":"","title":"What's a\nSwedish Dishcloth?","title_size":40,"subheading":"Invented in Sweden in 1949, these cloths replace paper towels, sponges and regular dishcloths. You'll never go back when you see how they work for yourself. Choose from 100+ fun motifs that add Scandinavian fun to your kitchen.","link":"shopify:\/\/pages\/whats-a-swedish-dishcloth","link_text":"Learn More","link_2":"","link_text_2":"","text_position":"right","image":"shopify:\/\/shop_images\/Shop_Now_800_x_1000_px_3.png","indent_image":false,"focal_point":"center center","color_scheme":"1"}}},"block_order":["164597694131d407d7-0"],"settings":{"full_width":false,"height":500,"height_mobile":450,"style":"arrows","autoplay":true,"autoplay_speed":7}},"recently-viewed":{"type":"recently-viewed","settings":{}}},"order":["collection-header","1645978457d67870fe","1632970932008cb5bb","main-collection","164597694199f20076","recently-viewed"]}
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "1645978457d67870fe": {
+      "type": "advanced-content",
+      "blocks": {
+        "da83fbb4-0f04-4da6-ae64-a3b8c0be7edb": {
+          "type": "liquid",
+          "settings": {
+            "code": "<br>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "da83fbb4-0f04-4da6-ae64-a3b8c0be7edb"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "1632970932008cb5bb": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "1c50f903-5743-4eb1-8369-60581ee02f35": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Novita Yarn: Buy 3 Get 1 Free!",
+            "text": "Mix & Match | No Limits",
+            "link": "",
+            "label": "",
+            "color_scheme": "3"
+          }
+        },
+        "773a9609-ae03-4f01-80d8-047a71ab517d": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "FREE PATTERNS from Novita",
+            "text": "",
+            "link": "shopify:\/\/collections\/novita-knits-patterns",
+            "label": "Browse Now",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "1c50f903-5743-4eb1-8369-60581ee02f35",
+        "773a9609-ae03-4f01-80d8-047a71ab517d"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 15,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "small"
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "collection_description",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapse_filters": false,
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    },
+    "164597694199f20076": {
+      "type": "slideshow-split",
+      "disabled": true,
+      "blocks": {
+        "164597694131d407d7-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "What's a\nSwedish Dishcloth?",
+            "title_size": 40,
+            "subheading": "Invented in Sweden in 1949, these cloths replace paper towels, sponges and regular dishcloths. You'll never go back when you see how they work for yourself. Choose from 100+ fun motifs that add Scandinavian fun to your kitchen.",
+            "link": "shopify:\/\/pages\/whats-a-swedish-dishcloth",
+            "link_text": "Learn More",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "right",
+            "image": "shopify:\/\/shop_images\/Shop_Now_800_x_1000_px_3.png",
+            "indent_image": false,
+            "focal_point": "center center",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "164597694131d407d7-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "height": 500,
+        "height_mobile": 450,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1645978457d67870fe",
+    "1632970932008cb5bb",
+    "main-collection",
+    "164597694199f20076",
+    "recently-viewed"
+  ]
+}
