@@ -1,6 +1,18 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
-<head>{% capture sb %}{% render 'sb-snippet' %}{% endcapture %}{% unless sb contains 'Liquid error' %}{% render 'sb-snippet' %}{% endunless %}
+<head>
+<!-- Canonical url custom logic injected by StoreSEO - Start -->
+
+    {%- if product.metafields.store_seo.cannonical_url.size > 2 -%}
+      {%- assign canonical_url = product.metafields.store_seo.cannonical_url -%}
+    {%- elsif page.metafields.store_seo.cannonical_url.size > 2 -%}
+      {%- assign canonical_url = page.metafields.store_seo.cannonical_url -%}
+    {%- elsif article.metafields.store_seo.cannonical_url.size > 2 -%}
+      {%- assign canonical_url = article.metafields.store_seo.cannonical_url -%}
+    {%- endif -%}
+    
+<!-- Canonical url custom logic injected by StoreSEO - End -->
+{% capture sb %}{% render 'sb-snippet' %}{% endcapture %}{% unless sb contains 'Liquid error' %}{% render 'sb-snippet' %}{% endunless %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906981-1"></script>
@@ -122,7 +134,49 @@
 <!--Gem_Page_Header_Script-->
 {% render 'gem-app-header-scripts' %}
 <!--End_Gem_Page_Header_Script-->
-{% include 'sales-motivator-init' %}</head>
+{% include 'sales-motivator-init' %}
+<!-- Noindex, nofollow tag inserted by StoreSEO - Start -->
+
+    {%- if product -%}
+      {%- if product.metafields.store_seo.no_index == 1 and product.metafields.store_seo.no_follow == 1 -%}
+      	<meta name="robots" content="noindex, nofollow">
+      {%- elsif product.metafields.store_seo.no_index == 1 -%}
+      <meta name="robots" content="noindex">
+      {%- elsif product.metafields.store_seo.no_follow == 1 -%}
+      <meta name="robots" content="nofollow">
+      {%- endif -%}
+    {%- endif -%}
+    
+<!-- Noindex, nofollow tag inserted by StoreSEO - End -->
+
+<!-- Custom social media preview logic inserted by StoreSEO - Start -->
+
+    {%- if product.metafields.store_seo.facebook_preview_image_url.size > 2 -%}
+    <meta name="og:image" content="{{ product.metafields.store_seo.facebook_preview_image_url | default: page_image }}" />
+    {%- endif -%}
+
+    {%- if product.metafields.store_seo.twitter_preview_image_url.size > 2 -%}
+    <meta name="twitter:image" content="{{ product.metafields.store_seo.twitter_preview_image_url | default: page_image }}" />
+    {%- endif -%}
+
+    {%- if article.metafields.store_seo.facebook_preview_image_url.size > 2 -%}
+    <meta name="og:image" content="{{ article.metafields.store_seo.facebook_preview_image_url | default: page_image }}" />
+    {%- endif -%}
+
+    {%- if article.metafields.store_seo.twitter_preview_image_url.size > 2 -%}
+    <meta name="twitter:image" content="{{ article.metafields.store_seo.twitter_preview_image_url | default: page_image }}" />
+    {%- endif -%}
+
+    {%- if page.metafields.store_seo.facebook_preview_image_url.size > 2 -%}
+    <meta name="og:image" content="{{ page.metafields.store_seo.facebook_preview_image_url | default: page_image }}" />
+    {%- endif -%}
+
+    {%- if page.metafields.store_seo.twitter_preview_image_url.size > 2 -%}
+    <meta name="twitter:image" content="{{ page.metafields.store_seo.twitter_preview_image_url | default: page_image }}" />
+    {%- endif -%}
+    
+<!-- Custom social media preview logic inserted by StoreSEO - End -->
+</head>
 
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-transitions="{{ settings.animate_page_transitions }}" data-button_style="{{ settings.button_style }}" data-edges="{{ settings.roundness }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" data-grid-style="{{ settings.product_grid_style }}">
 
