@@ -2,25 +2,23 @@
   "sections": {
     "c7b79270-4833-43af-997c-e449840d2389": {
       "type": "slideshow-split",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "top_subheading": "ONLINE ONLY!",
-            "title": "Finlayson Sale",
+            "top_subheading": "BUY 1 GET 1 40% OFF",
+            "title": "Finlayson Bathroom Towels",
             "title_size": 65,
-            "subheading": "All Finlayson on Sale Today!",
-            "link": "shopify:\/\/collections\/finlayson",
-            "link_text": "Shop Now",
+            "subheading": "",
+            "link": "shopify:\/\/collections\/finlayson-bath-towels",
+            "link_text": "Shop this Deal",
             "link_2": "",
             "link_text_2": "",
             "text_position": "right",
             "image": "shopify:\/\/shop_images\/reiluraita_reilu_feeling_720x_792de07c-1c80-43d3-8a32-be7ac3356e85.webp",
             "indent_image": false,
             "focal_point": "center center",
-            "color_scheme": "2"
+            "color_scheme": "3"
           }
         },
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1": {
@@ -276,6 +274,7 @@
     },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
