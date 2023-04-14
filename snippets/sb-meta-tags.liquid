@@ -1,0 +1,59 @@
+<!-- sb-meta-tags.liquid -->
+
+{% assign sb_pages = "" %}
+{% assign sb_titles = "" %}
+{% assign sb_descriptions = "" %}
+{% assign sb_images = "" %}
+
+
+{% assign sb_pages_arr = sb_pages | split: '!!!---!!!' %}
+{% assign sb_titles_arr = sb_titles | split: '!!!---!!!' %}
+{% assign sb_descriptions_arr = sb_descriptions | split: '!!!---!!!' %}
+{% assign sb_images_arr = sb_images | split: '!!!---!!!' %}
+
+
+{% assign og_title = page_title | default: shop.name %}
+{% assign og_description = page_description | default: shop.description | default: shop.name %}
+{% assign o_image = page_image | image_url %}
+{%- liquid
+  for page_s in sb_pages_arr
+    assign idx = forloop.index | minus: 1
+
+    if page_s == 'index' and request.page_type == 'index'
+      assign og_title = sb_titles_arr[idx]
+      assign og_description = sb_descriptions_arr[idx]
+      assign o_image = sb_images_arr[idx]
+    endif
+
+    if canonical_url contains page_s
+      assign og_title = sb_titles_arr[idx]
+      assign og_description = sb_descriptions_arr[idx]
+      assign o_image = sb_images_arr[idx]
+    endif
+  endfor
+%}
+
+<meta property="og:site_name" content="{{ shop.name }}">
+<meta property="og:url" content="{{ og_url }}">
+<meta property="og:title" content="{{ og_title | escape }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:description" content="{{ og_description | escape }}">
+
+{%- if o_image -%}
+  <meta property="og:image" content="{{ o_image }}">
+  <meta property="og:image:secure_url" content="{{ o_image }}">
+  <meta property="og:image:width" content="{{ page_image.width }}">
+  <meta property="og:image:height" content="{{ page_image.height }}">
+{%- endif -%}
+
+{%- if request.page_type == 'product' -%}
+  <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
+  <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
+{%- endif -%}
+
+{%- if settings.social_twitter_link != blank -%}
+  <meta name="twitter:site" content="{{ settings.social_twitter_link | split: 'twitter.com/' | last | prepend: '@' }}">
+{%- endif -%}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ og_title | escape }}">
+<meta name="twitter:description" content="{{ og_description | escape }}">

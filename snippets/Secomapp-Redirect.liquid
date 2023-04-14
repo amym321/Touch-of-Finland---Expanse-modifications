@@ -1,0 +1,7 @@
+<!-- Secomapp-Redirect.liquid -->
+{%- if template == '404' -%}
+{% capture secomapp_redirect %}{{ shop.url }}/{% endcapture %}
+<script>
+setTimeout(function() {window.location.href = "{{ secomapp_redirect }}"}, 500);
+</script>
+{%- endif -%}

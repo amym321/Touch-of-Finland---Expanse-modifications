@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
-<head>
+<head>{% capture sb %}{% render 'sb-snippet' %}{% endcapture %}{% unless sb contains 'Liquid error' %}{% render 'sb-snippet' %}{% endunless %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58906981-1"></script>
