@@ -240,7 +240,7 @@
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/finlayson-bath-towels\" title=\"Finlayson Bath Towels\"><strong>Buy 1 Get 1 40% off<\/strong> - All Finlayson Bathroom Towels<\/a><\/p>",
+              "richtext": "<p><a href=\"\/collections\/spring-for-finnish-beauty\" title=\"Spring for Finnish Beauty\"><strong>Finnish Beauty Sale - Shop Now<\/strong><\/a><\/p>",
               "richtext_mobile": ""
             }
           },
@@ -359,12 +359,6 @@
       },
       "1630716072bce9a496": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "17992116214976573926": {
-        "type": "shopify:\/\/apps\/seo-manager-venntov\/blocks\/seomanager\/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12",
         "disabled": false,
         "settings": {
         }
