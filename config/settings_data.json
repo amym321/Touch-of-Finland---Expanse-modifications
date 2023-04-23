@@ -239,9 +239,8 @@
           },
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "richtext": "<p><a href=\"\/collections\/spring-for-finnish-beauty\" title=\"Spring for Finnish Beauty\"><strong>Finnish Beauty Sale - Shop Now<\/strong><\/a><\/p>",
+              "richtext": "<p><a href=\"\/collections\/finnish-jewelry\" title=\"Finnish Jewelry\"><strong>Finnish Jewelry Sale - Shop Now<\/strong><\/a><\/p>",
               "richtext_mobile": ""
             }
           },
