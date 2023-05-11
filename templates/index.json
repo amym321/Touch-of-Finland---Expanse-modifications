@@ -2,24 +2,23 @@
   "sections": {
     "c7b79270-4833-43af-997c-e449840d2389": {
       "type": "slideshow-split",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
           "type": "slide",
           "settings": {
-            "top_subheading": "LIMITED TIME",
-            "title": "Mother's Day Gifts Sale",
+            "top_subheading": "made in finland",
+            "title": "PaaPii Design",
             "title_size": 65,
-            "subheading": "Ready for Mother's Day Gifting",
-            "link": "shopify:\/\/collections\/sale",
-            "link_text": "Shop Sales & Promotions",
+            "subheading": "Tunics, Dresses, Shirts & more!",
+            "link": "shopify:\/\/collections\/paapii-design",
+            "link_text": "Shop PaaPii",
             "link_2": "",
             "link_text_2": "",
             "text_position": "right",
-            "image": "shopify:\/\/shop_images\/MUURLA_CS_Dahlia_setting_3-scaled_ad5be3a6-c6bf-40d1-931b-fcdf4d82a527.jpg",
+            "image": "shopify:\/\/shop_images\/220516424034ec6d9d.png",
             "indent_image": false,
             "focal_point": "bottom center",
-            "color_scheme": "3"
+            "color_scheme": "1"
           }
         },
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1": {
@@ -274,6 +273,7 @@
     },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
