@@ -240,7 +240,7 @@
           "68d471c8-9bd5-4bf8-9f66-b3ca3b385a54": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p><strong>Free Shipping on orders $99+<\/strong> (us 48 only)<\/p>",
+              "richtext": "<p><a href=\"\/collections\/paapii-design\" title=\"PaaPii Design\"><strong>NEW: Finnish Clothing from PaaPii Design!<\/strong><\/a><\/p>",
               "richtext_mobile": ""
             }
           },
