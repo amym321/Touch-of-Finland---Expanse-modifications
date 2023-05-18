@@ -6,19 +6,19 @@
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
           "type": "slide",
           "settings": {
-            "top_subheading": "made in finland",
-            "title": "PaaPii Design",
-            "title_size": 65,
-            "subheading": "Tunics, Dresses, Shirts & more!",
-            "link": "shopify:\/\/collections\/paapii-design",
-            "link_text": "Shop PaaPii",
+            "top_subheading": "SPECIAL OFFER",
+            "title": "20% OFF!",
+            "title_size": 68,
+            "subheading": "All Marimekko on Sale Today!",
+            "link": "shopify:\/\/collections\/marimekko",
+            "link_text": "Shop Marimekko",
             "link_2": "",
             "link_text_2": "",
             "text_position": "right",
-            "image": "shopify:\/\/shop_images\/220516424034ec6d9d.png",
+            "image": "shopify:\/\/shop_images\/marimekko-5.jpg",
             "indent_image": false,
-            "focal_point": "bottom center",
-            "color_scheme": "1"
+            "focal_point": "center center",
+            "color_scheme": "3"
           }
         },
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1": {
