@@ -10,16 +10,15 @@
     },
     "1632970932008cb5bb": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "84a24fb9-57f7-468e-9bdf-e8353a7e471e": {
           "type": "banner",
           "settings": {
-            "heading": "IITTALA SEASONAL SALE",
-            "text": "Up to 50% off thru 3\/26",
-            "link": "shopify:\/\/collections\/iittala",
-            "label": "Shop the Sale",
-            "color_scheme": "4"
+            "heading": "20% off all Marimekko",
+            "text": "Limited time sale!",
+            "link": "shopify:\/\/collections\/marimekko",
+            "label": "Shop Marimekko",
+            "color_scheme": "5"
           }
         },
         "24e34243-7746-4047-afc9-7da0488441ec": {
