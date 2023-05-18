@@ -3,6 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "d37e3822-1f4f-4a0a-b5e7-15c03f1fa573": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "{{ product.metafields.custom.marimekko_sale.value }}"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -72,6 +79,7 @@
         }
       },
       "block_order": [
+        "d37e3822-1f4f-4a0a-b5e7-15c03f1fa573",
         "price",
         "inventory_status",
         "variant_picker",
