@@ -64,7 +64,7 @@
             "heading": "Buy 3 Get 1 Free",
             "textarea": "All Novita Yarn Included",
             "cta_text1": "Shop Wool Yarns",
-            "cta_link1": "",
+            "cta_link1": "shopify:\/\/collections\/novita-knits-wool-yarn",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/5540C3D9-B866-439E-BBAC-446EC62F953E_1_105_c.jpg",
@@ -73,32 +73,24 @@
             "height": 500,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "#fff"
+            "color_accent": "#ffffff"
           }
         },
-        "template--14724126474318__da797f9e-1029-403d-b9b4-31ad2efa991a-16846746217cb26dbc-1": {
-          "type": "advanced",
-          "disabled": true,
+        "795a85c5-32cd-4d14-9b1a-0257ef1231b2": {
+          "type": "sale_collection",
           "settings": {
-            "subheading": "",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
+            "sale_collection": "finnish-mustard",
+            "top_text": "SHORT DATE SALE",
+            "middle_text": "50% off",
+            "bottom_text": "FINNISH MUSTARD",
             "width": "50",
-            "height": 500,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "#fff"
+            "color_scheme": "1"
           }
         }
       },
       "block_order": [
         "template--14724126474318__da797f9e-1029-403d-b9b4-31ad2efa991a-16846746217cb26dbc-0",
-        "template--14724126474318__da797f9e-1029-403d-b9b4-31ad2efa991a-16846746217cb26dbc-1"
+        "795a85c5-32cd-4d14-9b1a-0257ef1231b2"
       ],
       "settings": {
         "full_width": false,
