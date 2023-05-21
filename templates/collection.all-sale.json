@@ -10,17 +10,15 @@
     },
     "1632970932008cb5bb": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "84a24fb9-57f7-468e-9bdf-e8353a7e471e": {
           "type": "banner",
-          "disabled": true,
           "settings": {
-            "heading": "20% off all Marimekko",
-            "text": "Limited time sale!",
-            "link": "shopify:\/\/collections\/marimekko",
-            "label": "Shop Marimekko",
-            "color_scheme": "5"
+            "heading": "Free Shipping on orders $99+",
+            "text": "(US 48 ONLY)",
+            "link": "",
+            "label": "",
+            "color_scheme": "3"
           }
         },
         "24e34243-7746-4047-afc9-7da0488441ec": {
@@ -47,6 +45,7 @@
         },
         "3c29fb16-7c45-40b2-893b-80208004d956": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "turun-sinappia-mild-mustard-275g",
             "subheading": "SHORT-DATE SALE",
@@ -61,6 +60,7 @@
         },
         "e84d0581-2176-45c5-b140-3bf3e1dc9980": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "",
             "subheading": "",
