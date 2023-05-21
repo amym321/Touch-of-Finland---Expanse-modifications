@@ -305,66 +305,6 @@
         "space_below": false
       }
     },
-    "695b845f-4726-41c6-ad13-342155b6705c": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "template--14724126474318__695b845f-4726-41c6-ad13-342155b6705c-1671065729b2d7b402-0": {
-          "type": "hero",
-          "settings": {
-            "top_subheading": "",
-            "title": "<p>St. Urho's Day Sale<\/p>",
-            "title_size": 70,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/st-urhos-sale",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#ffffff",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Untitled_design_29.png",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "template--14724126474318__695b845f-4726-41c6-ad13-342155b6705c-1671065729b2d7b402-0"
-      ],
-      "settings": {
-        "full_width": true,
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "baa21042-7da6-44d4-9f8c-2dda46dc6568": {
-      "type": "promo-grid",
-      "disabled": true,
-      "blocks": {
-        "cfeaf79e-1ae2-4e40-914c-7ce29a0692ba": {
-          "type": "banner",
-          "settings": {
-            "heading": "The Legend of Heikki Lunta",
-            "text": "",
-            "link": "shopify:\/\/pages\/the-legend-of-heikki-lunta",
-            "label": "Read Now",
-            "color_scheme": "1"
-          }
-        }
-      },
-      "block_order": [
-        "cfeaf79e-1ae2-4e40-914c-7ce29a0692ba"
-      ],
-      "settings": {
-        "full_width": true,
-        "gutter_size": 0,
-        "space_above": false,
-        "space_below": false
-      }
-    },
     "70c2feb8-1c7a-448f-8e37-155a801b743e": {
       "type": "slideshow",
       "disabled": true,
@@ -736,8 +676,6 @@
     "144966fb-e1c3-45de-940f-847c8ae89477",
     "6351a68e-ca8f-45cd-9c31-f73a07a7fead",
     "022c48d7-bccd-47ba-a9c9-28275f7283ff",
-    "695b845f-4726-41c6-ad13-342155b6705c",
-    "baa21042-7da6-44d4-9f8c-2dda46dc6568",
     "70c2feb8-1c7a-448f-8e37-155a801b743e",
     "16552286582d4b297e",
     "16553090232769c836",
