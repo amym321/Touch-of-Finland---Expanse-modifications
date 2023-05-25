@@ -1,10 +1,46 @@
 {
   "sections": {
+    "8ad51656-ec41-48f2-8fca-8af78709b8b1": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14724126474318__8ad51656-ec41-48f2-8fca-8af78709b8b1-1685017584fb430c6b-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#fff",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/webbanner_2aeea036-9825-431b-ae53-008ee4cf161a.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14724126474318__8ad51656-ec41-48f2-8fca-8af78709b8b1-1685017584fb430c6b-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "c7b79270-4833-43af-997c-e449840d2389": {
       "type": "slideshow-split",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "top_subheading": "SPECIAL OFFER",
             "title": "20% OFF!",
@@ -56,6 +92,7 @@
     },
     "da797f9e-1029-403d-b9b4-31ad2efa991a": {
       "type": "promo-grid",
+      "disabled": true,
       "blocks": {
         "template--14724126474318__da797f9e-1029-403d-b9b4-31ad2efa991a-16846746217cb26dbc-0": {
           "type": "advanced",
@@ -463,6 +500,7 @@
     }
   },
   "order": [
+    "8ad51656-ec41-48f2-8fca-8af78709b8b1",
     "c7b79270-4833-43af-997c-e449840d2389",
     "da797f9e-1029-403d-b9b4-31ad2efa991a",
     "022c48d7-bccd-47ba-a9c9-28275f7283ff",
