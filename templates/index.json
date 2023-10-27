@@ -37,7 +37,6 @@
     },
     "c7b79270-4833-43af-997c-e449840d2389": {
       "type": "slideshow-split",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0": {
           "type": "slide",
@@ -82,6 +81,7 @@
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-0",
         "template--14724126474318__c7b79270-4833-43af-997c-e449840d2389-1680447919be7552ff-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "height": 650,
@@ -93,7 +93,6 @@
     },
     "da797f9e-1029-403d-b9b4-31ad2efa991a": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__da797f9e-1029-403d-b9b4-31ad2efa991a-16846746217cb26dbc-0": {
           "type": "advanced",
@@ -130,6 +129,7 @@
         "template--14724126474318__da797f9e-1029-403d-b9b4-31ad2efa991a-16846746217cb26dbc-0",
         "795a85c5-32cd-4d14-9b1a-0257ef1231b2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "gutter_size": 25,
@@ -139,7 +139,6 @@
     },
     "022c48d7-bccd-47ba-a9c9-28275f7283ff": {
       "type": "promo-grid",
-      "disabled": true,
       "blocks": {
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0": {
           "type": "advanced",
@@ -164,6 +163,7 @@
       "block_order": [
         "template--14724126474318__022c48d7-bccd-47ba-a9c9-28275f7283ff-1675186975cfc4e27c-0"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "gutter_size": 0,
@@ -177,7 +177,7 @@
         "1655228658df1cf9b4-0": {
           "type": "collection",
           "settings": {
-            "collection": "finnish-candy-and-food",
+            "collection": "finnish-candy-shop",
             "title": "Candy & Food"
           }
         },
@@ -377,7 +377,6 @@
     },
     "1655296233694739f0": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "16552962333bc0022d-0": {
           "type": "title",
@@ -402,6 +401,7 @@
         "16552962333bc0022d-1",
         "16552962333bc0022d-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "3"
       }

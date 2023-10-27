@@ -2,7 +2,6 @@
   "sections": {
     "464832ac-efe3-4bec-834e-d95b3cb0eb67": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--14478584643662__464832ac-efe3-4bec-834e-d95b3cb0eb67-1665329532f04624a2-0": {
           "type": "hero",
@@ -68,6 +67,7 @@
         "27ad92bf-b5c2-402e-9850-f4f4314cfba0",
         "f9bb6b4d-14d1-4397-b3a9-d28c9e9a42b6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "desktop_size": -20,
@@ -127,7 +127,7 @@
             "heading": "Holiday Candy Sale",
             "textarea": "",
             "cta_text1": "Shop Now",
-            "cta_link1": "shopify:\/\/collections\/finnish-candy-and-food",
+            "cta_link1": "shopify:\/\/collections\/finnish-candy-shop",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/FC_KF_maitosuklaa_270g_407111_hands_hr.jpg",
@@ -194,7 +194,6 @@
     },
     "0ca16ad7-f1f3-41d9-934f-fbd76de85354": {
       "type": "text-columns",
-      "disabled": true,
       "blocks": {
         "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-1": {
           "type": "text_block",
@@ -225,6 +224,7 @@
         "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-1",
         "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-0"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "align_text": "center",
@@ -238,7 +238,7 @@
         "1655228658df1cf9b4-0": {
           "type": "collection",
           "settings": {
-            "collection": "finnish-candy-and-food",
+            "collection": "finnish-candy-shop",
             "title": "Candy & Food"
           }
         },
@@ -582,7 +582,6 @@
     },
     "1656862657771e2d58": {
       "type": "advanced-content",
-      "disabled": true,
       "blocks": {
         "165686265726e89246-1": {
           "type": "liquid",
@@ -596,6 +595,7 @@
       "block_order": [
         "165686265726e89246-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true
