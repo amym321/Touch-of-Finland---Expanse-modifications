@@ -127,7 +127,7 @@
             "heading": "Holiday Candy Sale",
             "textarea": "",
             "cta_text1": "Shop Now",
-            "cta_link1": "shopify:\/\/collections\/finnish-candy-shop",
+            "cta_link1": "shopify:\/\/collections\/finnish-candy",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/FC_KF_maitosuklaa_270g_407111_hands_hr.jpg",
@@ -238,7 +238,7 @@
         "1655228658df1cf9b4-0": {
           "type": "collection",
           "settings": {
-            "collection": "finnish-candy-shop",
+            "collection": "finnish-candy",
             "title": "Candy & Food"
           }
         },
