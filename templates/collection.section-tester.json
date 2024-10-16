@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "collection-header": {
@@ -16,7 +25,7 @@
           "settings": {
             "heading": "Free Shipping",
             "text": "with any purchase of $99+ (US 48 Only)",
-            "link": "shopify:\/\/pages\/shipping",
+            "link": "shopify://pages/shipping",
             "label": "Details Here",
             "color_scheme": "1"
           }
@@ -144,7 +153,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
@@ -166,17 +175,17 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Overlaid Hero Slide<\/p>",
+            "title": "<p>Overlaid Hero Slide</p>",
             "title_size": 70,
             "subheading": "Perfect for rich lifestyle photography.",
-            "link": "shopify:\/\/collections\/aarikka",
+            "link": "shopify://collections/aarikka",
             "link_text": "Optional button",
-            "link_2": "shopify:\/\/collections\/aarikka",
+            "link_2": "shopify://collections/aarikka",
             "link_text_2": "test",
             "color_accent": "#fff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/beautiful-day-at-the-beach.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/beautiful-day-at-the-beach.jpg",
+            "image": "shopify://shop_images/beautiful-day-at-the-beach.jpg",
+            "image_mobile": "shopify://shop_images/beautiful-day-at-the-beach.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -185,7 +194,7 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Make an Impact<\/p>",
+            "title": "<p>Make an Impact</p>",
             "title_size": 70,
             "subheading": "Supports multiple text alignments and mobile-specific images.",
             "link": "",
@@ -224,7 +233,7 @@
         "template--18547661865274__07667fdd-c0e8-47f2-9bfd-42de3c880243-16802799200d5f29ca-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
           }
         },
         "template--18547661865274__07667fdd-c0e8-47f2-9bfd-42de3c880243-16802799200d5f29ca-2": {
@@ -318,14 +327,14 @@
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
           }
         },
         "template--18547661865274__c8d52729-8842-47a1-a4bc-b13d6265d3d3-168027998628709ccf-1": {
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
           }
         }
       },
@@ -343,9 +352,9 @@
         "template--18547661865274__c29075e1-359f-4578-b797-4ca925092e98-16802800032520dc58-0": {
           "type": "image",
           "settings": {
-            "link": "shopify:\/\/collections\/aarikka",
-            "image": "shopify:\/\/shop_images\/beautiful-day-at-the-beach.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/fog-on-dark-waters-edge.jpg"
+            "link": "shopify://collections/aarikka",
+            "image": "shopify://shop_images/beautiful-day-at-the-beach.jpg",
+            "image_mobile": "shopify://shop_images/fog-on-dark-waters-edge.jpg"
           }
         },
         "template--18547661865274__c29075e1-359f-4578-b797-4ca925092e98-16802800032520dc58-1": {
@@ -369,14 +378,14 @@
     "040b3ebd-3713-472b-8a8a-a3538f27fea2": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
-        "image2": "shopify:\/\/shop_images\/northern-forest.jpg",
+        "image": "shopify://shop_images/beach-sunset-thailand.jpg",
+        "image2": "shopify://shop_images/northern-forest.jpg",
         "image_width": 700,
         "subtitle": "test",
         "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
         "button_label": "test",
-        "button_link": "shopify:\/\/collections\/candy-dishes",
+        "button_link": "shopify://collections/candy-dishes",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
@@ -389,10 +398,10 @@
       "settings": {
         "subtitle": "",
         "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
         "button_label": "Shop",
-        "button_link": "shopify:\/\/collections\/candles",
-        "image": "shopify:\/\/shop_images\/palm-trees-sky.jpg",
+        "button_link": "shopify://collections/candles",
+        "image": "shopify://shop_images/palm-trees-sky.jpg",
         "focal_point": "center",
         "layout": "left",
         "height": 550,
@@ -405,8 +414,8 @@
         "template--18547661865274__99ceab6c-fd6c-4624-aab5-fbe3fd683890-16802800267fa93cf3-0": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Iittala_Group_Logo_svg.png",
-            "link": "shopify:\/\/collections\/iittala"
+            "image": "shopify://shop_images/Iittala_Group_Logo_svg.png",
+            "link": "shopify://collections/iittala"
           }
         },
         "template--18547661865274__99ceab6c-fd6c-4624-aab5-fbe3fd683890-16802800267fa93cf3-1": {
@@ -463,10 +472,10 @@
             "heading": "Announce your promotion",
             "textarea": "Include the smaller details of your promotion in text below the title.",
             "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/bags-umbrellas",
+            "cta_link1": "shopify://collections/bags-umbrellas",
             "cta_text2": "Shop All",
-            "cta_link2": "shopify:\/\/collections\/arabia",
-            "image": "shopify:\/\/shop_images\/beautiful-day-at-the-beach.jpg",
+            "cta_link2": "shopify://collections/arabia-moomin",
+            "image": "shopify://shop_images/beautiful-day-at-the-beach.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -482,10 +491,10 @@
             "heading": "Announce your promotion",
             "textarea": "Include the smaller details of your promotion in text below the title.",
             "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/aarikka",
+            "cta_link1": "shopify://collections/aarikka",
             "cta_text2": "Shop All",
-            "cta_link2": "shopify:\/\/products\/4living-traditional-aspen-wooden-sauna-headrest",
-            "image": "shopify:\/\/shop_images\/woman-wades-in-ocean-at-sunset.jpg",
+            "cta_link2": "shopify://products/4living-traditional-aspen-wooden-sauna-headrest",
+            "image": "shopify://shop_images/woman-wades-in-ocean-at-sunset.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -497,9 +506,9 @@
         "37c939e3-d6da-413e-bf4f-9da7a1157af6": {
           "type": "simple",
           "settings": {
-            "link": "shopify:\/\/collections\/aarikka",
+            "link": "shopify://collections/aarikka",
             "text": "Test",
-            "image": "shopify:\/\/shop_images\/red-textured-wall.jpg",
+            "image": "shopify://shop_images/red-textured-wall.jpg",
             "width": "50",
             "height": 300
           }
@@ -532,8 +541,8 @@
         "0cfd60f8-c1fb-4ec0-8299-98efd009f1ad": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/palm-trees-sky.jpg",
-            "link": "shopify:\/\/collections\/ball-candles",
+            "image": "shopify://shop_images/palm-trees-sky.jpg",
+            "link": "shopify://collections/ball-candles",
             "width": "100"
           }
         },
@@ -542,7 +551,7 @@
           "settings": {
             "heading": "Banner promotion",
             "text": "Add the details of your promotion in smaller text",
-            "link": "shopify:\/\/collections\/arabia",
+            "link": "shopify://collections/arabia-moomin",
             "label": "Shop now",
             "color_scheme": "none"
           }
@@ -574,12 +583,12 @@
             "title": "Side by side slide",
             "title_size": 60,
             "subheading": "Tailored for longer text and smaller images. Explain more about your promotion.",
-            "link": "shopify:\/\/collections\/aarikka",
+            "link": "shopify://collections/aarikka",
             "link_text": "Optional button",
             "link_2": "",
             "link_text_2": "",
             "text_position": "right",
-            "image": "shopify:\/\/shop_images\/long-forest-path.jpg",
+            "image": "shopify://shop_images/long-forest-path.jpg",
             "indent_image": false,
             "focal_point": "center center",
             "color_scheme": "2"
@@ -592,12 +601,12 @@
             "title": "Highlight products",
             "title_size": 60,
             "subheading": "Repurpose your product photography with our \"Indented\" image option",
-            "link": "shopify:\/\/collections\/arabia",
+            "link": "shopify://collections/arabia-moomin",
             "link_text": "Optional button",
             "link_2": "",
             "link_text_2": "",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/ocean-water-with-swimmers.jpg",
+            "image": "shopify://shop_images/ocean-water-with-swimmers.jpg",
             "indent_image": true,
             "focal_point": "center center",
             "color_scheme": "1"
@@ -624,7 +633,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -633,7 +642,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -642,7 +651,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -651,7 +660,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -660,7 +669,7 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
             "author": "Author's name",
             "author_info": "Los Angeles, CA"
           }
@@ -687,36 +696,36 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/fog-on-dark-waters-edge.jpg",
+            "image": "shopify://shop_images/fog-on-dark-waters-edge.jpg",
             "image_width": 650,
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
             "button_label": "Optional button",
-            "button_link": "shopify:\/\/products\/4living-traditional-aspen-wooden-sauna-headrest"
+            "button_link": "shopify://products/4living-traditional-aspen-wooden-sauna-headrest"
           }
         },
         "template--18547661865274__5f508185-74ae-44e1-8ef4-2f7ab613bf02-1680280095c423daa6-1": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/fog-on-dark-waters-edge.jpg",
+            "image": "shopify://shop_images/fog-on-dark-waters-edge.jpg",
             "image_width": 650,
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
             "button_label": "Optional button",
-            "button_link": "shopify:\/\/collections\/sauna-skincare"
+            "button_link": "shopify://collections/sauna-skincare"
           }
         },
         "template--18547661865274__5f508185-74ae-44e1-8ef4-2f7ab613bf02-1680280095c423daa6-2": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/fog-on-dark-waters-edge.jpg",
+            "image": "shopify://shop_images/fog-on-dark-waters-edge.jpg",
             "image_width": 650,
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.<\/p>",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions.</p>",
             "button_label": "Optional button",
-            "button_link": "shopify:\/\/products\/4living-traditional-aspen-wooden-sauna-headrest"
+            "button_link": "shopify://products/4living-traditional-aspen-wooden-sauna-headrest"
           }
         }
       },
@@ -736,7 +745,7 @@
       "type": "featured-video",
       "settings": {
         "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "divider": false
       }
     }
