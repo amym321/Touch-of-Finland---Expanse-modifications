@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "464832ac-efe3-4bec-834e-d95b3cb0eb67": {
@@ -8,17 +17,17 @@
           "disabled": true,
           "settings": {
             "top_subheading": "2 for $20",
-            "title": "<p>Personalized SISU Pocket Knives<\/p>",
+            "title": "<p>Personalized SISU Pocket Knives</p>",
             "title_size": 50,
             "subheading": "7-in-1 Multi-tool",
-            "link": "shopify:\/\/collections\/personalized-sisu-multi-tools",
+            "link": "shopify://collections/personalized-sisu-multi-tools",
             "link_text": "Shop Now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/knif3.png",
-            "image_mobile": "shopify:\/\/shop_images\/Untitled-design-_22.png",
+            "image": "shopify://shop_images/knif3.png",
+            "image_mobile": "shopify://shop_images/Untitled-design-_22.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -28,17 +37,17 @@
           "disabled": true,
           "settings": {
             "top_subheading": "15% off",
-            "title": "<p>Kupilka Cups<\/p>",
+            "title": "<p>Kupilka Cups</p>",
             "title_size": 50,
             "subheading": "Adventurer's Greatest Companion",
-            "link": "shopify:\/\/collections\/kupilka",
+            "link": "shopify://collections/kupilka",
             "link_text": "Shop Kupilka",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/Untitled_design_23.png",
-            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_26.png",
+            "image": "shopify://shop_images/Untitled_design_23.png",
+            "image_mobile": "shopify://shop_images/Untitled_design_26.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -56,7 +65,7 @@
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/unikko1.png",
+            "image": "shopify://shop_images/unikko1.png",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -85,13 +94,13 @@
           "disabled": true,
           "settings": {
             "subheading": "",
-            "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_2_d6d300cf-e71b-4ed8-8576-de6babc4fa60.png?v=1657805595\" alt=\"iittala\" width=\"150\">",
+            "heading": "<img src=\"https://cdn.shopify.com/s/files/1/0643/4389/files/Untitled_design_2_d6d300cf-e71b-4ed8-8576-de6babc4fa60.png?v=1657805595\" alt=\"iittala\" width=\"150\">",
             "textarea": "Timeless Finnish Design Since 1881",
             "cta_text1": "Shop Now",
-            "cta_link1": "shopify:\/\/collections\/iittala",
+            "cta_link1": "shopify://collections/iittala",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/tof-cover_65b5fb92-6b29-4c68-b4a2-c7383f9b8ade.png",
+            "image": "shopify://shop_images/tof-cover_65b5fb92-6b29-4c68-b4a2-c7383f9b8ade.png",
             "video_url": "",
             "width": "100",
             "height": 200,
@@ -105,13 +114,13 @@
           "disabled": true,
           "settings": {
             "subheading": "UNIKKO SALE",
-            "heading": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0643\/4389\/files\/Untitled_design_30.png?v=1666366335\" alt=\"iittala\" width=\"200\">",
+            "heading": "<img src=\"https://cdn.shopify.com/s/files/1/0643/4389/files/Untitled_design_30.png?v=1666366335\" alt=\"iittala\" width=\"200\">",
             "textarea": "20% off Finland's Most Iconic Print",
             "cta_text1": "Shop Unikko",
-            "cta_link1": "shopify:\/\/collections\/marimekko",
+            "cta_link1": "shopify://collections/marimekko",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/unikko1.png",
+            "image": "shopify://shop_images/unikko1.png",
             "video_url": "",
             "width": "100",
             "height": 500,
@@ -127,10 +136,10 @@
             "heading": "Holiday Candy Sale",
             "textarea": "",
             "cta_text1": "Shop Now",
-            "cta_link1": "shopify:\/\/collections\/finnish-candy",
+            "cta_link1": "shopify://collections/finnish-candy",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/FC_KF_maitosuklaa_270g_407111_hands_hr.jpg",
+            "image": "shopify://shop_images/FC_KF_maitosuklaa_270g_407111_hands_hr.jpg",
             "video_url": "",
             "width": "100",
             "height": 500,
@@ -146,10 +155,10 @@
             "heading": "15% off today",
             "textarea": "All Bianco Blu Finnish Glass Birds",
             "cta_text1": "Shop Bianco Blu",
-            "cta_link1": "shopify:\/\/collections\/bianco-blu",
+            "cta_link1": "shopify://collections/bianco-blu",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/VDAY20-LIFESTYLE-27_1.jpg",
+            "image": "shopify://shop_images/VDAY20-LIFESTYLE-27_1.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -165,10 +174,10 @@
             "heading": "Up to 40% off",
             "textarea": "All Finlayson on Sale!",
             "cta_text1": "Shop Finlayson",
-            "cta_link1": "shopify:\/\/collections\/finlayson",
+            "cta_link1": "shopify://collections/finlayson",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Alku_feeling_720x_c5194b7a-ae4d-4581-91af-ae9c98067208.webp",
+            "image": "shopify://shop_images/Alku_feeling_720x_c5194b7a-ae4d-4581-91af-ae9c98067208.webp",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -199,24 +208,24 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Untitled_design_81.png",
+            "image": "shopify://shop_images/Untitled_design_81.png",
             "image_width": 650,
             "title": "Finlayson - up to 40% off!",
-            "text": "<p>Save up to 40% off on all Finlayson<\/p>",
+            "text": "<p>Save up to 40% off on all Finlayson</p>",
             "button_label": "Shop Finlayson",
-            "button_link": "shopify:\/\/collections\/finlayson"
+            "button_link": "shopify://collections/finlayson"
           }
         },
         "template--14478584643662__0ca16ad7-f1f3-41d9-934f-fbd76de85354-1667488398730211ac-0": {
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Untitled_design_82.png",
+            "image": "shopify://shop_images/Untitled_design_82.png",
             "image_width": 650,
             "title": "15% off all Bianco Blu",
-            "text": "<p>Finnish Glass Birds from Bianco Blu<\/p>",
+            "text": "<p>Finnish Glass Birds from Bianco Blu</p>",
             "button_label": "Shop Bianco Blu",
-            "button_link": "shopify:\/\/collections\/bianco-blu"
+            "button_link": "shopify://collections/bianco-blu"
           }
         }
       },
@@ -335,7 +344,7 @@
         "1b070acb-47c0-4fbd-9552-bedcd00edbbb"
       ],
       "settings": {
-        "title": "<p style=\"color:#064E82;\">What are you shopping for today?<\/p>",
+        "title": "<p style=\"color:#064E82;\">What are you shopping for today?</p>",
         "divider": false
       }
     },
@@ -347,7 +356,7 @@
           "settings": {
             "heading": "Up to 50% Off",
             "text": "Save on Retired, Seasonal & Overstock.",
-            "link": "shopify:\/\/collections\/clearance-sale",
+            "link": "shopify://collections/end-of-season-sale",
             "label": "Shop Sale",
             "color_scheme": "5"
           }
@@ -373,10 +382,10 @@
             "heading": "Made in Finland",
             "textarea": "",
             "cta_text1": "Shop Now",
-            "cta_link1": "shopify:\/\/collections\/made-in-finland-gifts",
+            "cta_link1": "shopify://collections/made-in-finland-gifts",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-06-16T121211.467_2d4d0615-669c-46cf-8d5f-b28b240c25a6.png",
+            "image": "shopify://shop_images/Untitled_design_-_2022-06-16T121211.467_2d4d0615-669c-46cf-8d5f-b28b240c25a6.png",
             "video_url": "",
             "width": "33",
             "height": 500,
@@ -392,10 +401,10 @@
             "heading": "Top 100",
             "textarea": "",
             "cta_text1": "Shop Now",
-            "cta_link1": "shopify:\/\/collections\/top-100-best-selling-finnish-products",
+            "cta_link1": "shopify://collections/top-100-best-selling-finnish-products",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-06-16T121211.467_2d4d0615-669c-46cf-8d5f-b28b240c25a6.png",
+            "image": "shopify://shop_images/Untitled_design_-_2022-06-16T121211.467_2d4d0615-669c-46cf-8d5f-b28b240c25a6.png",
             "video_url": "",
             "width": "33",
             "height": 500,
@@ -411,10 +420,10 @@
             "heading": "Buy More, Save More!",
             "textarea": "",
             "cta_text1": "Shop Value Packs",
-            "cta_link1": "shopify:\/\/collections\/value-packs",
+            "cta_link1": "shopify://collections/value-packs",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-06-16T121211.467_2d4d0615-669c-46cf-8d5f-b28b240c25a6.png",
+            "image": "shopify://shop_images/Untitled_design_-_2022-06-16T121211.467_2d4d0615-669c-46cf-8d5f-b28b240c25a6.png",
             "video_url": "",
             "width": "33",
             "height": 500,
@@ -431,10 +440,10 @@
             "heading": "WIN A TOIKKA BIRD!",
             "textarea": "No purchase neccesary.",
             "cta_text1": "Enter Now",
-            "cta_link1": "shopify:\/\/pages\/toikka-bird-giveaway",
+            "cta_link1": "shopify://pages/toikka-bird-giveaway",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/tb34.jpg",
+            "image": "shopify://shop_images/tb34.jpg",
             "video_url": "",
             "width": "100",
             "height": 500,
@@ -463,43 +472,43 @@
         "165529829349506362-0": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-06-15T104028.638.png",
-            "link": "shopify:\/\/collections\/iittala"
+            "image": "shopify://shop_images/Untitled_design_-_2022-06-15T104028.638.png",
+            "link": "shopify://collections/iittala"
           }
         },
         "165529829349506362-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/us_retailer_marimekko_design.png",
-            "link": "shopify:\/\/collections\/marimekko"
+            "image": "shopify://shop_images/us_retailer_marimekko_design.png",
+            "link": "shopify://collections/marimekko"
           }
         },
         "165529829349506362-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fazer_f327fbe5-6b1c-45f3-a43c-40dc70031765.jpg",
-            "link": "shopify:\/\/collections\/fazer"
+            "image": "shopify://shop_images/fazer_f327fbe5-6b1c-45f3-a43c-40dc70031765.jpg",
+            "link": "shopify://collections/fazer"
           }
         },
         "165529829349506362-3": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/us_retailer_rento_sauna.png",
-            "link": "shopify:\/\/collections\/rento-sauna-from-finland"
+            "image": "shopify://shop_images/us_retailer_rento_sauna.png",
+            "link": "shopify://collections/rento-sauna-from-finland"
           }
         },
         "165529829349506362-4": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_-_2022-06-15T105054.233.png",
-            "link": "shopify:\/\/collections\/kalevala-jewelry"
+            "image": "shopify://shop_images/Untitled_design_-_2022-06-15T105054.233.png",
+            "link": "shopify://collections/kalevala-jewelry"
           }
         },
         "165529829349506362-5": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/finnish-brands.png",
-            "link": "shopify:\/\/pages\/finnish-brands"
+            "image": "shopify://shop_images/finnish-brands.png",
+            "link": "shopify://pages/finnish-brands"
           }
         }
       },
@@ -528,13 +537,12 @@
         "16552962333bc0022d-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em>We typically send 3-4 emails per month with exclusive subscriber only offers.<\/em><\/p>"
+            "text": "<p><em>We typically send 3-4 emails per month with exclusive subscriber only offers.</em></p>"
           }
         },
         "16552962333bc0022d-2": {
           "type": "form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -556,12 +564,12 @@
             "title": "Serving Finns in USA since 1981",
             "title_size": 50,
             "subheading": "Tervetuloa! We're owned and operated by three generations of the same Finnish-American family!",
-            "link": "shopify:\/\/pages\/about-us-1",
+            "link": "shopify://pages/about-us-1",
             "link_text": "Read our story",
             "link_2": "",
             "link_text_2": "",
             "text_position": "right",
-            "image": "shopify:\/\/shop_images\/tof-4.jpg",
+            "image": "shopify://shop_images/tof-4.jpg",
             "indent_image": false,
             "focal_point": "20% 50%",
             "color_scheme": "1"
@@ -586,7 +594,7 @@
         "165686265726e89246-1": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=\"prooffactor-newsletter\"; style=\"font-size: 14px;\" data-open-accessibility-text-original=\"14px\">Enter to Win!<\/a>",
+            "code": "<div class=\"prooffactor-newsletter\"; style=\"font-size: 14px;\" data-open-accessibility-text-original=\"14px\">Enter to Win!</a>",
             "width": "50%",
             "alignment": "center"
           }
