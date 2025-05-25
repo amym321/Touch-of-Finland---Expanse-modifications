@@ -46,8 +46,7 @@
       "blocks": {
         "subcollections": {
           "type": "subcollections",
-          "settings": {
-          }
+          "settings": {}
         },
         "product_grid": {
           "type": "product_grid",
@@ -57,8 +56,7 @@
         },
         "collection_description": {
           "type": "collection_description",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -75,8 +73,7 @@
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {
-      }
+      "settings": {}
     },
     "82e68370-640d-4697-9a21-bf8037d518e5": {
       "type": "featured-collection",
@@ -94,8 +91,7 @@
       "blocks": {
         "template--18547661865274__a07fcc1b-2133-4569-8963-595710c9ec08-16802798865fe46653-0": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--18547661865274__a07fcc1b-2133-4569-8963-595710c9ec08-16802798865fe46653-1": {
           "type": "description",
@@ -238,8 +234,7 @@
         },
         "template--18547661865274__07667fdd-c0e8-47f2-9bfd-42de3c880243-16802799200d5f29ca-2": {
           "type": "form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -472,7 +467,7 @@
             "heading": "Announce your promotion",
             "textarea": "Include the smaller details of your promotion in text below the title.",
             "cta_text1": "Shop This",
-            "cta_link1": "shopify://collections/bags-umbrellas",
+            "cta_link1": "shopify://collections/bags-accessories",
             "cta_text2": "Shop All",
             "cta_link2": "shopify://collections/arabia-moomin",
             "image": "shopify://shop_images/beautiful-day-at-the-beach.jpg",
