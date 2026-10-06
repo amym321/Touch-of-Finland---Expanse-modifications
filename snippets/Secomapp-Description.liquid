@@ -1,4 +1,4 @@
-{% capture sb_include_manual_seo_log_ids_custom %}{% render "Secomapp-manual-seo-log-ids-custom" %}{% endcapture %}{% unless sb_include_manual_seo_log_ids_custom contains "Liquid error" %}{% capture "sb_res_check_custom_ids" %}{% render "Secomapp-manual-seo-log-ids-custom" %}{% endcapture %}{% endunless %}
+{% capture sb_include_manual_seo_log_ids_custom %}{% render "Secomapp-manual-seo-log-ids-custom" %}{% endcapture %}{% unless sb_include_manual_seo_log_ids_custom contains "Liquid error" %}{% capture sb_res_check_custom_ids %}{% render "Secomapp-manual-seo-log-ids-custom" %}{% endcapture %}{% endunless %}
 {% assign sb_res_check_custom_ids = sb_res_check_custom_ids | strip_html | strip | strip_newlines | lstrip  %}
 {% if sb_res_check_custom_ids == "1" %} {% assign sb_res_check_custom_ids = true  %} {% else %} {% assign sb_res_check_custom_ids = false  %} {% endif %}
 {%- if template contains "404" -%}
@@ -70,3 +70,13 @@
 <meta name="description" content="{{ secomapp_other_s | strip_html | strip | strip_newlines | replace: '"', "'"}}">
 
 {%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{% capture "sb_res_check_custom_ids" %}'
+  to: "{% capture sb_res_check_custom_ids %}"
+  position: 188..225
+{% endcomment %}
